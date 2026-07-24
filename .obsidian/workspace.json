@@ -117,16 +117,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-24 Регулярный синк с BillManager"
+              "title": "Синки с BillManager"
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -300,8 +299,9 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "abd35febf309d9a1",
+  "active": "6955f134d92bb2dc",
   "lastOpenFiles": [
+    "Работа/Astra/Команда/Команда Платформы AC/Андрей Иволга.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-22 Обсуждение с BillManager по интеграции с Боцманом.md",
@@ -328,7 +328,6 @@
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
     "Inbox/Hermes подключен.md",
     "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты/2026-07-23 Разбираем Usecase ЛК админ + тенанты.md",
-    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов",
     "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архкомы",
