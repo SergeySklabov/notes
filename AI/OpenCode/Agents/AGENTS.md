@@ -388,7 +388,9 @@ Dion: <ссылка на событие>
 
 ### Git
 - `.env` в `.gitignore` — не коммитить
-- Пока нет git-репозитория в SCP/ (vault в hommies)
+- Vault синхронизируется через приватный GitHub-репозиторий `SergeySklabov/obsidian-vault` (плагин Obsidian Git на Mac + git-клон у агента Hermes)
+- Папка `Работа/**/Презентации/` исключена из git (большие бинарники) — синхронизируется только через Dropbox
+- Агент Hermes: `git pull` перед работой, `commit + push` после изменений
 
 ## 7. Как звать агентов
 

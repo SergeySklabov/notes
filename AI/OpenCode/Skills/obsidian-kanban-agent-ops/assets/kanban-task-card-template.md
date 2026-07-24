@@ -1,20 +1,23 @@
 ---
 assignee:
-tags:
 ---
 
-# Goal
+# {{title}}
 
+<!-- Название на русском и с глагола: Сделать..., Определить..., Разработать... -->
 
+## Goal
 
-# Definition of Done
+<!-- What result should this task produce? -->
 
+## Definition of Done
 
+-
 
-# Plan
+## Plan
 
+1.
 
+## Subtasks
 
-# Subtasks
-
-- [ ] ...
+- [ ]

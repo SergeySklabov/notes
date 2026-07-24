@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Office temp files
+~$*
+
+# Secrets
+.env
+
+# Large binaries — synced via Dropbox, not git
+Работа/**/Презентации/
