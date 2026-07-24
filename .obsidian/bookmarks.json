@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "folder",
+      "ctime": 1783154335516,
+      "path": "Работа/Astra",
+      "title": "Astra"
+    },
+    {
+      "type": "folder",
+      "ctime": 1783424793885,
+      "path": "Работа/Astra/Команда/Команда Платформы AC",
+      "title": "Команда Платформы"
+    },
+    {
+      "type": "folder",
+      "ctime": 1783427340461,
+      "path": "Работа/Astra/Платформа Astra Cloud/Компоненты",
+      "title": "Компоненты"
+    },
+    {
+      "type": "folder",
+      "ctime": 1783526694375,
+      "path": "AI/OpenCode/Agents",
+      "title": "AI"
+    },
+    {
+      "type": "folder",
+      "ctime": 1783526766770,
+      "path": "Работа/Astra/Встречи",
+      "title": "Встречи"
+    }
+  ]
+}

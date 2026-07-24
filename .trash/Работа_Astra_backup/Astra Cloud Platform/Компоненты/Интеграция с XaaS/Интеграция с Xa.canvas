@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"18b0447b8a3b6c36","type":"text","text":"XaaS в Astra Cloud Plaform","x":-20,"y":-80,"width":250,"height":60},
+		{"id":"8e5579bc5f788564","type":"text","text":"**Базовый IAM** \nПользователи ACP могут получать доступ к XaaS и заказывать приложения с учетом свой роли и доступов","x":-780,"y":-140,"width":480,"height":140},
+		{"id":"110873a11d23f3d4","type":"text","text":"Пользователи Astra Cloud Platform могут разворачивать через XaaS приложения на ресурсах ACP. Минимально: возможность выбрать VPC и подсеть в тенанте при заказе","x":-780,"y":40,"width":380,"height":140},
+		{"id":"572175b059e9f3da","type":"text","text":"**Базовый сетевой доступ:**\nразвёрнутое приложение получает IP внутри VPC, может общаться с другими сервисами тенанта (например, БД).","x":-210,"y":140,"width":330,"height":160},
+		{"id":"42bf761d95699b80","type":"text","text":"XaaS может быть развернуть в Astra Cloud Platform наряду с другими компонентами платформы и работать в ней","x":-730,"y":-280,"width":280,"height":120},
+		{"id":"b5f6e7a66eb636b3","type":"text","text":"**Observability** Метрики, логи, трейсы развёрнутых через XaaS сервисов, доступные тенанту и оператору платформы.","x":230,"y":380,"width":400,"height":120},
+		{"id":"ff206d53794989b0","type":"text","text":"**Lifecycle развёрнутых сервисов.** Обновление шаблонов, масштабирование, бэкап/восстановление данных, миграция и т.д.","x":-210,"y":380,"width":400,"height":120},
+		{"id":"6496cf28c642c2b1","type":"text","text":"**Биллинг (начальный):** факт заказа приложения фиксируется в BillManager, хотя бы как отдельная строка с фиксированной ценой (без поминутной тарификации)","x":-140,"y":600,"width":420,"height":160},
+		{"id":"a1952c6adbde1b37","type":"text","text":"Интеграция XaaS с Биллингом (BillManager) в Astra Cloud Platform ","x":230,"y":180,"width":280,"height":120},
+		{"id":"bc17b847cb544798","type":"text","text":"Интеграция XaaS в Astra Cloud Platform","x":-490,"y":997,"width":350,"height":83},
+		{"id":"57da943bd89773d5","type":"text","text":"XaaS развёрнут как сервис внутри ACP","x":-840,"y":1160,"width":350,"height":83},
+		{"id":"3dc9e68ad950afed","type":"text","text":"Пользователь аутентифицирован в IAM  \nработает в контексте своего Tenant","x":-665,"y":1243,"width":350,"height":83},
+		{"id":"8b160e8bf716db6f","type":"text","text":"Роли: xaaS_user, xaaS_admin","x":-490,"y":1326,"width":350,"height":83},
+		{"id":"485b5170b3a75ad4","type":"text","text":"Деплой в VPC + storage своего Tenant  \n(ручной выбор сети)","x":-315,"y":1409,"width":350,"height":83},
+		{"id":"02eaff33c0d6f8fc","type":"text","text":"IP внутри VPC, связность с сервисами Tenant","x":-140,"y":1492,"width":350,"height":83},
+		{"id":"98afc0e768a4b20d","type":"text","text":"Биллинг: фиксированная плата за заказ","x":-40,"y":1575,"width":350,"height":83},
+		{"id":"6423440f39ec18fe","type":"text","text":"Удаление приложения (ручное)","x":80,"y":1658,"width":350,"height":83}
+	],
+	"edges":[
+		{"id":"7a90a1dcf2c2314c","fromNode":"8e5579bc5f788564","fromSide":"right","toNode":"18b0447b8a3b6c36","toSide":"left"},
+		{"id":"3dacc00a20bda8e7","fromNode":"42bf761d95699b80","fromSide":"right","toNode":"18b0447b8a3b6c36","toSide":"left"},
+		{"id":"53dce8ff808e2d39","fromNode":"110873a11d23f3d4","fromSide":"right","toNode":"18b0447b8a3b6c36","toSide":"left"},
+		{"id":"91516b9b93f75779","fromNode":"110873a11d23f3d4","fromSide":"bottom","toNode":"572175b059e9f3da","toSide":"left"}
+	]
+}

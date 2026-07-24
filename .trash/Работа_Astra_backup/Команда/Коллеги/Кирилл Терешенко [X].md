@@ -1,0 +1,32 @@
+---
+phone:
+department:
+position:
+---
+## Содержание
+- [[#Задачи]]
+- [[#Открытые вопросы]]
+- [[#Cинки]]
+- [[#Backlinks]]
+
+# Задачи
+```tasks
+not done
+tags include #Терешенко_Кирилл
+sort by due
+group by due
+```
+
+# Открытые вопросы
+
+
+# Cинки
+_Пока нет записей_
+
+# Backlinks
+```dataview
+TABLE without id
+file.outlinks AS "OUTGOING",
+file.inlinks AS "BACKLINKS"
+WHERE file.name = this.file.name
+```

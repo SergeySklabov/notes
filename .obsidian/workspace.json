@@ -1,0 +1,362 @@
+{
+  "main": {
+    "id": "6219f4125dfea10f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c42ac0c6e966113",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6955f134d92bb2dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Синки с BillManager"
+            }
+          },
+          {
+            "id": "a74b616a15ffb278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Команда/Собеседование на BSS/Вопросы для собеса.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Вопросы для собеса"
+            }
+          },
+          {
+            "id": "fbe2eacc694f9614",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Billing (BIL)"
+            }
+          },
+          {
+            "id": "d8a4b917a7697b66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IAM (UIDM)"
+            }
+          },
+          {
+            "id": "3ba46ff04e602111",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Команда/Команда Платформы AC/Андрей Иволга.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Андрей Иволга"
+            }
+          },
+          {
+            "id": "c30c45d75c67c83f",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
+            }
+          },
+          {
+            "id": "e46885f2101a0d22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-20 Встреча с RnD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-20 Встреча с RnD"
+            }
+          },
+          {
+            "id": "abd35febf309d9a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-22 DR ACP"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b4db9280ad371c9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdba82bdb8ada5f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "766f32a7eaf8f1b0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "cb6c5373c8137595",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "2026-07-10 Регулярный синк с BillManage",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "75d20d697a3ea3f2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 675.5
+  },
+  "right": {
+    "id": "c2887a5db4ce6be2",
+    "type": "split",
+    "children": [
+      {
+        "id": "c27c075e2604417d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ce98224e91d06d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/04-06-2026 Детали форка OpenNebula.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для 04-06-2026 Детали форка OpenNebula"
+            }
+          },
+          {
+            "id": "a228b58ce83558f9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/04-06-2026 Детали форка OpenNebula.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из 04-06-2026 Детали форка OpenNebula"
+            }
+          },
+          {
+            "id": "f4e138df86438562",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "de7cf78cfc93206d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "7b04baed1a8b9a71",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          },
+          {
+            "id": "085490f2d88dd8e3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-git:Open Git source control": false,
+      "digitalgarden:Digital Garden Publication Center": false
+    }
+  },
+  "active": "abd35febf309d9a1",
+  "lastOpenFiles": [
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-20 Встреча с RnD.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты/2026-07-23 Разбираем Usecase ЛК админ + тенанты.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
+    "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Попенов.md",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
+    "Работа/Astra/Команда/Команда Платформы AC/Михаил Перевалов.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты/2026-07-15 Разбираем Usecase для ЛК - MVP и последующие итерации.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/2026-07-21 Архитектура ACP 2.3 - вторая серия.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты/UseCase для ЛК.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/2026-07-07 Архитектура ACP 2.2-2.3.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/2026-07-22 Архитектура ACP 2.3 - квоты и IAM.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/2026-07-16 Архитектура ACP as-is и to-be.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с командой тех писов/2026-07-17 Актуализация документации и материалов по Платформе Astra Cloud.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/Общая архитектура ACP.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура/2026-07-22 DR ACP.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Командные нерегулярные встречи/2026-07-23 Разбираем Usecase ЛК админ + тенанты.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Процессы команды/2026-07-14 Роль ТПМ - взаимодействие с другими командами.md",
+    "Работа/Astra/Встречи/Стенограмма встреч/Разбираем Usecase ЛК админ + тенанты_2026-07-23.md",
+    "Работа/Astra/Встречи/Стенограмма встреч/DR ACP_2026-07-22.md",
+    "Работа/Astra/Встречи/Протоколы встреч/2026-06-04 Детали форка OpenNebula.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-22 Обсуждение с BillManager по интеграции с Боцманом.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-06-30 Регулярный синк с BillManager.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-10 Регулярный синк с BillManager.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-05-29 Обсуждение тенантов + регулярный синк.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архкомы",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Общая архитектура",
+    "AI/OpenCode/Skills/platform-architecture",
+    "Tags/#meeting",
+    "Работа/Astra/Встречи/Стенограмма встреч/Синк с Архитектором по тенантам.docx",
+    "Стенограмма встреч",
+    "Работа/Astra/Встречи/Стенограмма встреч/Технический Менеджер Продукта в ACP.doc",
+    "Работа/Astra/Встречи/Стенограмма встреч/Статус-митинг команды разработки.doc",
+    "Astra/Astra Cloud Platform/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
+    "Работа/Astra/Astra Cloud Platform/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/Identity and Access Managment/Единый SSO для Платформы.canvas",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/Identity and Access Managment/Единый SSO для Платформы.canvas",
+    "Attachments2/Pasted image 20250901222523.png",
+    "Attachments2/IMG_0982.jpeg",
+    "Attachments2/Pasted image 20251008000157.png",
+    "Attachments2/Pasted image 20250205011255.png",
+    "Attachments2/Pasted image 20250131002012.png",
+    "Attachments2/Pasted image 20250228002328.png",
+    "Attachments2/Pasted image 20250921222153.png",
+    "Attachments2/Pasted image 20241111230059.png",
+    "Attachments2/Pasted image 20220810211429.png",
+    "Attachments2/Pasted image 20250926232052.png",
+    "Работа/Astra/Astra Cloud Platform/Компоненты/IAM (UIDM)/Identity and Access Managment/Единый SSO для Платформы.canvas",
+    "Работа/Astra/Astra Cloud Platform/Компоненты/Identity and Access Managment/Единый SSO для Платформы.canvas",
+    "Работа — копия/Astra/Astra Cloud Platform/Компоненты/IAM (UIDM)/Identity and Access Managment/Единый SSO для Платформы.canvas",
+    "Работа — копия/Astra/Astra Cloud Platform/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
+    "Работа/Astra/Astra Cloud Platform/Компоненты/IAM (UIDM)/Identity and Access Managment/Единый SSO для Платформы.canvas"
+  ]
+}
