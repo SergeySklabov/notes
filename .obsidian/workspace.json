@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -56,7 +56,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Billing (BIL)"
+              "title": "2026-07-24 Регулярный синк с BillManager"
             }
           },
           {
@@ -125,7 +125,8 @@
               "title": "Синки с BillManager"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -300,10 +301,11 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "6955f134d92bb2dc",
+  "active": "fbe2eacc694f9614",
   "lastOpenFiles": [
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-20 Встреча с RnD.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
@@ -328,7 +330,6 @@
     "AI/Hermes",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
     "Inbox/Hermes подключен.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты/2026-07-23 Разбираем Usecase ЛК админ + тенанты.md",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов",
     "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архкомы",
