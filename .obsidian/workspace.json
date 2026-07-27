@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IAM (UIDM)"
+              "title": "Синки с RnD"
             }
           },
           {
@@ -126,7 +126,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -301,15 +301,16 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "fbe2eacc694f9614",
+  "active": "d8a4b917a7697b66",
   "lastOpenFiles": [
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-10 Регулярный синк с BillManager.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-20 Встреча с RnD.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
     "Работа/Astra/Команда/Команда Платформы AC/Андрей Иволга.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-22 Обсуждение с BillManager по интеграции с Боцманом.md",
@@ -329,7 +330,6 @@
     "AI/Hermes/Hermes — карта агентов и скиллов.md",
     "AI/Hermes",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
-    "Inbox/Hermes подключен.md",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов",
     "Работа/Astra/Встречи/Протоколы встреч/Личные Кабинеты",
     "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архкомы",
