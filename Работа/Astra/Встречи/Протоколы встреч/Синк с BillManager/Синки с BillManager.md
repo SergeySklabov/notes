@@ -45,6 +45,12 @@ tags:
 
 ---
 
+# Открытые вопросы
+
+- Single Logout в BillManager: [use case на Confluence](https://life.astralinux.ru/pages/viewpage.action?pageId=670463262)
+
+---
+
 # Все открытые задачи
 
 ```tasks
