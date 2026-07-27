@@ -102,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -277,8 +277,9 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "abd35febf309d9a1",
+  "active": "e46885f2101a0d22",
   "lastOpenFiles": [
+    "Работа/Astra/Команда/Команда Платформы AC/Виталий Козловский.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/ACP 2.2.0.md",
@@ -301,7 +302,6 @@
     "Работа/Astra/Встречи/Подготовка ко встречам/Синки команды.md",
     "Работа/Astra/Встречи/Стенограмма встреч/Синк по RnD 2026-07-24.md",
     "Работа/Astra/Команда/Команда Платформы AC/Александр Шадрин.md",
-    "Работа/Astra/Команда/Команда Платформы AC/Виталий Козловский.md",
     "Работа/Astra/Встречи/Стенограмма встреч/2026-07-23 1-2-1 Дмитрий Попенов.md",
     "AI/OpenCode/Шпаргалка по агентам и скиллам.md",
     "AI/OpenCode/Агенты.md",
