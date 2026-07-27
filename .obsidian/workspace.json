@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
+                "file": "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Тайлаков.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IAM (UIDM)"
+              "title": "Дмитрий Тайлаков"
             }
           },
           {
@@ -169,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407.5
+    "width": 258.5
   },
   "right": {
     "id": "c2887a5db4ce6be2",
@@ -289,9 +289,9 @@
   },
   "active": "3ba46ff04e602111",
   "lastOpenFiles": [
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
-    "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/IAM (UIDM).md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/ACP 2.2.0.md",
     "Работа/Astra/Команда/Команда Платформы AC/Андрей Иволга.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
