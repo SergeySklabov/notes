@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>2026-07-07 Архитектура ACP 2.2-2.3</title><meta charset="utf-8"/><link rel="preload" href="../../../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="2026-07-07 Архитектура ACP 2.2-2.3"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-07-07 Архитектура ACP 2.2-2.3"/><meta name="twitter:description" content="2026-07-07 Архитектура ACP 2.2-2.3 Содержание Протокол встречи Решения Задачи Анализ встречи 2026-07-07 Зависимости Портреты Стейкхолдеры AAR Протокол встречи Тема: Новая архитектура ACP: порталы, TMS, IaaS-оркестратор, API Gateway, тенантная модель Участники: @Андрей Крюков, @Максим Югай, @Михаил П..."/><meta property="og:description" content="2026-07-07 Архитектура ACP 2.2-2.3 Содержание Протокол встречи Решения Задачи Анализ встречи 2026-07-07 Зависимости Портреты Стейкхолдеры AAR Протокол встречи Тема: Новая архитектура ACP: порталы, TMS, IaaS-оркестратор, API Gateway, тенантная модель Участники: @Андрей Крюков, @Максим Югай, @Михаил П..."/><meta property="og:image:alt" content="2026-07-07 Архитектура ACP 2.2-2.3 Содержание Протокол встречи Решения Задачи Анализ встречи 2026-07-07 Зависимости Портреты Стейкхолдеры AAR Протокол встречи Тема: Новая архитектура ACP: порталы, TMS, IaaS-оркестратор, API Gateway, тенантная модель Участники: @Андрей Крюков, @Максим Югай, @Михаил П..."/><meta property="og:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:url" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta name="twitter:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://sergeysklabov.github.io/notes"/><meta property="og:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/протоколы-встреч/архитектура/2026-07-07-архитектура-acp-2.2-2.3"/><meta property="twitter:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/протоколы-встреч/архитектура/2026-07-07-архитектура-acp-2.2-2.3"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="2026-07-07 Архитектура ACP 2.2-2.3 Содержание Протокол встречи Решения Задачи Анализ встречи 2026-07-07 Зависимости Портреты Стейкхолдеры AAR Протокол встречи Тема: Новая архитектура ACP: порталы, TMS, IaaS-оркестратор, API Gateway, тенантная модель Участники: @Андрей Крюков, @Максим Югай, @Михаил П..."/><meta name="generator" content="Quartz"/><link href="../../../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="работа/astra/встречи/протоколы-встреч/архитектура/2026-07-07-архитектура-acp-2.2-2.3" data-basepath="//sergeysklabov.github.io/notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-248" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-248" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/">Работа</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/">Astra</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/встречи/">Встречи</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/встречи/протоколы-встреч/">Протоколы встреч</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/встречи/протоколы-встреч/архитектура/">Архитектура</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026-07-07 Архитектура ACP 2.2-2.3</a></div></nav><h1 class="article-title">2026-07-07 Архитектура ACP 2.2-2.3</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../../../../../tags/meeting" class="internal internal-link tag-link">meeting</a><span class="note-properties-separator">, </span><a href="../../../../../tags/arch-comm" class="internal internal-link tag-link">arch-comm</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-07-21T19:43:28.000Z">Jul 21, 2026</time><span>9 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="2026-07-07-архитектура-acp-22-23">2026-07-07 Архитектура ACP 2.2-2.3<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-07-07-архитектура-acp-22-23" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="содержание">Содержание<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#содержание" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="#%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8" class="internal internal-link alias">Протокол встречи</a></li>
+<li><a href="#%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F" class="internal internal-link alias">Решения</a></li>
+<li><a href="#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" class="internal internal-link alias">Задачи</a></li>
+<li><a href="#%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8-2026-07-07" class="internal internal-link alias">Анализ встречи 2026-07-07</a></li>
+<li><a href="#%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" class="internal internal-link alias">Зависимости</a></li>
+<li><a href="#%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%D1%8B" class="internal internal-link alias">Портреты</a></li>
+<li><a href="#%D1%81%D1%82%D0%B5%D0%B9%D0%BA%D1%85%D0%BE%D0%BB%D0%B4%D0%B5%D1%80%D1%8B" class="internal internal-link alias">Стейкхолдеры</a></li>
+<li><a href="#aar" class="internal internal-link alias">AAR</a></li>
+</ul>
+<hr/>
+<h2 id="протокол-встречи">Протокол встречи<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#протокол-встречи" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Тема:</strong> Новая архитектура ACP: порталы, TMS, IaaS-оркестратор, API Gateway, тенантная модель
+<strong>Участники:</strong> @Андрей Крюков, @Максим Югай, @Михаил Перевалов, @Андрей Иволга, @Александр Шадрин, @Дмитрий Попенов, @Ольга Милащенко, @Сергей Склабовский</p>
+<h3 id="контекст">Контекст<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#контекст" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Андрей Крюков представил новую архитектуру ACP 2.2 и дальнейших релизов. Ключевой сдвиг - отказ от BillManager как центрального оркестратора и переход к собственным компонентам платформы.</p>
+<p><strong>Ограничения презентации:</strong> изменения показаны без привязки к релизам, биллинг/квоты/учёт потребления - вторая серия (ориентировочно в четверг).</p>
+<h3 id="новая-архитектура-ключевые-подсистемы">Новая архитектура: ключевые подсистемы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#новая-архитектура-ключевые-подсистемы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Добавляются (зелёным на схеме):</strong></p>
+<ol>
+<li><strong>Портал оператора</strong> - новый портал для провайдера. Нужен, потому что управление тенантами - функция оператора, а не самообслуживания.</li>
+<li><strong>Портал самообслуживания</strong> - для потребителей. Управление ВМ, образами, дисками, сетями (база для Lika).</li>
+<li><strong>Подсистема контейнеризации</strong> - интеграция с Boatsman.</li>
+<li><strong>IaaS-оркестратор</strong> - провиженинг ресурсов (ВМ, диски, сети через APOS). База - прототип Александра Шадрина (нужно доделать образы и сети).</li>
+<li><strong>API Gateway (подсистема предоставления программных интерфейсов)</strong> - внутренний шлюз для единой точки доступа к сервисам + внешний шлюз (Terraform, CLI).</li>
+<li><strong>TMS (Tenant Management System)</strong> - управление жизненным циклом тенантов.</li>
+</ol>
+<h3 id="ключевые-обсуждения">Ключевые обсуждения<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ключевые-обсуждения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. Отказ от BillManager как оркестратора</strong></p>
+<ul>
+<li>BillManager закрывал порталы, биллинг, оркестрацию, отчётность - концентрация функций.</li>
+<li>Решение: оставить BillManager только биллинг (договоры, организации, тарифы, расчёт, выставление счетов).</li>
+<li>Провиженинг вынести в IaaS-оркестратор.</li>
+<li>Причина: продуктовая команда BillManager развивается по своей стратегии, не коррелирующей с нашей.</li>
+</ul>
+<p><strong>2. TMS - новый центр платформы</strong></p>
+<ul>
+<li>TMS управляет тенантами: создаёт, хранит состояние, инкапсулирует реализацию во всех нижележащих подсистемах.</li>
+<li>Создание тенанта - растянутый процесс: TMS создаёт ID -> область в IAM/UIDM (+ роль пользователю) -> VDC в Бресте -> контейнер в APOS.</li>
+<li><strong>Важно:</strong> TMS - единственный, кто знает о маппинге tenant_id ↔ VDC_id ↔ APOS_container.</li>
+<li>Оркестратор не управляет тенантами - только ресурсами внутри тенанта.</li>
+<li><strong>Дискуссия (Максим Югай):</strong> TMS становится «вторым оркестратором под старым названием». Риски:
+<ul>
+<li>Дублирование адаптеров (TMS + IaaS-оркестратор -> Брест, APOS)</li>
+<li>TMS начинает знать о ресурсах (кластеры, гипервизоры), растёт связанность</li>
+<li>При появлении новых оркестраторов (PaaS, K8s) паутина интеграций будет множиться</li>
+</ul>
+</li>
+<li><strong>Контраргумент (Александр Шадрин):</strong> в новом подходе инкапсуляция правильная - никто извне не управляет состоянием TMS. В старом (тонкий TMS) внешние системы дёргали ручки изменения статуса - архитектурно неверно.</li>
+<li><strong>Риск (Сергей):</strong> при появлении организации, PaaS-оркестратора количество стрелок будет расти как паутина. Нужно продумать водораздел.</li>
+</ul>
+<p><strong>3. Портал оператора и портал самообслуживания</strong></p>
+<ul>
+<li>Ольга Милащенко: это один портал с двумя ролевыми контурами (оперируют одними объектами).</li>
+<li>Андрей: физически разные экземпляры, на одной кодовой базе (как PaaS-решения).</li>
+<li>Ольга: создание тенанта через портал оператора напрямую - непонятно пользователю. Тенант должен рождаться из объектов реального мира (договор, клиент, услуга).</li>
+<li>Андрей: сознательно упростил - фокус на отработке механики TMS + оркестратор. В Lika механика будет привязана к реальным сценариям.</li>
+</ul>
+<p><strong>4. API Gateway (внутренний и внешний)</strong></p>
+<ul>
+<li><strong>Внутренний шлюз:</strong> единая точка входа для общения с внутренними сервисами. Централизует проверку токенов, политики доступа.</li>
+<li><strong>Внешний шлюз:</strong> для поставщика (Terraform, CLI), не для потребителя.</li>
+<li><strong>Александр Шадрин (опасения):</strong>
+<ul>
+<li>Точка отказа (SPOF) - весь трафик через шлюз</li>
+<li>Авторизация на шлюзе vs. в каждой подсистеме: если решение на шлюзе, то трафик между шлюзом и подсистемой «дырявый» (sidecar required)</li>
+<li>Gravitee лежит мёртвым грузом (лицензионные ограничения, сложность развёртывания, проблемы с маршрутизацией)</li>
+<li>Нужно пересмотреть выбор Gravitee или искать более подходящее решение</li>
+</ul>
+</li>
+<li><strong>Андрей:</strong> изменения в одном месте (централизация) vs. во всех подсистемах. Можно сделать защищённый контур.</li>
+<li><strong>Максим Югай:</strong> ребята из IAM готовы поделиться документацией по интеграции со шлюзами. Авторизация на шлюзе - целевая картина.</li>
+</ul>
+<p><strong>5. Безопасность и авторизация (Дмитрий Попенов / Александр Шадрин)</strong></p>
+<ul>
+<li>Дмитрий Попенов: предложенная архитектура не учитывает требования безопасности ОС - идентификация/авторизация пользователей должна сквозной проходить в каждую подсистему (Libvirt через Kerberos/сертификаты).</li>
+<li>Александр: с безопасниками обсуждали - запросы от пользователя должны пробрасываться от фронта до конечной подсистемы.</li>
+<li><strong>Решение:</strong> согласовать подход с ДИБ (отдел безопасности) - где будет проверяться авторизация (на шлюзе или в каждой подсистеме). Сергей/Александр формулируют вопрос и идут к ДИБ.</li>
+</ul>
+<p><strong>6. TMS - перепроектирование</strong></p>
+<ul>
+<li>TMS изначально проектировался с BillManager как оркестратором - теперь нужно перестраивать.</li>
+<li>Сергей: TMS в текущих требованиях был минимальным. Теперь расширяем функциональность, некоторые ручки API уберём (внешнее управление состоянием), добавим логику внутренних вызовов (Брест, APOS).</li>
+<li>Александр: внешне интерфейсы TMS не меняются (создать/удалить тенант), но внутренняя логика расширяется - «сходить в Брест и APOS».</li>
+<li>Максим Югай: TMS становится ядром платформы + меньше координации между командами. Но: растёт связанность, дублирование адаптеров, при появлении новых сущностей (организации) всё усложняется.</li>
+</ul>
+<hr/>
+<h2 id="решения">Решения<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#решения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>BillManager</strong> - только биллинг; провиженинг выносится в IaaS-оркестратор</li>
+<li><strong>TMS</strong> - владеет жизненным циклом тенантов; инкапсулирует маппинг tenant -> VDC -> APOS_container</li>
+<li><strong>IaaS-оркестратор</strong> - управляет ресурсами (ВМ, диски, сети), не тенантами</li>
+<li><strong>Внутренний API Gateway</strong> - единая точка входа; вопрос авторизации (на шлюзе vs. в подсистемах) - согласовать с ДИБ</li>
+<li><strong>Gravitee</strong> - пересмотреть как кандидата для API Gateway (лицензии, сложность)</li>
+<li><strong>Порталы</strong> - два экземпляра (оператор + самообслуживание), одна кодовая база</li>
+<li><strong>Создание тенанта</strong> - не через прямой UI оператора, а через бизнес-сценарии (Lika)</li>
+<li><strong>TMS: перепроектирование</strong> - расширение внутренней логики, сужение внешнего API</li>
+<li><strong>Авторизация</strong> - сформулировать вопрос и согласовать с ДИБ (формулировку готовит Александр Шадрин)</li>
+</ul>
+<hr/>
+<h2 id="задачи">Задачи<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#задачи" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Кому</th><th>Что</th><th style="text-align:center;">Срок</th></tr></thead><tbody><tr><td>Андрей Крюков</td><td>Подготовить вторую серию (биллинг, квоты, учёт потребления)</td><td style="text-align:center;">уточнить</td></tr><tr><td>Андрей Крюков + Максим Югай</td><td>Проработать границы TMS vs. IaaS-оркестратор с учётом расширения - плюсы/минусы</td><td style="text-align:center;">1 нед.</td></tr><tr><td>Александр Шадрин</td><td>Подготовить формулировку вопроса по авторизации (шлюз vs. подсистемы) для ДИБ</td><td style="text-align:center;">уточнить</td></tr><tr><td>Андрей Крюков / Александр Шадрин</td><td>Сходить в ДИБ с вопросом по авторизации</td><td style="text-align:center;">уточнить</td></tr><tr><td>Андрей Крюков</td><td>Разослать запись встречи и материалы участникам</td><td style="text-align:center;">сразу</td></tr><tr><td>Группа</td><td>Пересмотреть выбор Gravitee как API Gateway (лицензии, альтернативы)</td><td style="text-align:center;">в рамках проработки</td></tr><tr><td>Группа</td><td>Продумать сценарий появления новых оркестраторов (PaaS, K8s) и их влияние на TMS</td><td style="text-align:center;"></td></tr></tbody></table></div>
+<ul class="contains-task-list">
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> <a href="../../../../.././../../../../tags/крюков_андрей" class="tag-link internal internal-link alias" data-slug="tags/крюков_андрей">крюков_андрей</a> Подготовить вторую серию (биллинг, квоты, учёт потребления)</li>
+<li class="task-list-item is-checked" data-task="x"><input type="checkbox" checked class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> <a href="../../../../.././../../../../tags/крюков_андрей" class="tag-link internal internal-link alias" data-slug="tags/крюков_андрей">крюков_андрей</a> <a href="../../../../.././../../../../tags/югай_максим" class="tag-link internal internal-link alias" data-slug="tags/югай_максим">югай_максим</a> Проработать границы TMS vs. IaaS-оркестратор ✅ 2026-07-15</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> <a href="../../../../.././../../../../tags/шадрин_александр" class="tag-link internal internal-link alias" data-slug="tags/шадрин_александр">шадрин_александр</a> Подготовить формулировку вопроса по авторизации для ДИБ</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> <a href="../../../../.././../../../../tags/крюков_андрей" class="tag-link internal internal-link alias" data-slug="tags/крюков_андрей">крюков_андрей</a> <a href="../../../../.././../../../../tags/шадрин_александр" class="tag-link internal internal-link alias" data-slug="tags/шадрин_александр">шадрин_александр</a> Сходить в ДИБ с вопросом по авторизации</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> <a href="../../../../.././../../../../tags/крюков_андрей" class="tag-link internal internal-link alias" data-slug="tags/крюков_андрей">крюков_андрей</a> Разослать запись и материалы</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../.././../../../../tags/arch-comm" class="tag-link internal internal-link alias" data-slug="tags/arch-comm">arch-comm</a> Пересмотреть выбор Gravitee как API Gateway</li>
+</ul>
+<hr/>
+<h2 id="анализ-встречи-2026-07-07">Анализ встречи 2026-07-07<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#анализ-встречи-2026-07-07" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="5-главных-тем">5 главных тем<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-главных-тем" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>BillManager -> только биллинг.</strong> Провиженинг выносится в IaaS-оркестратор. Причина: стратегия BillManager не коррелирует с нашей.</li>
+<li><strong>TMS - центр платформы.</strong> Управляет ЖЦ тенантов, инкапсулирует маппинг VDC/APOS. Спор: становится «вторым оркестратором» с дублированием адаптеров.</li>
+<li><strong>Порталы: один или два.</strong> Решено: два экземпляра (оператор + самообслуживание) на одной кодовой базе.</li>
+<li><strong>API Gateway: внутренний + внешний.</strong> Централизация проверки токенов vs. SPOF и «дырявый» трафик. Gravitee под вопросом.</li>
+<li><strong>Безопасность: авторизация на шлюзе или в подсистеме.</strong> Требуется согласование с ДИБ.</li>
+</ol>
+<h3 id="daci-матрица">DACI-матрица<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daci-матрица" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Решение</th><th>Driver</th><th>Approver</th><th>Contributors</th><th>Informed</th></tr></thead><tbody><tr><td>BillManager -> только биллинг</td><td>Андрей Крюков</td><td>Сергей Склабовский</td><td>Александр Шадрин, Максим Югай</td><td>Команда</td></tr><tr><td>TMS - управление ЖЦ тенантов</td><td>Андрей Крюков</td><td>Сергей Склабовский</td><td>Александр Шадрин, Максим Югай</td><td>Ольга Милащенко, Михаил Перевалов</td></tr><tr><td>API Gateway (внутренний шлюз)</td><td>Андрей Крюков</td><td>Сергей Склабовский + ДИБ</td><td>Александр Шадрин, Максим Югай</td><td>Дмитрий Попенов</td></tr><tr><td>Порталы: два экземпляра</td><td>Андрей Крюков</td><td>Сергей Склабовский</td><td>Ольга Милащенко</td><td>Команда</td></tr><tr><td>Авторизация - согласовать с ДИБ</td><td>Александр Шадрин</td><td>Сергей Склабовский</td><td>ДИБ</td><td>Андрей Крюков</td></tr></tbody></table></div>
+<hr/>
+<h2 id="зависимости">Зависимости<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#зависимости" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Зависимость</th><th style="text-align:center;">Тип</th><th style="text-align:center;">Статус</th></tr></thead><tbody><tr><td>TMS -> Брест (создание VDC)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">не реализовано</td></tr><tr><td>TMS -> APOS (создание контейнера)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">не реализовано</td></tr><tr><td>TMS -> IAM/UIDM (область + роль)</td><td style="text-align:center;">🟡 слабо</td><td style="text-align:center;">есть прототип</td></tr><tr><td>IaaS-оркестратор -> APOS (сети)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">не реализовано (в прототипе нет)</td></tr><tr><td>IaaS-оркестратор -> Брест (ВМ, диски)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">есть прототип</td></tr><tr><td>API Gateway -> IAM (валидация токенов)</td><td style="text-align:center;">🟡 слабо</td><td style="text-align:center;">IAM готов поделиться документацией</td></tr><tr><td>BillManager -> новая архитектура</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">отказ от BillManager как оркестратора</td></tr><tr><td>Gravitee -> API Gateway</td><td style="text-align:center;">⚪ неопределено</td><td style="text-align:center;">лицензионные ограничения, может быть заменён</td></tr><tr><td>ДИБ -> архитектура авторизации</td><td style="text-align:center;">🔴 блокер</td><td style="text-align:center;">нужен ответ от ДИБ до финализации</td></tr><tr><td>TMS -> IaaS-оркестратор (границы)</td><td style="text-align:center;">🔴 блокер</td><td style="text-align:center;">нужно чёткое разделение до 2-й серии</td></tr></tbody></table></div>
+<hr/>
+<h2 id="портреты">Портреты<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#портреты" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="андрей-крюков---архитектор">Андрей Крюков - Архитектор<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#андрей-крюков---архитектор" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> ведущий встречи, презентует новую архитектуру</li>
+<li><strong>Стиль:</strong> структурный, фокус на концепцию (намеренно упрощает детали)</li>
+<li><strong>Триггеры:</strong> временные рамки (Сергей ограничил по времени), альтернативные варианты («не можем себе позволить ещё альтернативы»)</li>
+<li><strong>Комментарий:</strong> осознанно убрал BillManager-интеграцию из схемы, признаёт недоработки (стрелки к оркестратору от портала оператора)</li>
+</ul>
+<h3 id="максим-югай---тпм">Максим Югай - ТПМ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#максим-югай---тпм" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> конструктивный критик, задаёт системные вопросы</li>
+<li><strong>Стиль:</strong> аналитический, видит риски связанности и дублирования</li>
+<li><strong>Цитата:</strong> «TMS становится вторым оркестратором под старым названием»</li>
+<li><strong>Предложение:</strong> зафиксировать чёткий водораздел между TMS и оркестратором</li>
+</ul>
+<h3 id="александр-шадрин---тп--архитектор">Александр Шадрин - ТП / Архитектор<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#александр-шадрин---тп--архитектор" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> эксперт по IaaS-оркестратору и безопасности</li>
+<li><strong>Стиль:</strong> практический, поднимает технические ограничения (SPOF, sidecar, лицензии Gravitee)</li>
+<li><strong>Вклад:</strong> объясняет разницу между старым (тонкий TMS) и новым (полный TMS) подходом</li>
+<li><strong>Предложение:</strong> пересмотреть Gravitee, согласовать авторизацию с ДИБ</li>
+</ul>
+<h3 id="ольга-милащенко---аналитик">Ольга Милащенко - Аналитик<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ольга-милащенко---аналитик" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> продуктовый взгляд, фокус на пользовательский опыт</li>
+<li><strong>Стиль:</strong> задаёт вопросы «зачем пользователю это видеть?»</li>
+<li><strong>Вклад:</strong> указала, что тенант не должен создаваться через UI напрямую, и что порталы - один продукт с двумя ролями</li>
+</ul>
+<h3 id="дмитрий-попенов---архитектор-безопасность">Дмитрий Попенов - Архитектор (безопасность)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#дмитрий-попенов---архитектор-безопасность" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> страж безопасности</li>
+<li><strong>Стиль:</strong> принципиальный, требует учёта требований безопасности ОС</li>
+<li><strong>Вклад:</strong> поднял вопрос сквозной авторизации через все подсистемы, потребовал сослаться на документ СЗИ</li>
+</ul>
+<h3 id="сергей-склабовский---тпм--lead">Сергей Склабовский - ТПМ / Lead<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#сергей-склабовский---тпм--lead" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> модератор, принимает решения</li>
+<li><strong>Стиль:</strong> подводит итоги, ставит задачи, задаёт направление</li>
+<li><strong>Вклад:</strong> поддержал проработку альтернатив («Если ещё неделя - почему нет?»), зафиксировал 3 ключевых вопроса на выход</li>
+</ul>
+<hr/>
+<h2 id="стейкхолдеры">Стейкхолдеры<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#стейкхолдеры" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Стейкхолдер</th><th style="text-align:center;">Интерес</th><th style="text-align:center;">Влияние</th><th>Квадрант</th></tr></thead><tbody><tr><td>Сергей Склабовский</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Key Player</strong> - активно вовлечён, принимает решения</td></tr><tr><td>Андрей Крюков</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Key Player</strong> - архитектор, ведёт изменения</td></tr><tr><td>Максим Югай</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - ТПМ, видит риски, влияет на решения</td></tr><tr><td>Александр Шадрин</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Key Player</strong> - владеет прототипом, знает ограничения</td></tr><tr><td>Ольга Милащенко</td><td style="text-align:center;">Средний</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - продуктовый взгляд</td></tr><tr><td>Михаил Перевалов</td><td style="text-align:center;">Средний</td><td style="text-align:center;">Низкое</td><td><strong>Monitor</strong> - вовлечён в порталы</td></tr><tr><td>Андрей Иволга</td><td style="text-align:center;">Средний</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - задаёт уточняющие вопросы</td></tr><tr><td>Дмитрий Попенов</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Keep Satisfied</strong> - безопасность, может заблокировать</td></tr><tr><td>ДИБ</td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Keep Satisfied</strong> - нужен формальный ответ</td></tr><tr><td>BillManager (команда)</td><td style="text-align:center;">Низкий</td><td style="text-align:center;">Среднее</td><td><strong>Monitor</strong> - стратегия не коррелирует с нашей</td></tr></tbody></table></div>
+<hr/>
+<h2 id="aar-after-action-review">AAR (After-Action Review)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aar-after-action-review" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-что-планировали">1. Что планировали?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-что-планировали" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Презентовать новую архитектуру ACP 2.2-2.3, получить обратную связь, выявить противоречия концептуального характера.</p>
+<h3 id="2-что-получилось">2. Что получилось?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-что-получилось" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Удачно:</strong></p>
+<ul>
+<li>Чётко сформулирован отказ от BillManager как оркестратора - ключевой архитектурный сдвиг</li>
+<li>TMS определён как центр управления тенантами с инкапсуляцией реализации</li>
+<li>Подняты и зафиксированы риски: связанность TMS, дублирование адаптеров, авторизация</li>
+<li>Достигнута договорённость по порталам (два экземпляра, одна кодовая база)</li>
+<li>Максим Югай включился как ТПМ - видит риски и предлагает проработку границ</li>
+</ul>
+<p><strong>Неудачно:</strong></p>
+<ul>
+<li>Вопрос безопасности (Дмитрий Попенов) не был проработан до встречи - архитектура не согласована с ДИБ</li>
+<li>Вопрос авторизации (шлюз vs. подсистемы) остался открытым - требует отдельного похода к ДИБ</li>
+<li>Gravitee выбран без проверки лицензионных ограничений - лежит мёртвым грузом</li>
+<li>Границы TMS vs. IaaS-оркестратор размыты - риск дублирования адаптеров</li>
+<li>Биллинг/квоты/учёт потребления вынесены во вторую серию - без них картина неполная</li>
+</ul>
+<h3 id="3-почему">3. Почему?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-почему" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Безопасность и ДИБ традиционно подключаются постфактум, а не на этапе архитектурного проектирования</li>
+<li>Gravitee выбирался «на вырост» без pilot-развёртывания и проверки лицензий</li>
+<li>Разделение TMS и оркестратора эволюционировало в ходе самой встречи - изначально не было чёткого водораздела</li>
+<li>BillManager-зависимость тянулась годами, решение отказаться созрело только сейчас</li>
+</ul>
+<h3 id="4-что-будем-делать-иначе">4. Что будем делать иначе?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-что-будем-делать-иначе" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Перед архитекурной встречей - пре-чекин с ДИБ.</strong> Согласовать подход к авторизации до фиксации архитектуры.</li>
+<li><strong>API Gateway - провести PoC.</strong> Gravitee или альтернатива: pilot с реальными сценариями до выбора.</li>
+<li><strong>TMS vs. Оркестратор - зафиксировать водораздел.</strong> Максим Югай + Андрей Крюков готовят документ с чёткими границами.</li>
+<li><strong>Вторая серия - не откладывать.</strong> Биллинг, квоты, учёт - интегрировать в общую архитектуру до финализации.</li>
+<li><strong>Проработка альтернатив - разрешить.</strong> Сергей согласился, что неделя на альтернативы допустима.</li>
+</ul>
+<h3 id="метрики">Метрики<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#метрики" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Показатель</th><th style="text-align:center;">Значение</th></tr></thead><tbody><tr><td>Принято решений</td><td style="text-align:center;">9</td></tr><tr><td>Выдано поручений</td><td style="text-align:center;">7</td></tr><tr><td>Открытых вопросов</td><td style="text-align:center;">3 (авторизация, границы TMS, Gravitee)</td></tr></tbody></table></div></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-194" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#2026-07-07-архитектура-acp-22-23" data-for="2026-07-07-архитектура-acp-22-23">2026-07-07 Архитектура ACP 2.2-2.3</a></li><li class="depth-1"><a href="#содержание" data-for="содержание">Содержание</a></li><li class="depth-1"><a href="#протокол-встречи" data-for="протокол-встречи">Протокол встречи</a></li><li class="depth-2"><a href="#контекст" data-for="контекст">Контекст</a></li><li class="depth-2"><a href="#новая-архитектура-ключевые-подсистемы" data-for="новая-архитектура-ключевые-подсистемы">Новая архитектура: ключевые подсистемы</a></li><li class="depth-2"><a href="#ключевые-обсуждения" data-for="ключевые-обсуждения">Ключевые обсуждения</a></li><li class="depth-1"><a href="#решения" data-for="решения">Решения</a></li><li class="depth-1"><a href="#задачи" data-for="задачи">Задачи</a></li><li class="depth-1"><a href="#анализ-встречи-2026-07-07" data-for="анализ-встречи-2026-07-07">Анализ встречи 2026-07-07</a></li><li class="depth-2"><a href="#5-главных-тем" data-for="5-главных-тем">5 главных тем</a></li><li class="depth-2"><a href="#daci-матрица" data-for="daci-матрица">DACI-матрица</a></li><li class="depth-1"><a href="#зависимости" data-for="зависимости">Зависимости</a></li><li class="depth-1"><a href="#портреты" data-for="портреты">Портреты</a></li><li class="depth-2"><a href="#андрей-крюков---архитектор" data-for="андрей-крюков---архитектор">Андрей Крюков - Архитектор</a></li><li class="depth-2"><a href="#максим-югай---тпм" data-for="максим-югай---тпм">Максим Югай - ТПМ</a></li><li class="depth-2"><a href="#александр-шадрин---тп--архитектор" data-for="александр-шадрин---тп--архитектор">Александр Шадрин - ТП / Архитектор</a></li><li class="depth-2"><a href="#ольга-милащенко---аналитик" data-for="ольга-милащенко---аналитик">Ольга Милащенко - Аналитик</a></li><li class="depth-2"><a href="#дмитрий-попенов---архитектор-безопасность" data-for="дмитрий-попенов---архитектор-безопасность">Дмитрий Попенов - Архитектор (безопасность)</a></li><li class="depth-2"><a href="#сергей-склабовский---тпм--lead" data-for="сергей-склабовский---тпм--lead">Сергей Склабовский - ТПМ / Lead</a></li><li class="depth-1"><a href="#стейкхолдеры" data-for="стейкхолдеры">Стейкхолдеры</a></li><li class="depth-1"><a href="#aar-after-action-review" data-for="aar-after-action-review">AAR (After-Action Review)</a></li><li class="depth-2"><a href="#1-что-планировали" data-for="1-что-планировали">1. Что планировали?</a></li><li class="depth-2"><a href="#2-что-получилось" data-for="2-что-получилось">2. Что получилось?</a></li><li class="depth-2"><a href="#3-почему" data-for="3-почему">3. Почему?</a></li><li class="depth-2"><a href="#4-что-будем-делать-иначе" data-for="4-что-будем-делать-иначе">4. Что будем делать иначе?</a></li><li class="depth-2"><a href="#метрики" data-for="метрики">Метрики</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../../../../../работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/общая-архитектура-acp" class="internal">Общая архитектура ACP</a></li><li><a href="../../../../../работа/astra/встречи/протоколы-встреч/синк-с-billmanager/2026-05-29-обсуждение-тенантов-+-регулярный-синк" class="internal">2026-05-29 Обсуждение тенантов + регулярный синк</a></li><li><a href="../../../../../работа/astra/встречи/протоколы-встреч/синк-с-billmanager/2026-06-15-регулярный-синк-с-billmanager" class="internal">2026-06-15 Регулярный синк с BillManager</a></li><li><a href="../../../../../работа/astra/встречи/протоколы-встреч/синк-с-billmanager/2026-06-30-регулярный-синк-с-billmanager" class="internal">2026-06-30 Регулярный синк с BillManager</a></li><li><a href="../../../../../работа/astra/встречи/стенограмма-встреч/архитектура-acp-2.2-2.3" class="internal">Архитектура ACP 2.2-2.3</a></li><li><a href="../../../../../inbox/untitled.base" class="internal">Untitled</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../postscript-3eea7814.js" type="module" data-persist="true"></script></html>

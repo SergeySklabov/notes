@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>покрытие-потребностей-ПСБ</title><meta charset="utf-8"/><link rel="preload" href="../../../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="покрытие-потребностей-ПСБ"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="покрытие-потребностей-ПСБ"/><meta name="twitter:description" content="Источники: demo/полная-карта-платформы.md — 18 подсистем ACP, статус по MVP demo/что-есть-но-не-в-mvp.md — gap-анализ MVP vs полное видение demo/что-не-хватает-до-zvirt.md — сравнение с zvirt PSB/ПСБ-БМ-вопросы-и-потребности.md — потребности ПСБ demo/план-закрытия-проблем-ПСБ.md — что делать нам Что..."/><meta property="og:description" content="Источники: demo/полная-карта-платформы.md — 18 подсистем ACP, статус по MVP demo/что-есть-но-не-в-mvp.md — gap-анализ MVP vs полное видение demo/что-не-хватает-до-zvirt.md — сравнение с zvirt PSB/ПСБ-БМ-вопросы-и-потребности.md — потребности ПСБ demo/план-закрытия-проблем-ПСБ.md — что делать нам Что..."/><meta property="og:image:alt" content="Источники: demo/полная-карта-платформы.md — 18 подсистем ACP, статус по MVP demo/что-есть-но-не-в-mvp.md — gap-анализ MVP vs полное видение demo/что-не-хватает-до-zvirt.md — сравнение с zvirt PSB/ПСБ-БМ-вопросы-и-потребности.md — потребности ПСБ demo/план-закрытия-проблем-ПСБ.md — что делать нам Что..."/><meta property="og:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:url" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta name="twitter:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://sergeysklabov.github.io/notes"/><meta property="og:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/astra-cloud-platform/компоненты/личный-кабинет-(scp)/покрытие-потребностей-псб"/><meta property="twitter:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/astra-cloud-platform/компоненты/личный-кабинет-(scp)/покрытие-потребностей-псб"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="Источники: demo/полная-карта-платформы.md — 18 подсистем ACP, статус по MVP demo/что-есть-но-не-в-mvp.md — gap-анализ MVP vs полное видение demo/что-не-хватает-до-zvirt.md — сравнение с zvirt PSB/ПСБ-БМ-вопросы-и-потребности.md — потребности ПСБ demo/план-закрытия-проблем-ПСБ.md — что делать нам Что..."/><meta name="generator" content="Quartz"/><link href="../../../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="работа/astra/astra-cloud-platform/компоненты/личный-кабинет-(scp)/покрытие-потребностей-псб" data-basepath="//sergeysklabov.github.io/notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-224" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-224" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/">Работа</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/">Astra</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/astra-cloud-platform/">Astra Cloud Platform</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/astra-cloud-platform/компоненты/">Компоненты</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../работа/astra/astra-cloud-platform/компоненты/личный-кабинет-(scp)/">Личный Кабинет (SCP)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>покрытие-потребностей-ПСБ</a></div></nav><h1 class="article-title">покрытие-потребностей-ПСБ</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-17T10:16:33.000Z">Jul 17, 2026</time><span>6 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p><strong>Источники:</strong></p>
+<ul>
+<li><code>demo/полная-карта-платформы.md</code> — 18 подсистем ACP, статус по MVP</li>
+<li><code>demo/что-есть-но-не-в-mvp.md</code> — gap-анализ MVP vs полное видение</li>
+<li><code>demo/что-не-хватает-до-zvirt.md</code> — сравнение с zvirt</li>
+<li><code>PSB/ПСБ-БМ-вопросы-и-потребности.md</code> — потребности ПСБ</li>
+<li><code>demo/план-закрытия-проблем-ПСБ.md</code> — что делать нам</li>
+</ul>
+<hr/>
+<h2 id="что-входит-в-mvp-acp-220-ноябрь-2026">Что входит в MVP ACP 2.2.0 (ноябрь 2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-входит-в-mvp-acp-220-ноябрь-2026" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Компонент</th><th>Состав</th><th>Статус</th></tr></thead><tbody><tr><td><strong>Портал самообслуживания (SCP)</strong></td><td>~15 UC из ~50. ВМ (CRUD), диски, публичные образы, дашборд (стат-карточки), SSH-ключи</td><td>✅ MVP</td></tr><tr><td><strong>IaaS-оркестратор</strong></td><td>~10+ UC. REST API для ВМ, дисков, образов</td><td>🟡 Зависимость (предоставляет API)</td></tr><tr><td><strong>Брест/Crystal</strong></td><td>CRUD ВМ, диски, образы (базовые)</td><td>🟡 Зависимость (предоставляет API)</td></tr><tr><td><strong>IAM</strong></td><td>SSO (OAuth 2.0/OIDC), отображение роли из JWT</td><td>🟡 Зависимость (предоставляет API)</td></tr><tr><td><strong>SDN</strong></td><td>Только дефолтная сеть тенанта (Brest read-only)</td><td>🟡 Частично</td></tr><tr><td><strong>Мониторинг</strong></td><td>Только стат-карточки на дашборде</td><td>🟡 Минимально</td></tr></tbody></table></div>
+<h3 id="чего-нет-в-mvp">Чего НЕТ в MVP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#чего-нет-в-mvp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Компонент</th><th>Когда</th></tr></thead><tbody><tr><td>SDN полный (VPC, Floating IP, Security Groups)</td><td>3.0+</td></tr><tr><td>Ролевая модель (Админ/Админ ИБ)</td><td>2027 H2+</td></tr><tr><td>Мультитенантность (TMS)</td><td>2027 H1</td></tr><tr><td>Админ-портал</td><td>2027 H1</td></tr><tr><td>Квоты и биллинг</td><td>2.3+</td></tr><tr><td>Снапшоты и backup</td><td>3.0+</td></tr><tr><td>Свои образы (custom images)</td><td>3.0+</td></tr><tr><td>CLI / Terraform / SDK</td><td>3.0+</td></tr><tr><td>Браузерная VNC-консоль</td><td>3.0+</td></tr><tr><td>Мониторинг (графики, алерты)</td><td>2.3+</td></tr></tbody></table></div>
+<hr/>
+<h2 id="11-потребностей-псб-vs-mvp">11 потребностей ПСБ vs MVP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-потребностей-псб-vs-mvp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="потребность-1--папкиобласти-вместо-vdc">Потребность 1 — Папки/области вместо VDC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-1--папкиобласти-вместо-vdc" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Модель VDC → области/папки с разной ролевой моделью</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>❌ Нет</td></tr><tr><td><strong>Почему</strong></td><td>Изменение модели VDC — это доработка BillManager (ISPsystem) или появление TMS</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Единый VDC на тенант. Никаких папок/областей</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟡 2.3+ (BillManager) или 2027 H1+ (TMS)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«В ноябре — один VDC на тенант. Разделение на области — после доработки BillManager или появления TMS»</td></tr></tbody></table></div>
+<h3 id="потребность-2--группировка-ресурсов-в-vdc">Потребность 2 — Группировка ресурсов в VDC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-2--группировка-ресурсов-в-vdc" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Ресурсы сплошным списком, нельзя объединить в группы</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>❌ Нет</td></tr><tr><td><strong>Почему</strong></td><td>Нет модели тегов/групп в IaaS-оркестраторе</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Плоский список ВМ с сортировкой и поиском</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟡 2.3+ (если IaaS-оркестратор добавит теги)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«В ноябре — плоский список с поиском. Группировка — после появления тегов в платформе»</td></tr></tbody></table></div>
+<h3 id="потребность-3--роли-админ--админ-иб">Потребность 3 — Роли Админ / Админ ИБ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-3--роли-админ--админ-иб" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Администратор клиента (управление) и Администратор ИБ (только просмотр)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>❌ Нет</td></tr><tr><td><strong>Почему</strong></td><td>Ролевая модель убрана из ВИ (PULSE W28). Per-service RBAC зависит от TMS</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Единая роль: пользователь с полным доступом к своему тенанту</td></tr><tr><td><strong>Когда ждать</strong></td><td>🔵 2027 H2+</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«В ноябре — одна роль пользователя. Разделение Админ/Админ ИБ — не ранее 2027»</td></tr></tbody></table></div>
+<h3 id="потребность-4--логирование-действий-админов">Потребность 4 — Логирование действий админов<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-4--логирование-действий-админов" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Кто, когда, какие действия на ВМ. Логи доступны Администратору ИБ</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Частично</td></tr><tr><td><strong>Почему</strong></td><td>Аудит есть на стороне IaaS, но UI логов в ЛК — post-MVP. Нет endpoint для SCP</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>IaaS логирует действия. Но отображения логов в ЛК — НЕТ</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟡 2.3+ (если IaaS-оркестратор сделает read-only endpoint)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Логирование на стороне платформы есть. Интерфейс логов в ЛК — в следующем релизе»</td></tr></tbody></table></div>
+<h3 id="потребность-5--фильтрацияпоиск-вм-по-имени-и-адресу">Потребность 5 — Фильтрация/поиск ВМ по имени и адресу<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-5--фильтрацияпоиск-вм-по-имени-и-адресу" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Список ВМ не позволяет искать ВМ по имени/адресу</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Зависит от API</td></tr><tr><td><strong>Почему</strong></td><td>Если IaaS-оркестратор поддерживает фильтрацию (search/query params) — делаем. Если нет — только клиентский поиск по загруженному списку</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Клиентская фильтрация по имени (в браузере). Серверная фильтрация — если API позволяет</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (клиентская) / 🟡 2.3+ (серверная)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Поиск по имени в списке — будет. Поиск по IP — после доработки API оркестратора»</td></tr></tbody></table></div>
+<h3 id="потребность-6--отображение-сетей-mac-интерфейсов-вм">Потребность 6 — Отображение сетей, MAC, интерфейсов ВМ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-6--отображение-сетей-mac-интерфейсов-вм" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>В списке ВМ видеть сети, число интерфейсов, IP и MAC-адреса</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Зависит от API</td></tr><tr><td><strong>Почему</strong></td><td>Нужен endpoint <code>GET /vm/{id}/nics</code> от IaaS-оркестратора</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Если API есть — покажем. Если нет — только IP из основной модели ВМ</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (если API готов) / 🟡 2.3+</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Уточняем у команды оркестратора — будут ли детальные данные по сетевым интерфейсам»</td></tr></tbody></table></div>
+<h3 id="потребность-7--поле-описание-для-вм">Потребность 7 — Поле «Описание» для ВМ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-7--поле-описание-для-вм" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Добавить поле описания для служебной информации</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Зависит от API</td></tr><tr><td><strong>Почему</strong></td><td>Нужно поле description в модели ВМ IaaS-оркестратора + PATCH endpoint</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Если модель данных позволяет — сделаем. Если нет — post-MVP</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (если API готов) / 🟡 2.3+</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Поле описания — технически простая задача. Решается после расширения модели данных»</td></tr></tbody></table></div>
+<h3 id="потребность-8--управление-датацентрами">Потребность 8 — Управление датацентрами<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-8--управление-датацентрами" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Администраторы заказывают/изменяют/удаляют датацентры</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>❌ Нет</td></tr><tr><td><strong>Почему</strong></td><td>Функция админ-портала, которого нет даже в проекте</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>ЦОД отображается в информации о ВМ (read-only)</td></tr><tr><td><strong>Когда ждать</strong></td><td>🔵 2027 H1+</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Управление ЦОД — функция оператора платформы. В 2026 — через администратора, в 2027 — через админ-портал»</td></tr></tbody></table></div>
+<h3 id="потребность-9--смена-пароля">Потребность 9 — Смена пароля<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-9--смена-пароля" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Пользователь меняет пароль через интерфейс БИЛЛ</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Через IAM</td></tr><tr><td><strong>Почему</strong></td><td>Решение 26.06: смена пароля — в IAM-портале, не в ЛК</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Кнопка «Сменить пароль» → редирект на IAM-портал</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (редирект на IAM)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Смена пароля — через корпоративный портал IAM. В ЛК будет кнопка перехода»</td></tr></tbody></table></div>
+<h3 id="потребность-10--истекший-пароль--не-пускать">Потребность 10 — Истекший пароль — не пускать<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-10--истекший-пароль--не-пускать" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>❌ Не в ЛК</td></tr><tr><td><strong>Почему</strong></td><td>Функция IAM — проверка при аутентификации</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>IAM должна обеспечить блокировку при истекшем пароле</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (задача на IAM, CF-4460)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Это проверка на уровне IAM при входе — не функция портала»</td></tr></tbody></table></div>
+<h3 id="потребность-11--vnc-прокси-через-бм">Потребность 11 — VNC-прокси через БМ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#потребность-11--vnc-прокси-через-бм" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>БИЛЛ должен проксировать VNC-консоль</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Аспект</th><th>Ответ</th></tr></thead><tbody><tr><td><strong>В MVP?</strong></td><td>🟡 Через .vv файл</td></tr><tr><td><strong>Почему</strong></td><td>VNC через .vv файл (virt-viewer) — делает IaaS-оркестратор. Браузерная VNC — 3.0+</td></tr><tr><td><strong>Что реально в MVP</strong></td><td>Кнопка «Подключиться» → скачивание .vv файла → открытие в virt-viewer</td></tr><tr><td><strong>Когда ждать</strong></td><td>🟢 MVP (через virt-viewer) / 🔵 3.0+ (в браузере)</td></tr><tr><td><strong>Что сказать заказчику</strong></td><td>«Консоль — через нативное приложение virt-viewer. Браузерная консоль — в 2027+»</td></tr></tbody></table></div>
+<hr/>
+<h2 id="22-вопроса-из-чата-vs-mvp">22 вопроса из чата vs MVP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-вопроса-из-чата-vs-mvp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="блок-a-ролевая-модель-логи-отображение-1-8">Блок A. Ролевая модель, логи, отображение (№1-8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#блок-a-ролевая-модель-логи-отображение-1-8" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>№</th><th>Вопрос</th><th>В MVP?</th><th>Когда</th></tr></thead><tbody><tr><td>1</td><td>Области (папки) вместо VDC</td><td>❌</td><td>2.3+</td></tr><tr><td>2</td><td>Группировка ресурсов</td><td>❌</td><td>2.3+</td></tr><tr><td>3</td><td>Роли Админ / Админ ИБ</td><td>❌</td><td>2027 H2+</td></tr><tr><td>4</td><td>Логирование действий админов</td><td>🟡 Аудит в IaaS, UI нет</td><td>2.3+</td></tr><tr><td>5</td><td>Фильтрация/поиск ВМ по имени/адресу</td><td>🟡 Клиентская фильтрация</td><td>MVP / 2.3+</td></tr><tr><td>6</td><td>Отображение сетей, MAC, интерфейсов</td><td>🟡 Зависит от API</td><td>MVP / 2.3+</td></tr><tr><td>7</td><td>Поле «Описание» для ВМ</td><td>🟡 Зависит от API</td><td>MVP / 2.3+</td></tr><tr><td>8</td><td>Управление датацентрами</td><td>❌</td><td>2027 H1+</td></tr></tbody></table></div>
+<h3 id="блок-b-пароли-и-доступ-9-11">Блок B. Пароли и доступ (№9-11)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#блок-b-пароли-и-доступ-9-11" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>№</th><th>Вопрос</th><th>В MVP?</th><th>Когда</th></tr></thead><tbody><tr><td>9</td><td>Смена пароля</td><td>🟡 Редирект на IAM</td><td>MVP</td></tr><tr><td>10</td><td>Истекший пароль</td><td>❌ Функция IAM</td><td>MVP (CF-4460)</td></tr><tr><td>11</td><td>VNC-прокси</td><td>🟡 .vv файл</td><td>MVP / 3.0+</td></tr></tbody></table></div>
+<h3 id="блок-c-ldap--ald-12-15--вне-mvp-архитектурные-ограничения">Блок C. LDAP / ALD (№12-15) — вне MVP (архитектурные ограничения)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#блок-c-ldap--ald-12-15--вне-mvp-архитектурные-ограничения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>№</th><th>Вопрос</th><th>Статус</th></tr></thead><tbody><tr><td>12</td><td>LDAP — УЗ с полномочиями админа домена</td><td>Архитектурное ограничение</td></tr><tr><td>13</td><td>LDAP — доп. символы в именах</td><td>Архитектурное ограничение</td></tr><tr><td>14</td><td>LDAP — иерархия сотрудников</td><td>Ждём пресейлов</td></tr><tr><td>15</td><td>LDAP — мапинг ролей (сотни групп)</td><td>Ждём пресейлов</td></tr></tbody></table></div>
+<h3 id="блок-d-служебный-пользователь-dcpoweruser-16-18--critical-вне-mvp">Блок D. Служебный пользователь DCpoweruser (№16-18) — Critical, вне MVP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#блок-d-служебный-пользователь-dcpoweruser-16-18--critical-вне-mvp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>№</th><th>Вопрос</th><th>Статус</th></tr></thead><tbody><tr><td>16</td><td>Не редактируется карточка ролей</td><td>Critical, на 3-й линии</td></tr><tr><td>17</td><td>DCpoweruser: пароль открыто, права не отозвать</td><td>Critical, ждём клиента</td></tr><tr><td>18</td><td>Смена УЗ служебного пользователя + 2ФА</td><td>Critical, на 3-й линии</td></tr></tbody></table></div>
+<h3 id="блок-e-инфраструктура-и-баги-19-22">Блок E. Инфраструктура и баги (№19-22)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#блок-e-инфраструктура-и-баги-19-22" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>№</th><th>Вопрос</th><th>В MVP?</th><th>Когда</th></tr></thead><tbody><tr><td>19</td><td>Что зааффектит отключение vlan42?</td><td>Не UI-задача</td><td>—</td></tr><tr><td>20</td><td>BILLmanager и L2-сети без IP</td><td>🟡 Отображение — если API</td><td>MVP / 2.3+</td></tr><tr><td>21</td><td>Проблема с шаблонами в БМ</td><td>❌</td><td>Ждём админов</td></tr><tr><td>22</td><td>Единицы измерения — ошибка доступа VDC</td><td>❌</td><td>Нужен стенд</td></tr></tbody></table></div>
+<hr/>
+<h2 id="итоговая-статистика">Итоговая статистика<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#итоговая-статистика" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="по-11-потребностям">По 11 потребностям<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#по-11-потребностям" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Статус</th><th>Кол-во</th><th>Номера</th></tr></thead><tbody><tr><td>✅ Входит в MVP</td><td>0</td><td>—</td></tr><tr><td>🟡 Частично / зависит от API</td><td>6</td><td>4, 5, 6, 7, 9, 11</td></tr><tr><td>❌ Не в MVP (платформа / post-MVP)</td><td>5</td><td>1, 2, 3, 8, 10</td></tr></tbody></table></div>
+<h3 id="по-22-вопросам-чата">По 22 вопросам чата<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#по-22-вопросам-чата" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Статус</th><th>Кол-во</th></tr></thead><tbody><tr><td>🟢 Входит в MVP (фронт)</td><td>~3 (5-клиентская фильтрация, 9-редирект IAM, 11-.vv консоль)</td></tr><tr><td>🟡 Зависит от API IaaS</td><td>~4 (4, 6, 7, 20)</td></tr><tr><td>❌ Post-MVP / архитектура / не UI</td><td>~15</td></tr></tbody></table></div>
+<hr/>
+<h2 id="что-честно-сказать-заказчику">Что честно сказать заказчику<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#что-честно-сказать-заказчику" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>В ноябре 2026 вы получите портал для пользователя:</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Есть</th><th>Нет</th></tr></thead><tbody><tr><td>✅ Создавать, запускать, останавливать, удалять ВМ</td><td>❌ Роли Админ / Админ ИБ</td></tr><tr><td>✅ Создавать и прикреплять диски</td><td>❌ Группировка по папкам/тегам</td></tr><tr><td>✅ Выбирать ОС из публичных образов</td><td>❌ Снапшоты и бэкапы</td></tr><tr><td>✅ Смотреть дашборд (стат-карточки)</td><td>❌ Floating IP и Security Groups</td></tr><tr><td>✅ Заходить по SSH</td><td>❌ Браузерная VNC</td></tr><tr><td>✅ Единый вход (SSO)</td><td>❌ Смена пароля (только редирект)</td></tr><tr><td>✅ Дефолтная сеть</td><td>❌ Квоты, биллинг, потребление</td></tr><tr><td>✅ Поиск по имени в списке ВМ</td><td>❌ Свои ISO/образы</td></tr></tbody></table></div>
+<blockquote>
+<p><strong>Остальное — в 2027:</strong></p>
+<ul>
+<li>2027 H1 (2.3+): отображение сетей/MAC/IP, описание ВМ, квоты (read-only), базовый мониторинг</li>
+<li>2027 H2+ (3.0+): ролевая модель, браузерная VNC, снапшоты, свои образы, полный SDN</li>
+</ul>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-172" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#что-входит-в-mvp-acp-220-ноябрь-2026" data-for="что-входит-в-mvp-acp-220-ноябрь-2026">Что входит в MVP ACP 2.2.0 (ноябрь 2026)</a></li><li class="depth-1"><a href="#чего-нет-в-mvp" data-for="чего-нет-в-mvp">Чего НЕТ в MVP</a></li><li class="depth-0"><a href="#11-потребностей-псб-vs-mvp" data-for="11-потребностей-псб-vs-mvp">11 потребностей ПСБ vs MVP</a></li><li class="depth-1"><a href="#потребность-1--папкиобласти-вместо-vdc" data-for="потребность-1--папкиобласти-вместо-vdc">Потребность 1 — Папки/области вместо VDC</a></li><li class="depth-1"><a href="#потребность-2--группировка-ресурсов-в-vdc" data-for="потребность-2--группировка-ресурсов-в-vdc">Потребность 2 — Группировка ресурсов в VDC</a></li><li class="depth-1"><a href="#потребность-3--роли-админ--админ-иб" data-for="потребность-3--роли-админ--админ-иб">Потребность 3 — Роли Админ / Админ ИБ</a></li><li class="depth-1"><a href="#потребность-4--логирование-действий-админов" data-for="потребность-4--логирование-действий-админов">Потребность 4 — Логирование действий админов</a></li><li class="depth-1"><a href="#потребность-5--фильтрацияпоиск-вм-по-имени-и-адресу" data-for="потребность-5--фильтрацияпоиск-вм-по-имени-и-адресу">Потребность 5 — Фильтрация/поиск ВМ по имени и адресу</a></li><li class="depth-1"><a href="#потребность-6--отображение-сетей-mac-интерфейсов-вм" data-for="потребность-6--отображение-сетей-mac-интерфейсов-вм">Потребность 6 — Отображение сетей, MAC, интерфейсов ВМ</a></li><li class="depth-1"><a href="#потребность-7--поле-описание-для-вм" data-for="потребность-7--поле-описание-для-вм">Потребность 7 — Поле «Описание» для ВМ</a></li><li class="depth-1"><a href="#потребность-8--управление-датацентрами" data-for="потребность-8--управление-датацентрами">Потребность 8 — Управление датацентрами</a></li><li class="depth-1"><a href="#потребность-9--смена-пароля" data-for="потребность-9--смена-пароля">Потребность 9 — Смена пароля</a></li><li class="depth-1"><a href="#потребность-10--истекший-пароль--не-пускать" data-for="потребность-10--истекший-пароль--не-пускать">Потребность 10 — Истекший пароль — не пускать</a></li><li class="depth-1"><a href="#потребность-11--vnc-прокси-через-бм" data-for="потребность-11--vnc-прокси-через-бм">Потребность 11 — VNC-прокси через БМ</a></li><li class="depth-0"><a href="#22-вопроса-из-чата-vs-mvp" data-for="22-вопроса-из-чата-vs-mvp">22 вопроса из чата vs MVP</a></li><li class="depth-1"><a href="#блок-a-ролевая-модель-логи-отображение-1-8" data-for="блок-a-ролевая-модель-логи-отображение-1-8">Блок A. Ролевая модель, логи, отображение (№1-8)</a></li><li class="depth-1"><a href="#блок-b-пароли-и-доступ-9-11" data-for="блок-b-пароли-и-доступ-9-11">Блок B. Пароли и доступ (№9-11)</a></li><li class="depth-1"><a href="#блок-c-ldap--ald-12-15--вне-mvp-архитектурные-ограничения" data-for="блок-c-ldap--ald-12-15--вне-mvp-архитектурные-ограничения">Блок C. LDAP / ALD (№12-15) — вне MVP (архитектурные ограничения)</a></li><li class="depth-1"><a href="#блок-d-служебный-пользователь-dcpoweruser-16-18--critical-вне-mvp" data-for="блок-d-служебный-пользователь-dcpoweruser-16-18--critical-вне-mvp">Блок D. Служебный пользователь DCpoweruser (№16-18) — Critical, вне MVP</a></li><li class="depth-1"><a href="#блок-e-инфраструктура-и-баги-19-22" data-for="блок-e-инфраструктура-и-баги-19-22">Блок E. Инфраструктура и баги (№19-22)</a></li><li class="depth-0"><a href="#итоговая-статистика" data-for="итоговая-статистика">Итоговая статистика</a></li><li class="depth-1"><a href="#по-11-потребностям" data-for="по-11-потребностям">По 11 потребностям</a></li><li class="depth-1"><a href="#по-22-вопросам-чата" data-for="по-22-вопросам-чата">По 22 вопросам чата</a></li><li class="depth-0"><a href="#что-честно-сказать-заказчику" data-for="что-честно-сказать-заказчику">Что честно сказать заказчику</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../../../../../inbox/untitled.base" class="internal">Untitled</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../postscript-3eea7814.js" type="module" data-persist="true"></script></html>

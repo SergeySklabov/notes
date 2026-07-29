@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>2026-07-21 Архитектура ACP 2.3 - вторая серия</title><meta charset="utf-8"/><link rel="preload" href="../../../../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="2026-07-21 Архитектура ACP 2.3 - вторая серия"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-07-21 Архитектура ACP 2.3 - вторая серия"/><meta name="twitter:description" content="2026-07-21 Архитектура ACP 2.3 - вторая серия Содержание Связанные заметки Протокол встречи Решения Задачи Риски Требуются отдельные обсуждения Анализ встречи 2026-07-21 Зависимости Портреты Стейкхолдеры AAR Связанные заметки 2026-07-16 Архитектура ACP - первая серия."/><meta property="og:description" content="2026-07-21 Архитектура ACP 2.3 - вторая серия Содержание Связанные заметки Протокол встречи Решения Задачи Риски Требуются отдельные обсуждения Анализ встречи 2026-07-21 Зависимости Портреты Стейкхолдеры AAR Связанные заметки 2026-07-16 Архитектура ACP - первая серия."/><meta property="og:image:alt" content="2026-07-21 Архитектура ACP 2.3 - вторая серия Содержание Связанные заметки Протокол встречи Решения Задачи Риски Требуются отдельные обсуждения Анализ встречи 2026-07-21 Зависимости Портреты Стейкхолдеры AAR Связанные заметки 2026-07-16 Архитектура ACP - первая серия."/><meta property="og:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:url" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta name="twitter:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://sergeysklabov.github.io/notes"/><meta property="og:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/2026-07-21-архитектура-acp-2.3---вторая-серия"/><meta property="twitter:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/2026-07-21-архитектура-acp-2.3---вторая-серия"/><link rel="icon" href="../../../../../../static/icon.png"/><meta name="description" content="2026-07-21 Архитектура ACP 2.3 - вторая серия Содержание Связанные заметки Протокол встречи Решения Задачи Риски Требуются отдельные обсуждения Анализ встречи 2026-07-21 Зависимости Портреты Стейкхолдеры AAR Связанные заметки 2026-07-16 Архитектура ACP - первая серия."/><meta name="generator" content="Quartz"/><link href="../../../../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/2026-07-21-архитектура-acp-2.3---вторая-серия" data-basepath="//sergeysklabov.github.io/notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-251" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-251" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/">Работа</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/astra/">Astra</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/astra/встречи/">Встречи</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/astra/встречи/протоколы-встреч/">Протоколы встреч</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/">Архитектура</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/">Общая архитектура</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026-07-21 Архитектура ACP 2.3 - вторая серия</a></div></nav><h1 class="article-title">2026-07-21 Архитектура ACP 2.3 - вторая серия</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../../../../../../tags/meeting" class="internal internal-link tag-link">meeting</a><span class="note-properties-separator">, </span><a href="../../../../../../tags/architecture" class="internal internal-link tag-link">architecture</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-07-24T16:30:33.000Z">Jul 24, 2026</time><span>11 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="2026-07-21-архитектура-acp-23---вторая-серия">2026-07-21 Архитектура ACP 2.3 - вторая серия<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-07-21-архитектура-acp-23---вторая-серия" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="содержание">Содержание<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#содержание" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="#%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8" class="internal internal-link alias">Связанные заметки</a></li>
+<li><a href="#%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8" class="internal internal-link alias">Протокол встречи</a></li>
+<li><a href="#%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F" class="internal internal-link alias">Решения</a></li>
+<li><a href="#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" class="internal internal-link alias">Задачи</a></li>
+<li><a href="#%D1%80%D0%B8%D1%81%D0%BA%D0%B8" class="internal internal-link alias">Риски</a></li>
+<li><a href="#%D1%82%D1%80%D0%B5%D0%B1%D1%83%D1%8E%D1%82%D1%81%D1%8F-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F" class="internal internal-link alias">Требуются отдельные обсуждения</a></li>
+<li><a href="#%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8-2026-07-21" class="internal internal-link alias">Анализ встречи 2026-07-21</a></li>
+<li><a href="#%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" class="internal internal-link alias">Зависимости</a></li>
+<li><a href="#%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%D1%8B" class="internal internal-link alias">Портреты</a></li>
+<li><a href="#%D1%81%D1%82%D0%B5%D0%B9%D0%BA%D1%85%D0%BE%D0%BB%D0%B4%D0%B5%D1%80%D1%8B" class="internal internal-link alias">Стейкхолдеры</a></li>
+<li><a href="#aar" class="internal internal-link alias">AAR</a></li>
+</ul>
+<hr/>
+<h2 id="связанные-заметки">Связанные заметки<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#связанные-заметки" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../../../../../../архитектура/общая-архитектура/2026-07-16-архитектура-acp-as-is-и-to-be" class="internal internal-link alias" data-slug="архитектура/общая-архитектура/2026-07-16-архитектура-acp-as-is-и-to-be">2026-07-16 Архитектура ACP</a></strong> - первая серия. Теперь детализированы 2 варианта архитектуры 2.3, обсуждены механизмы создания тенантов и ресурсов</li>
+<li><strong><a href="../../../../../../работа/astra/встречи/протоколы-встреч/синки-с-rnd/2026-07-20-встреча-с-rnd" class="internal internal-link alias" data-slug="работа/astra/встречи/протоколы-встреч/синки-с-rnd/2026-07-20-встреча-с-rnd">2026-07-20 Встреча с RnD</a></strong> - подтверждены сроки Libvirt 1.8.8 (IAM в Brest). Обсуждение квот и метринга пересекается с решениями по BillManager</li>
+<li><strong><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/архкомы/2026-06-10-архитектурный-комитет-iaas-orchestrator" class="internal internal-link alias" data-slug="работа/astra/встречи/протоколы-встреч/архитектура/архкомы/2026-06-10-архитектурный-комитет-iaas-orchestrator">2026-06-10 Архитектурный комитет IaaS-orchestrator</a></strong> - подтверждена роль оркестратора как прослойки между BillManager и ресурс-провайдерами</li>
+</ul>
+<hr/>
+<h2 id="протокол-встречи">Протокол встречи<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#протокол-встречи" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Участники:</strong> @Андрей Крюков, @Сергей Склабовский, @Дмитрий Попенов, @Максим Югай, @Александр Шадрин, @Виталий Козловский, @Ольга Милащенко, @Андрей Иволга</p>
+<p><strong>Контекст:</strong> Вторая серия архитектурной встречи - фокус на ACP 2.3 (+2.4). Андрей Крюков представил 2 варианта архитектуры, ключевая дискуссия - роль BillManager и целевая архитектура.</p>
+<h3 id="два-варианта-архитектуры-23">Два варианта архитектуры 2.3<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#два-варианта-архитектуры-23" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Вариант 1 (основной):</strong></p>
+<ul>
+<li>Функции управления клиентами, договорами, тарифами остаются в BillManager</li>
+<li>Новый портал оператора (зеленый) может быть как надстройкой, либо старый портал продолжает использоваться</li>
+<li>Tenant создается через BillManager (услуга VDC) -> Brest создает VDC -> Brest уведомляет TMS -> TMS создает запись тенанта</li>
+<li>IAM: создается объект тенанта, назначается роль оператору</li>
+<li>Варианты доступа: сразу назначить роль или отдельным сценарием</li>
+</ul>
+<p><strong>Вариант 2 (альтернативный):</strong></p>
+<ul>
+<li>Тенантами управляем через новый портал оператора</li>
+<li>TMS самостоятельно пытается создать услугу VDC в BillManager</li>
+<li><strong>Проблема:</strong> для создания VDC нужен пользователь от клиента (не админ), требуется передавать логин/пароль в открытом виде - безопасники запретят</li>
+<li>TMS придётся хранить связку тенант-клиент (дублирование функции управления организациями)</li>
+</ul>
+<h3 id="создание-ресурса-в-тенанте">Создание ресурса в тенанте<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#создание-ресурса-в-тенанте" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Пользователь аутентифицируется через IAM -> получает токен с тенантным контекстом</li>
+<li>Портал самообслуживания -> Оркестратор -> TMS (получает контекст: VDC в Brest)</li>
+<li>Оркестратор создает ВМ, диски, сети (автоматизирует связку Brest + APOS)</li>
+<li>Оркестратор уведомляет BillManager о создании ресурса</li>
+<li>BillManager синхронизирует ресурсы для тарификации</li>
+<li>При отрицательном балансе BillManager -> TMS блокирует тенант</li>
+</ul>
+<h3 id="дискуссия-billmanager-и-целевая-архитектура">Дискуссия: BillManager и целевая архитектура<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#дискуссия-billmanager-и-целевая-архитектура" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Дмитрий Попенов:</strong> нужно видеть целевую архитектуру без BillManager, чтобы понимать шаги. VDC не должен упоминаться в новом портале - только тенанты.</p>
+<p><strong>Ольга Милащенко:</strong> фокус на текущие релизы (2.2, 2.3). Целевая картина есть у Дмитрия Пронюшкина. Без организаций BillManager не заменить.</p>
+<p><strong>Андрей Иволга:</strong> архитектура строится от цели к шагам, а системный анализ - от текущих требований. Это разные вещи, и здесь мы про архитектуру.</p>
+<p><strong>Александр Шадрин:</strong> можно построить платформу без биллинга (первый шаг), а биллинг добавить позже. Экспертизы по написанию биллинга у нас нет.</p>
+<p><strong>Виталий Козловский:</strong> если убрать BillManager из картинки, функции распределить между модулями - получится стройная система. BillManager потом пририсовать сбоку через адаптеры.</p>
+<p><strong>Андрей Крюков:</strong> красивая картинка оторвана от реалий. Интеграционный долг существующей системы не позволяет прыгнуть в целевую архитектуру за один шаг.</p>
+<p><strong>Сергей Склабовский:</strong> нужно определить какой набор функций нужен платформе (квоты, usage, организации), а как их получить - вопрос второй. BillManager не единственный путь. Пример с ПСБ: им биллинг не нужен.</p>
+<h3 id="итог-по-billmanager">Итог по BillManager<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#итог-по-billmanager" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>@Андрей Крюков: из BillManager убираем:</p>
+<ul>
+<li>Оркестрацию -> IaaS Orchestrator ✅</li>
+<li>Квоты -> Quota Manager (в 2.3/2.4)</li>
+<li>Usage metering -> вопрос открыт (пока преждевременно)</li>
+<li>Остальное - функции биллинга</li>
+</ul>
+<p>Новые услуги требуют написания обработчиков услуг в BillManager. Предложение: не ходить к BillManager с просьбами, а научиться писать обработчики самим (как сделал Boatsman).</p>
+<h3 id="третья-серия">Третья серия<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#третья-серия" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Договорились о третьей серии (завтра вместо архкома) - чтобы дойти до середины презентации и прояснить целевую архитектуру.</p>
+<hr/>
+<h2 id="решения">Решения<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#решения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Архитектура 2.3</strong> - вариант 1 (через BillManager) как переходный. Вариант 2 (TMS создаёт VDC) - рисковый (безопасность)</li>
+<li><strong>Из BillManager убираем:</strong> оркестрацию, квоты. Usage metering - открыт</li>
+<li><strong>Обработчики услуг BillManager</strong> - учимся писать сами (как Boatsman)</li>
+<li><strong>Третья серия</strong> - завтра, 2 часа</li>
+</ul>
+<hr/>
+<h2 id="задачи">Задачи<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#задачи" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Кому</th><th>Что</th><th style="text-align:center;">Срок</th></tr></thead><tbody><tr><td>Андрей Крюков</td><td>Подготовить третью серию архитектуры (целевая картина + шаги)</td><td style="text-align:center;">22.07</td></tr><tr><td>Сергей Склабовский</td><td>Определить набор функций для платформы (квоты, usage, организации)</td><td style="text-align:center;">22.07</td></tr><tr><td>Команда</td><td>Изучить механизм написания обработчиков услуг BillManager</td><td style="text-align:center;">TBD</td></tr></tbody></table></div>
+<ul class="contains-task-list">
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../../.././../../../../../tags/architecture" class="tag-link internal internal-link alias" data-slug="tags/architecture">architecture</a> <a href="../../../../../.././../../../../../tags/крюков_андрей" class="tag-link internal internal-link alias" data-slug="tags/крюков_андрей">крюков_андрей</a> Подготовить третью серию архитектуры (целевая картина + шаги) 📅 2026-07-22</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> <a href="../../../../../.././../../../../../tags/architecture" class="tag-link internal internal-link alias" data-slug="tags/architecture">architecture</a> <a href="../../../../../.././../../../../../tags/склабовский_сергей" class="tag-link internal internal-link alias" data-slug="tags/склабовский_сергей">склабовский_сергей</a> Определить набор функций для платформы (квоты, usage, организации) 📅 2026-07-22</li>
+</ul>
+<hr/>
+<h2 id="риски">Риски<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#риски" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>BillManager dependency</strong> - 🔴 остаётся ключевым блокером. Без альтернативы биллингу не уйти от него</li>
+<li><strong>Два варианта архитектуры</strong> - 🟠 если выберем не тот, получим ещё больший интеграционный долг</li>
+<li><strong>Обработчики услуг</strong> - 🟡 экспертиза по BillManager внутри команды отсутствует. Boatsman справился, но не факт что получится у других</li>
+<li><strong>Третья серия</strong> - 🟡 если не придём к консенсусу, архитектура 2.3 останется неопределённой</li>
+</ul>
+<hr/>
+<h2 id="требуются-отдельные-обсуждения">Требуются отдельные обсуждения<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#требуются-отдельные-обсуждения" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Тема</th><th>Участники</th><th>Причина</th><th>Следующий шаг</th></tr></thead><tbody><tr><td><strong>Целевая архитектура (3-я серия)</strong></td><td>Все</td><td>Не успели, дискуссия по BillManager заняла время</td><td>Андрей Крюков готовит, завтра</td></tr><tr><td><strong>Usage metering - когда и как</strong></td><td>Андрей Крюков, Сергей Склабовский</td><td>Пока преждевременно, но надо запланировать</td><td>Отложено до появления новых услуг</td></tr><tr><td><strong>Организации (Organization Manager)</strong></td><td>Все</td><td>Нужен для отказа от BillManager, но не в 2.3</td><td>Сергей предлагает добавить в план</td></tr></tbody></table></div>
+<hr/>
+<h2 id="анализ-встречи-2026-07-21">Анализ встречи 2026-07-21<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#анализ-встречи-2026-07-21" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="5-главных-тем">5 главных тем<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-главных-тем" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Два варианта 2.3</strong> - через BillManager (вариант 1) vs TSM сам создаёт VDC (вариант 2, рискованный)</li>
+<li><strong>BillManager - рудимент</strong> - все согласны что надо уходить, но шаги не ясны. Оркестрацию убрали, квоты - план, usage - открыт</li>
+<li><strong>Целевая архитектура</strong> - Дмитрий Попенов/Виталий: хотим видеть конечную картину. Андрей Крюков: красиво, но оторвано от реалий</li>
+<li><strong>Платформа без биллинга</strong> - Александр Шадрин: можно построить сначала, биллинг добавить потом</li>
+<li><strong>Обработчики услуг</strong> - научиться писать самим, как Boatsman</li>
+</ol>
+<h3 id="обратная-связь-по-приоритетам">Обратная связь по приоритетам<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#обратная-связь-по-приоритетам" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>P0 - блокеры</strong></p>
+<ol>
+<li><strong>Целевая и baseline не разделены.</strong> Целевая картинка де-факто существует (3-слойная схема Пронюшкина: представление -> слой оркестрации -> нижележащие ресурс-провайдеры). Но она не ратифицирована, а Андрей считает её «оторванной от реалий». Это неразрешённый конфликт, а не деталь. Нужно либо утвердить её как канон, либо согласовать альтернативу - и отдельно нарисовать <strong>migration map с явно подписанными промежуточными состояниями</strong> (2.3 / 2.4 / target). Без этого спор бесконечен.</li>
+<li><strong>Протечка контекста VDC вверх + BillManager на критическом пути создания тенанта.</strong> Попенов и Козловский правы: VDC - термин подсистемы виртуализации (Брест), он не должен фигурировать нигде, кроме последней стрелки в Брест. Сейчас стрелка «создать VDC» идёт из BillManager напрямую в Брест - это инвертирует слои. Тест, который предложил Виталий, архитектурно верный и совпадает с твоим же тезисом про снижение зависимостей: <strong>убрать квадрат биллинга с картинки, доказать, что обязанности (организации, ТМС, оркестрация) самодостаточно распределяются по модулям, и только потом пририсовать BillManager сбоку через адаптеры на биллинговые функции</strong> - так, чтобы его можно было выкинуть/заменить/не ставить. Это ровно кейс ПСБ и ACP Lite.</li>
+<li><strong>Нет унифицированного API/BFF-слоя.</strong> Оля права - на схеме порталы лезут напрямую в ТМС и биллинг. Без стандартизированного API-слоя между слоем представления и внутренними компонентами схема нежизнеспособна и раскрывает внутреннюю реализацию. Это стыкуется с твоей работой по capability-manifest в ЛК.</li>
+<li><strong>Конфликт границы IAM/TMS всплыл ровно как прогнозировалось.</strong> В представленном флоу объект тенанта в RooX создаётся <strong>раньше</strong>, чем запись в ТМС. То есть кто владеет деревом тенантов - уже спорно на уровне последовательности вызовов. Это тот самый структурный дефект, который проявляется на интеграции, а не на ревью.</li>
+</ol>
+<p><strong>P1 - исправить до финализации</strong></p>
+<ol start="5">
+<li><strong>Метринг и квоты мис-скоуплены как под-функция биллинга.</strong> Позиция Андрея «сейчас не нужно, услуга одна (ВМ), учёт уже есть в Бресте/биллинге» защитима для 2.3. Но твоя интуиция верна по другой причине, чем деньги: квота-по-ресурсам и usage-аналитика нужны <strong>независимо от биллинга</strong> - кейс лицензионной поставки (ПСБ, инкремент), где биллинга нет вообще, но нужно квотировать и смотреть потребление. Значит это не «преждевременно», а <strong>неверно отнесено</strong>: это платформенная capability, а не биллинговая. Реформулировать в целевой модели, не откладывать.</li>
+<li><strong>ТМС-god-object.</strong> Тут Александр по существу прав, и это стоит зафиксировать как принцип: ТМС управляет контейнерами изоляции (группы Брест, namespaces Боцман, VDC ON), а IaaS-оркестратор - ресурсами (ВМ, сети, диски). Это чистый шов, он не разбухнет. Но твой вопрос про слой Organization остаётся открытым: организация - это отдельный компонент над ТМС или это внутри ТМС. Границу надо прописать сейчас, иначе она попадёт в ТМС по инерции.</li>
+</ol>
+<p><strong>P2 - гигиена</strong></p>
+<ol start="7">
+<li><strong>Терминология.</strong> VDC / тенант / проект / услуга гуляют. Максим прав про синонимию проект↔тенант в UI, Попенов прав про чистку VDC из верхних слоёв. Один глоссарий, привести схемы к нему.</li>
+</ol>
+<h3 id="последующие-шаги">Последующие шаги<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#последующие-шаги" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>К третьей серии (завтра 14:00) навязать структуру - это твоя роль как лида ТПМ, а не архитектора:</p>
+<ol>
+<li><strong>Потребовать два артефакта раздельно:</strong> (а) утверждённая целевая референс-арх, (б) migration map с подписанными состояниями 2.3/2.4/target. Без разделения серия 3 повторит серию 2.</li>
+<li><strong>Дать Андрею/Виталию конкретный дедлайн на «упражнение без биллинга»</strong> (P0-2) - это самый дешёвый способ проверить самодостаточность архитектуры и снять половину споров.</li>
+<li><strong>Требовать API-слой на всех схемах</strong> (P0-3) и глоссарий (P2).</li>
+<li><strong>Завести decision log</strong> по итогам: каждое решение - с владельцем и датой (владелец дерева тенантов, судьба organization mgmt, статус метринга). Половину времени серии 2 съели вопросы без зафиксированных ответов, дошли только до середины.</li>
+<li><strong>Развести build/buy/ask по недостающим компонентам</strong> (quota / usage / org mgmt) в отдельную рамку с инвестиционной логикой, а не «допилит ли BillManager». Твой же тезис из встречи: сначала определяем нужный набор функций, потом - как добываем. Держись принципа «no commits - no weight»: оценки сложности без фактуры (особенно по объёму работ на биллинг-функции, где у команды нет экспертизы) в решение не идут.</li>
+<li><strong>Эскалация по BillManager на критпуть.</strong> Сформулировать явный запрос «что нам нужно» и получить ответ да/нет - как ты и предложил. Пока не получен ответ, зависимость не снимается, а техдолг интеграции копится.</li>
+</ol>
+<h3 id="--адженда-серии-3-confluence-ready-plain-text">- Адженда серии 3 (Confluence-ready, plain text)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#--адженда-серии-3-confluence-ready-plain-text" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Архитектура ACP - серия 3</p>
+<p>Цель встречи: развести и зафиксировать два раздельных артефакта - целевую референс-архитектуру и migration map. Всё остальное обсуждаем поверх них.</p>
+<ul>
+<li>Ратификация целевой: принимаем 3-слойную схему Пронюшкина как канон или согласуем альтернативу; если «оторвана от реалий» - конкретика по пунктам, а не общий тезис.</li>
+<li>Migration map: явно подписанные промежуточные состояния 2.3 / 2.4 / target; оценка величины скачка 2.4 -> final.</li>
+<li>Упражнение «без биллинга»: убираем квадрат BillManager, проверяем, что обязанности (организации, ТМС, оркестрация) самодостаточно распределяются по модулям без дыр.</li>
+<li>API-слой: единый стандартизированный интерфейс между порталами и внутренними компонентами - обязателен на всех схемах.</li>
+<li>Граница IAM/ТМС: владелец дерева тенантов и источник истины; порядок создания объекта тенанта.</li>
+<li>Метринг и квоты как платформенная capability вне биллинга (кейс ПСБ, лицензионная поставка) - закладываем или явно откладываем с обоснованием.</li>
+<li>Глоссарий: VDC / тенант / проект / услуга; чистка VDC из верхних слоёв схем.</li>
+<li>Decision log: каждое решение - с владельцем и датой.</li>
+<li>Тайминг: дойти минимум до второй половины презентации (в серии 2 остановились на середине).</li>
+</ul>
+<hr/>
+<p>Коллеги, по итогам серии 2 фиксирую, почему мы крутимся на месте, и что меняем к серии 3.</p>
+<p>Корень проблемы не в биллинге. Мы в одной сессии смешиваем два разных артефакта - целевую архитектуру и baseline 2.3 - и спорим мимо друг друга: часть комнаты про целевую, часть про требования на ближайший релиз. Пока не разведём - каждая серия будет повторять предыдущую.</p>
+<p>Что навязываю к серии 3:</p>
+<ol>
+<li>Два раздельных артефакта. (а) целевая референс-архитектура, (б) migration map с явно подписанными состояниями 2.3 / 2.4 / target. Это критично и идёт первым шагом - без этого дальше не двигаемся.</li>
+<li>Целевую ратифицируем: принимаем 3-слойную схему Пронюшкина как канон или согласуем альтернативу. «Оторвана от реалий» - ок, но тогда конкретика по пунктам.</li>
+<li>На всех схемах - единый API-слой между порталами и внутренними компонентами.</li>
+<li>Decision log: каждое решение с владельцем и датой.</li>
+</ol>
+<p>Обсуждение стрелочек BillManager продолжаем только после того, как на столе лежат (1) и (2). Иначе это броуновское движение.</p>
+<h3 id="daci-матрица">DACI-матрица<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daci-матрица" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Решение</th><th>Driver</th><th>Approver</th><th>Contributors</th><th>Informed</th></tr></thead><tbody><tr><td>Вариант 1 (через BillManager) для 2.3</td><td>Андрей Крюков</td><td>Сергей Склабовский</td><td>Дмитрий Попенов, Максим Югай</td><td>Команда ACP</td></tr><tr><td>Обработчики BillManager - пишем сами</td><td>Александр Шадрин</td><td>Сергей Склабовский</td><td>Андрей Крюков</td><td>Команда ACP</td></tr><tr><td>3-я серия архитектуры</td><td>Сергей Склабовский</td><td>Андрей Крюков</td><td>-</td><td>Все</td></tr></tbody></table></div>
+<hr/>
+<h2 id="зависимости">Зависимости<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#зависимости" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Зависимость</th><th style="text-align:center;">Тип</th><th style="text-align:center;">Статус</th></tr></thead><tbody><tr><td>Платформа -> BillManager (биллинг)</td><td style="text-align:center;">🔴 блокер</td><td style="text-align:center;">Альтернативы нет. Обработчики пытаемся писать сами</td></tr><tr><td>IaaS Orchestrator -> BillManager (вынос провиженинга)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">План 2.3. Сроки: Libvirt 1.8.8 (февраль 2027)</td></tr><tr><td>Quota Manager -> BillManager (вынос квот)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">2.3/2.4, требуется архитектура от Андрея Крюкова</td></tr><tr><td>TMS -> BillManager (тенанты)</td><td style="text-align:center;">🟠 сильно</td><td style="text-align:center;">Пока через BillManager. В перспективе - через TMS</td></tr><tr><td>Usage Metering -> новые услуги</td><td style="text-align:center;">🟡 слабо</td><td style="text-align:center;">Пока не нужно, но запланировать</td></tr></tbody></table></div>
+<hr/>
+<h2 id="портреты">Портреты<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#портреты" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="андрей-крюков---архитектор-acp">Андрей Крюков - Архитектор ACP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#андрей-крюков---архитектор-acp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> Докладчик, автор двух вариантов архитектуры</li>
+<li><strong>Стиль:</strong> Прагматичный - исходит из существующих ограничений, не обещает быстрых побед</li>
+<li><strong>Триггеры:</strong> «Красивые картинки, оторванные от реальности»</li>
+<li><strong>Цитата:</strong> «Дима Пронюшкин даёт архитектуру в облаках, она не учитывает контекст существующий. А когда просишь привязать - почему-то отказ»</li>
+<li><strong>Вклад:</strong> Чётко сформулировал, что убираем из BillManager, а что остаётся</li>
+</ul>
+<h3 id="сергей-склабовский---po-платформы">Сергей Склабовский - PO платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#сергей-склабовский---po-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> Модератор дискуссии, принимает решения</li>
+<li><strong>Стиль:</strong> Ищет компромисс между целевым видением и прагматикой</li>
+<li><strong>Триггеры:</strong> Когда архитектура блокирует развитие</li>
+<li><strong>Цитата:</strong> «Нам нужно определить набор функций, которые нам нужны. А как мы их получим - вопрос второй»</li>
+<li><strong>Вклад:</strong> Предложил фокусироваться на функциях, а не на BillManager</li>
+</ul>
+<h3 id="максим-югай---тпм-iamtms">Максим Югай - ТПМ IAM/TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#максим-югай---тпм-iamtms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Роль:</strong> Эксперт по IAM и тенантному контексту</li>
+<li><strong>Стиль:</strong> Уточняет детали, задаёт правильные вопросы</li>
+<li><strong>Цитата:</strong> «BillManager здесь по одной причине: он единственный сможет тарифицировать потребление ресурсов»</li>
+<li><strong>Вклад:</strong> Прояснил роль BillManager в тарификации, подтвердил концепцию проекта-тенанта</li>
+</ul>
+<hr/>
+<h2 id="стейкхолдеры">Стейкхолдеры<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#стейкхолдеры" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Стейкхолдер</th><th style="text-align:center;">Интерес</th><th style="text-align:center;">Влияние</th><th>Квадрант</th></tr></thead><tbody><tr><td><a href="../../../../../../работа/astra/команда/команда-платформы-ac/андрей-крюков" class="internal internal-link alias" data-slug="работа/astra/команда/команда-платформы-ac/андрей-крюков">Андрей Крюков</a></td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Key Player</strong> - архитектор</td></tr><tr><td><a href="../../../../../../работа/astra/команда/команда-платформы-ac/сергей-склабовский" class="internal internal-link alias" data-slug="работа/astra/команда/команда-платформы-ac/сергей-склабовский">Сергей Склабовский</a></td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Высокое</td><td><strong>Key Player</strong> - PO</td></tr><tr><td><a href="../../../../../../дмитрий-попенов" class="internal internal-link alias" data-slug="дмитрий-попенов">Дмитрий Попенов</a></td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - требует целевую картину</td></tr><tr><td><a href="../../../../../../работа/astra/команда/команда-платформы-ac/максим-югай" class="internal internal-link alias" data-slug="работа/astra/команда/команда-платформы-ac/максим-югай">Максим Югай</a></td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - IAM, TMS</td></tr><tr><td><a href="../../../../../../работа/astra/команда/команда-платформы-ac/александр-шадрин" class="internal internal-link alias" data-slug="работа/astra/команда/команда-платформы-ac/александр-шадрин">Александр Шадрин</a></td><td style="text-align:center;">Высокий</td><td style="text-align:center;">Среднее</td><td><strong>Keep Informed</strong> - IaaS Orchestrator</td></tr><tr><td>BillManager (команда)</td><td style="text-align:center;">Средний</td><td style="text-align:center;">Высокое</td><td><strong>Keep Satisfied</strong> - критическая зависимость</td></tr></tbody></table></div>
+<hr/>
+<h2 id="aar-after-action-review">AAR (After-Action Review)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aar-after-action-review" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-что-планировали">1. Что планировали?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-что-планировали" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Вторая серия архитектуры 2.3 - детализация подсистем, механизмы создания тенантов и ресурсов.</p>
+<h3 id="2-что-получилось">2. Что получилось?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-что-получилось" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Удачно:</strong></p>
+<ul>
+<li>Два варианта архитектуры представлены и обсуждены</li>
+<li>Чётко определено, что убираем из BillManager (оркестрация, квоты)</li>
+<li>Договорились писать обработчики BillManager сами</li>
+<li>Принято решение о третьей серии</li>
+</ul>
+<p><strong>Неудачно:</strong></p>
+<ul>
+<li>Не дошли до середины презентации - дискуссия по BillManager заняла >1 часа</li>
+<li>Целевая архитектура без BillManager так и не согласована</li>
+<li>Usage metering отложен без конкретных сроков</li>
+</ul>
+<h3 id="3-почему">3. Почему?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-почему" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>BillManager - самая болезненная точка, все хотели высказаться</li>
+<li>Нет консенсуса между «идти от текущего» (Андрей) и «идти от целевого» (Дмитрий/Виталий)</li>
+</ul>
+<h3 id="4-что-будем-делать-иначе">4. Что будем делать иначе?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-что-будем-делать-иначе" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Третья серия завтра</strong> - фокус на целевой картине + шагах</li>
+<li><strong>Отдельная встреча по BillManager</strong> - если снова не успеем</li>
+</ul>
+<h3 id="метрики">Метрики<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#метрики" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Показатель</th><th style="text-align:center;">Значение</th></tr></thead><tbody><tr><td>Принято решений</td><td style="text-align:center;">4</td></tr><tr><td>Выдано поручений</td><td style="text-align:center;">2</td></tr><tr><td>Открытых вопросов</td><td style="text-align:center;">3 (usage metering, организации, BillManager альтернатива)</td></tr></tbody></table></div></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-197" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#2026-07-21-архитектура-acp-23---вторая-серия" data-for="2026-07-21-архитектура-acp-23---вторая-серия">2026-07-21 Архитектура ACP 2.3 - вторая серия</a></li><li class="depth-1"><a href="#содержание" data-for="содержание">Содержание</a></li><li class="depth-1"><a href="#связанные-заметки" data-for="связанные-заметки">Связанные заметки</a></li><li class="depth-1"><a href="#протокол-встречи" data-for="протокол-встречи">Протокол встречи</a></li><li class="depth-2"><a href="#два-варианта-архитектуры-23" data-for="два-варианта-архитектуры-23">Два варианта архитектуры 2.3</a></li><li class="depth-2"><a href="#создание-ресурса-в-тенанте" data-for="создание-ресурса-в-тенанте">Создание ресурса в тенанте</a></li><li class="depth-2"><a href="#дискуссия-billmanager-и-целевая-архитектура" data-for="дискуссия-billmanager-и-целевая-архитектура">Дискуссия: BillManager и целевая архитектура</a></li><li class="depth-2"><a href="#итог-по-billmanager" data-for="итог-по-billmanager">Итог по BillManager</a></li><li class="depth-2"><a href="#третья-серия" data-for="третья-серия">Третья серия</a></li><li class="depth-1"><a href="#решения" data-for="решения">Решения</a></li><li class="depth-1"><a href="#задачи" data-for="задачи">Задачи</a></li><li class="depth-1"><a href="#риски" data-for="риски">Риски</a></li><li class="depth-1"><a href="#требуются-отдельные-обсуждения" data-for="требуются-отдельные-обсуждения">Требуются отдельные обсуждения</a></li><li class="depth-1"><a href="#анализ-встречи-2026-07-21" data-for="анализ-встречи-2026-07-21">Анализ встречи 2026-07-21</a></li><li class="depth-2"><a href="#5-главных-тем" data-for="5-главных-тем">5 главных тем</a></li><li class="depth-2"><a href="#обратная-связь-по-приоритетам" data-for="обратная-связь-по-приоритетам">Обратная связь по приоритетам</a></li><li class="depth-2"><a href="#последующие-шаги" data-for="последующие-шаги">Последующие шаги</a></li><li class="depth-2"><a href="#--адженда-серии-3-confluence-ready-plain-text" data-for="--адженда-серии-3-confluence-ready-plain-text">- Адженда серии 3 (Confluence-ready, plain text)</a></li><li class="depth-2"><a href="#daci-матрица" data-for="daci-матрица">DACI-матрица</a></li><li class="depth-1"><a href="#зависимости" data-for="зависимости">Зависимости</a></li><li class="depth-1"><a href="#портреты" data-for="портреты">Портреты</a></li><li class="depth-2"><a href="#андрей-крюков---архитектор-acp" data-for="андрей-крюков---архитектор-acp">Андрей Крюков - Архитектор ACP</a></li><li class="depth-2"><a href="#сергей-склабовский---po-платформы" data-for="сергей-склабовский---po-платформы">Сергей Склабовский - PO платформы</a></li><li class="depth-2"><a href="#максим-югай---тпм-iamtms" data-for="максим-югай---тпм-iamtms">Максим Югай - ТПМ IAM/TMS</a></li><li class="depth-1"><a href="#стейкхолдеры" data-for="стейкхолдеры">Стейкхолдеры</a></li><li class="depth-1"><a href="#aar-after-action-review" data-for="aar-after-action-review">AAR (After-Action Review)</a></li><li class="depth-2"><a href="#1-что-планировали" data-for="1-что-планировали">1. Что планировали?</a></li><li class="depth-2"><a href="#2-что-получилось" data-for="2-что-получилось">2. Что получилось?</a></li><li class="depth-2"><a href="#3-почему" data-for="3-почему">3. Почему?</a></li><li class="depth-2"><a href="#4-что-будем-делать-иначе" data-for="4-что-будем-делать-иначе">4. Что будем делать иначе?</a></li><li class="depth-2"><a href="#метрики" data-for="метрики">Метрики</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/2026-07-03-синк-с-архитектором-по-тенантам" class="internal">2026-07-03 Синк с архитектором по тенантам</a></li><li><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/2026-07-22-архитектура-acp-2.3---квоты-и-iam" class="internal">2026-07-22 Архитектура ACP 2.3 - квоты и IAM</a></li><li><a href="../../../../../../работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/общая-архитектура-acp" class="internal">Общая архитектура ACP</a></li><li><a href="../../../../../../работа/astra/встречи/протоколы-встреч/синк-с-billmanager/2026-07-22-обсуждение-с-billmanager-по-интеграции-с-боцманом" class="internal">2026-07-22 Обсуждение с BillManager по интеграции с Боцманом</a></li><li><a href="../../../../../../работа/astra/встречи/стенограмма-встреч/архитектура-acp-2.3" class="internal">Архитектура ACP 2.3</a></li><li><a href="../../../../../../inbox/untitled.base" class="internal">Untitled</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../../postscript-3eea7814.js" type="module" data-persist="true"></script></html>

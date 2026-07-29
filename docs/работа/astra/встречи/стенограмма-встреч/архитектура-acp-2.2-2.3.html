@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Архитектура ACP 2.2-2.3</title><meta charset="utf-8"/><link rel="preload" href="../../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="Архитектура ACP 2.2-2.3"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Архитектура ACP 2.2-2.3"/><meta name="twitter:description" content="00:03 Андрей Крюков Реплика: Так… Ейчас так наверное, видно мой экран видно? Нет? 00:22 Максим Югай Реплика: Видно да."/><meta property="og:description" content="00:03 Андрей Крюков Реплика: Так… Ейчас так наверное, видно мой экран видно? Нет? 00:22 Максим Югай Реплика: Видно да."/><meta property="og:image:alt" content="00:03 Андрей Крюков Реплика: Так… Ейчас так наверное, видно мой экран видно? Нет? 00:22 Максим Югай Реплика: Видно да."/><meta property="og:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:url" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta name="twitter:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://sergeysklabov.github.io/notes"/><meta property="og:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/стенограмма-встреч/архитектура-acp-2.2-2.3"/><meta property="twitter:url" content="https://https//sergeysklabov.github.io/notes/работа/astra/встречи/стенограмма-встреч/архитектура-acp-2.2-2.3"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="00:03 Андрей Крюков Реплика: Так… Ейчас так наверное, видно мой экран видно? Нет? 00:22 Максим Югай Реплика: Видно да."/><meta name="generator" content="Quartz"/><link href="../../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="работа/astra/встречи/стенограмма-встреч/архитектура-acp-2.2-2.3" data-basepath="//sergeysklabov.github.io/notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-298" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-298" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../работа/">Работа</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../работа/astra/">Astra</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../работа/astra/встречи/">Встречи</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../работа/astra/встречи/стенограмма-встреч/">Стенограмма встреч</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Архитектура ACP 2.2-2.3</a></div></nav><h1 class="article-title">Архитектура ACP 2.2-2.3</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../../../../tags/transcript" class="internal internal-link tag-link">transcript</a><span class="note-properties-separator">, </span><a href="../../../../tags/protocol/done" class="internal internal-link tag-link">protocol/done</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-07-29T15:43:23.000Z">Jul 29, 2026</time><span>55 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p><strong>00:03</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Так… Ейчас так наверное, видно мой экран видно? Нет?</li>
+</ul>
+<p><strong>00:22</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Видно да.</li>
+</ul>
+<p><strong>00:23</strong>
+Михаил Перевалов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Видно…</li>
+</ul>
+<p><strong>00:25</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Значит немножко там пару раз вступительных, значит, для чего сегодня собрались?</li>
+</ul>
+<p><strong>00:37</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Чтобы понять, что мы и пообсуждать, что мы у нас будет в релизе два два как изменяется архитектура, так скажем, два два два три и и далее. Да, значит. Ну какой какие-то вот ближайшие релизы, значит и основная, наверное, цель чтобы…</li>
+</ul>
+<p><strong>01:06</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но у всех сложилось, все послушали всех сложилось правильное там понимание и оно вот мой рассказ он не противоречил, да? Чтобы выявить наши все противоречия, да.</li>
+</ul>
+<p><strong>01:27</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Та, так скажем, концептуального характера, наверное. Вот цель в этом озадач… Значит по давайте сразу по ограничениям, значит вот то, что я буду рассказывать, это не как к неразбито по релизам те изменения в архитектуре, которые мы будем делать там добавляются компоненты, да? То есть пока это вне контекста данного разговора.</li>
+</ul>
+<p><strong>01:51</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть это там мы потом сделаем. Сейчас обсуждаем там фактуру и значит, вот в тех изменениях, так скажем, там новый подход?</li>
+</ul>
+<p><strong>02:07</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. В нем пока не буду рассказывать про квот, учет потребления, биллинг это во второй серии.</li>
+</ul>
+<p><strong>02:16</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вторая серия у нас, наверное, скорее всего там в четверг будет. Вот пока это не обсуждаем. Значит, немножко, наверное, вот чтобы было понятно для Димы и Миши. Возможно, они не видели, не знают.</li>
+</ul>
+<p><strong>02:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Чтобы было понятно, о чем я буду рассказывать сейчас я не буду об этом там детально рассказывать. Ну, по крайней мере, что у нас есть? У нас есть функциональная архитектура наших там как у нас наша платформа разбита вот в текущем состояние на какие подсистемы разбита, за что они отвечают вот есть. А у нас это лежит в требованиях в разделе требования к релизом исипи два Икс.</li>
+</ul>
+<p><strong>03:24</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Там есть раздел в общих требованиях архитектуры есть функциональные подсистемы. То есть это вот Дима, Миша, может вам посмотреть? Возможно это вы не видели, чтобы было понятно, о чем мы будем даже разговаривать. Значит давайте, чтобы время не терять да, еще небольшое отступление.</li>
+</ul>
+<p><strong>03:52</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит давайте так. Я буду рассказывать, возможно там сразу какие-то вопросы. Вот давайте я какую-то часть расскажу, остановлюсь и им там можно что-то обсудить, задать вопросы.</li>
+</ul>
+<p><strong>04:08</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот мне кажется там по ходу рассказы моего возможно эти все не вся часть вопросов, она просто отпадет. Значит собственно вот есть мне кажется полностью картинка вылезает или…</li>
+</ul>
+<p><strong>04:27</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Или нет или не очень ее как-то видно, но как бы мне это все…</li>
+</ul>
+<p><strong>04:31</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Три блока только? Ну, с поставщиком - да и три блока.</li>
+</ul>
+<p><strong>04:39</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Может масштаб в браузере чуть поменьше сделать?</li>
+</ul>
+<p><strong>04:42</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да я уже и поменьше вот так и будет вообще не видно.</li>
+</ul>
+<p><strong>04:47</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну ладно, давайте я буду прокручивать.</li>
+</ul>
+<p><strong>04:47</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Макс, а у тебя в три блока, в смысле вертикальных было, что ли? У меня четыре просто видно поставщик потребителей наверху.</li>
+</ul>
+<p><strong>04:54</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну ниже четыре блока оператора сам обслуживание оператора новые и самообслуживание новые. У тебя не попадает, что ли это?</li>
+</ul>
+<p><strong>05:01</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну…</li>
+</ul>
+<p><strong>05:01</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не поверьте кали у нас вот четыре горизонталь мы видим, а сейчас вертикаль две видим. Ну так то питай верхние стою вроде та.</li>
+</ul>
+<p><strong>05:06</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>А… Ну да.</li>
+</ul>
+<p><strong>05:08</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, да, будем! Будем да будем так смотрите значит зелененьким это то, что у нас добавляется те подсистемы, которые появляются там начиная с два два значит давайте перечислим значит портала оператора. Это новое там поколение?</li>
+</ul>
+<p><strong>05:34</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. То есть кто чем занимается.</li>
+</ul>
+<p><strong>05:36</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Миша то есть мы делаем свой новый портал оператора и соответственно такой же портал самообслуживания сейчас там у Миши могут быть сразу вопросы а почему это вроде там только про самообслуживание да, но расскажу почему. Почему без оператора мы не сможем обойтись. Значит под система контенеризации.</li>
+</ul>
+<p><strong>06:02</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, это вот интеграция с босманом. Значит под система оркестрации инфраструктурных сервисов.</li>
+</ul>
+<p><strong>06:12</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, который отвечает да за… За провиженик сервисов таких как там управления виртуальными машинами, образами, дисками и сетями. Значит подсистема предоставления программных интерфейсов. Это то, что у нас раньше она, ну так сказать в зачатках была как под система управления программная интерфейса, но немножко ее давно это назрел. Ее нужно пересмотреть и начать ее использовать.</li>
+</ul>
+<p><strong>06:52</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да потому что она там сейчас как мертвым грузом просто числилость, но никак не использовать. Значит и появляется у нас еще под система управления тенентами. То есть это то, как мне кажется, без чего вот нам тот минимум, который нам необходим для того, чтобы начать развивать наш там новый подход.</li>
+</ul>
+<p><strong>07:23</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Собственно тут надо, наверное, тоже дать пояснение. Вот там наверное Миша и Диме больше значит что буквально в пару слов, что мы до этого значит строили так скажем, платформу?</li>
+</ul>
+<p><strong>07:41</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да и то м ы это была интеграция продуктов группы Астра? Да. Значит мы сейчас от этого подхода уходим?</li>
+</ul>
+<p><strong>07:55</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. И пытаемся именно построить ту платформу, как мы ее видим. И если продукты полностью соответствуют нашим требованиям да.</li>
+</ul>
+<p><strong>08:08</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы их можем имеется в виду продукты Группыаст, то мы и соответственно их будем использовать. Если нет, значит мы будем закрывать какими-то своими подсистемами, которые реализуем своими средствами. Значит вот у нас появляется сколько? Так шесть значит, теперь давайте немножко про них поговорим.</li>
+</ul>
+<p><strong>08:40</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот такая дят немножко поменьше сделаю. Значит тут несколько подсистем будет указано? Да.</li>
+</ul>
+<p><strong>08:54</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть здесь такой некий фокус на порталы по система оркестрации управление тенонтами вот наиболее важный, как мне кажется. Значит немножко давайте начнем с…</li>
+</ul>
+<p><strong>09:13</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>С порталов? Да. Значит почему? Значит нам нужен обязательно портал оператора?</li>
+</ul>
+<p><strong>09:22</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Почему? Потому что мы… У нас функция управления тенонтами это функция оператора платформа.</li>
+</ul>
+<p><strong>09:34</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот мы сейчас, так сказать в этой парадигме живем. Мы это не функция самообслуживания.</li>
+</ul>
+<p><strong>09:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы не позволяем потребителя создавать самостоятельный теннот. То есть это только функция оператора. Соответственно для того чтобы нам хоть как-то запустить вот этот процесс да варианты использования по там созданию, удалению тентами?</li>
+</ul>
+<p><strong>10:07</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Значит предлагается вот этот функционал управление тентами поместить в новый портал оператора, который мы реализуем.</li>
+</ul>
+<p><strong>10:19</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит это вот наверное прямо сейчас? Та вот под необходимой минимум функции есть ощущение подозрения, что он расширится, но это вот как бы во второй серии.</li>
+</ul>
+<p><strong>10:37</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Там мы об этом поговорим. Что?</li>
+</ul>
+<p><strong>10:41</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что туда еще может войти? Значит и также у нас для потребителей есть портал самообслуживание, в котором, как предполагается сейчас да, мы реализуем функции управления виртуальными машинами.</li>
+</ul>
+<p><strong>11:05</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Образами виртуальных машин, дисками и сетями. И тут наверное стоит добавить, что вот этот функционал ну, насколько я знаю, да, мы пытаемся будем пытаться использовать там в той же лайке да, тот необходимый минимум функции, которые мы предоставим для управления вот облаком.</li>
+</ul>
+<p><strong>11:39</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит далее значит у нас появляется подсистема оркестрации. Да. Значит, которая на себя берет функция… Ну по сути провижинга да, ресурсов таких как виртуальные машины, опять же диски, сети и здесь вот когда я говорю там о сетях, я подразумеваю, что мы идем сюда уже с сетями апос те, которые вот предоставляет наш систему управления сетями.</li>
+</ul>
+<p><strong>12:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть у нас стоит, как мне ледится, стоит все-таки задача эти функции реализовать. Значит сейчас вот у Саши Шадрина он есть некий прототип, которые… Ну по сути есть интерфейс? Да. Который хотелось бы да реализовать, как вот он видится в этом оркестраторе.</li>
+</ul>
+<p><strong>12:59</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Но единственное, что там есть некоторые части, которые нужно будет доделать, а именно управление образами там нету и полноценного управления сетями, их там тоже нет. И предполагается, что вот этот прототип, он как бы будет базом, которым нужно будет построить да на оркестратор.</li>
+</ul>
+<p><strong>13:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>И тут надо еще отметить, что сейчас почему мы его делаем? Да этот оркестратор то есть в чем причина его появления? По том, что сейчас оркестрацией занимается подсистема…</li>
+</ul>
+<p><strong>13:51</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну не подсистема, а продуктов, который закрывает несколько наших подсистем. Да. Бил менеджер.</li>
+</ul>
+<p><strong>13:58</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит он закрывает и оба портала. Портал оператор, портал самообслуживания выступает как то система биллинга под система отчетности и функции оркестратора еще вот. Но с учетом того, что мы взяли направление отказа от вот такой вот подхода концентрации всех функций бил менеджеры да и мы пытаемся сейчас оставить бил менеджеры только, наверное, свойственную ему функцию.</li>
+</ul>
+<p><strong>14:39</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это… Это управление там договорами, управление организациями, управление тарифами самой учет не учет, а как расчет. Ну в денежном эквиваленте да, можно так сказать.</li>
+</ul>
+<p><strong>15:09</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Там некая там тарификация и плюс биллинг сам выставление счетов. Вот все эти функции мы оставим скорее всего в бил менеджере. А вот провиженинг мы перевыносим, потому что…</li>
+</ul>
+<p><strong>15:29</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну давайте мы все знаем. Да, у нас есть сложности с с этой продуктовой командой, которая не очень готова изменять под наши трели. Но это очевидно. Почему? Потому что это отдельный продукт и собственно они развиваются там исходя из своих…</li>
+</ul>
+<p><strong>15:48</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Из своей стратегии, которая с нашей не очень коррелиром. Да. Значит вот мы функции оркестрации выносим в отдельную подсистему.</li>
+</ul>
+<p><strong>16:01</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит также у нас мы решаем нашу любимую долго задачу управление темантами. Да. Значит у нас сейчас уже есть.</li>
+</ul>
+<p><strong>16:22</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Постановки на разработку этого тмса? Да. Ив два два он появится.</li>
+</ul>
+<p><strong>16:28</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но сейчас есть понимание, что то, как он проектировался изначально? Да.</li>
+</ul>
+<p><strong>16:37</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>А проектировался он исходя из того, что оркестратором остается билменеджер? Да.</li>
+</ul>
+<p><strong>16:45</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит такой подход нас не устраивает. Да.</li>
+</ul>
+<p><strong>16:48</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>И мы собственно будем перестраивать, ну, возможно даже частично перепроектируем тмс. Да.</li>
+</ul>
+<p><strong>17:00</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это скорее всего будет там возможно в два три. Сейчас пока вот не берусь утверждать по цифрам. Значит в чем тут основная идея? Значит мы сейчас пытаемся… Ну давайте так. Как мы ранее да смотрели на под систему управления тенонтами.</li>
+</ul>
+<p><strong>17:28</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что это просто некий сервис, который ведет учет тенонта, то есть создает какие-то идентификаторы, присваивает. Да. Но на самом деле за этим стоит гораздо больше и как мы знаем да. У нас вот исходя из того, что нам нужно соединить несколько наших по систем там по систему виртуализации да.</li>
+</ul>
+<p><strong>18:02</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>В виде бреста по системно управления сетями апос. Вот это все. Да.</li>
+</ul>
+<p><strong>18:12</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>С учетом того, что и также там вил менеджер, который там отвечает там сейчас за… За биллинг? Да и за портала. Значит везде разные модели, разные представления совершенно да.</li>
+</ul>
+<p><strong>18:27</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Разные сущности. Вот нам стоит задача связать…</li>
+</ul>
+<p><strong>18:33</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы с вами говорили, что там тененты в каждой и спедсистем там в дрестей это одно. Это мы зафиксировали, что это виртуальный дата центр. Да.</li>
+</ul>
+<p><strong>18:46</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит ну в вопросе более простая ситуация. Да.</li>
+</ul>
+<p><strong>18:51</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть он сейчас понимает вот этот контекст тенонтов? Да.</li>
+</ul>
+<p><strong>18:59</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Умеет с ним работать. Вот.</li>
+</ul>
+<p><strong>19:01</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но тем не менее, что основная идея, что в управлении не только там управляет, а он отвечает за по сути инкапсуляцию реализации тенентов во всех ниже лежащих под системах. Да. То есть вот если у нас, грубо говоря в бресте это видиси, то предполагается, что об этом знает только Мтмс.</li>
+</ul>
+<p><strong>19:32</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что когда мы даем команду там создать тенант да вот ТМС он сам самостоятельно сходит в брест? Да и создаст там видиси необходимй. Вот и тут соответственно там что нужно в вопросе там? Ну сходит, создаст, вызовет запрос создастя тенне значит, что здесь важно, что мы четко разделяем функциональные обязанности?</li>
+</ul>
+<p><strong>20:08</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Мы говорим, что в рамках платформы да всеми тенентами и что за этим стоит. А отвечает ТМС.</li>
+</ul>
+<p><strong>20:22</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он знает, где и что нужно создать, чтобы везде появился теном. Соответственно оркестратор управляет только ресурсами? Да вот в частности мы его назвали как инфраструктурной да. Мы опять же вот наверное там предложенной идее Дим Пронюшкин да что мы поделим на вот эти слои то есть будет несколько оркестраторов, то есть какой-то инфраструктурный оркестратор там платформенные и так далее, еще возможно какие-то…</li>
+</ul>
+<p><strong>21:00</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит они отвечают только за управление ресурсами вот на своем уровне? Да.</li>
+</ul>
+<p><strong>21:08</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Своего слоя здесь мы четко вот отделяем для того чтобы при появлении, например, другого оркестратора, значит, он мог также там вызывать или взаимодействовать с тмсом? Да. Не зная как.</li>
+</ul>
+<p><strong>21:29</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что… Что за этим стоит. Там в какой-то конечной подсистеме, что нужно сделать значит…</li>
+</ul>
+<p><strong>21:42</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Немножко тогда сейчас вот вниз опущусь… Да вот чтобы показать такую опять же это просто вот сихематично, наверное показать просто вот как бы базовый принцип там вот это взаимодействие.</li>
+</ul>
+<p><strong>21:57</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Она там гораздо шире, но тем не менее то вот как я сказал да что мы пытаемся это вариант использования. Да там создание тента вот создать тенонт.</li>
+</ul>
+<p><strong>22:12</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Приходит команда по система тенетами и тут вот начинается там самое интересное. Да вот и…</li>
+</ul>
+<p><strong>22:18</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>И тут и создаются идентификатор тенанта и у этого тенанта какой-то… Состояние появляется? Да. Поскольку у нас этот процесс может быть растянутый во времени да.</li>
+</ul>
+<p><strong>22:39</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы вот показываем, что это создание оно в каком- то процессе. Да, оно протекает.</li>
+</ul>
+<p><strong>22:48</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит дальше мы примеру создаем схожий объект по тенанту в по системе управления аутентификации? Да.</li>
+</ul>
+<p><strong>22:59</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>В нашем маме, который закрывается Рукса от Юадемон. Да. Создали там некую область, которая соответствует тементу. Дальше пошли привязали этого пользователя к назначили ему роль в этом тененте.</li>
+</ul>
+<p><strong>23:20</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Потом, например, пошли создали видиси в подсистеме виртуализации. Да.</li>
+</ul>
+<p><strong>23:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Там запомнили вот эти связки, которые связку тенента айди. Да и и видиси идентификатор Видиси, который Брес Создат там создали какой-то тенент в апосе. Да.</li>
+</ul>
+<p><strong>23:45</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>По системе управления сетями. Ну и если все удачно да, мы говорим, что окей там тенетен мы везде создали. Да.</li>
+</ul>
+<p><strong>23:54</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Сейчас вот опять же там предвесыщаю вопросы. Это не значит, что это вот такое там действительно там последовательное какое-то должно быть. Да, но и опять же это можно там разные через разные механики реализовать, но смысл в том, что за это ответственно подсистема управления тенонтами. Это вот наверное там важное, потому что там, насколько я слышал, была идея, что управление тентами оно где- то вот в оркестраторе должно быть.</li>
+</ul>
+<p><strong>24:28</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Значит нет, мы разделяем функции и ограничиваем обязанности. Да.</li>
+</ul>
+<p><strong>24:35</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Каждого компонента. Значит здесь еще хотел бы добавить, наверное так по что управляем сетями? Да.</li>
+</ul>
+<p><strong>24:50</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я наверное так рассказал. Да. Смотрите значит, вот я здесь, наверное, пока остановлюсь, чтобы, наверное, немножко обсудить.</li>
+</ul>
+<p><strong>25:11</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Андрюх, можно вот вопрос тогда сразу: вот по этой схеме, которую ты сейчас сказываешь, вот в этом контексте, где есть тмс-оркестратор, новые порталы, явно отсутствует биллинг, хотя ты про него говорил.</li>
+</ul>
+<p><strong>25:29</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да что там функция биллинга, там договорная вся вот эта деятельность, она остается. Вот эта конструкция новая, которую мы сейчас там видим да на экране она вообще как-то билится?</li>
+</ul>
+<p><strong>25:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну смотри. Вот я сказал, это будет в серии номер два. То есть вот это да, да, это будет еще расширяться, но потому что…</li>
+</ul>
+<p><strong>25:46</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>А это будет се окей да.</li>
+</ul>
+<p><strong>25:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну то есть у меня как бы я там еще материалы готовлю на эту тему.</li>
+</ul>
+<p><strong>26:02</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да тут да, коллеги еще вот смотрите да важные, наверное, важные уточнения действительно, чтобы было понимали.</li>
+</ul>
+<p><strong>26:02</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Хорошо…</li>
+</ul>
+<p><strong>26:14</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть вот еще раз вот этот как бы минимальный набор того, что нужно сделать, чтобы нам запустить функционал с управления тентом, чтобы они вот появились и стали использоваться. Да и появился у нас оркестратор.</li>
+</ul>
+<p><strong>26:39</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но действительно в этом подходе пока не отражено учет потребления, квоты, биллинг и так далее. Вот сейчас я его занимаюсь, я это еще дополню. Ну да.</li>
+</ul>
+<p><strong>27:00</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Тогда можно от меня еще вопрос, Андрей? Смотри, очень красивая там идея. Что именно?</li>
+</ul>
+<p><strong>27:07</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Тмс? Ага, получается абстрагирую там… Ну точнее только Тмс знает о том, как реализован тенант там в подсистемах. Но мне тогда не совсем понятно.</li>
+</ul>
+<p><strong>27:22</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Оркестратор если уйдет в систему, он должен тоже понимать, как в системе реализован тенент? Вот может, ты про это там позже расскажешь? Или что?</li>
+</ul>
+<p><strong>27:31</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Как вот этот вопрос планируется решать? Может, я тебя не допонял?</li>
+</ul>
+<p><strong>27:35</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Может быть и не нужен.</li>
+</ul>
+<p><strong>27:35</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть пойдет в арест? Он должен…</li>
+</ul>
+<p><strong>27:36</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он должен понимать, что такое там, что в госте это вот этот энонд и представлен как еси там Оет.</li>
+</ul>
+<p><strong>27:41</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я? Да я может подькомментирую, потому что видишь, он уже пишет о получении контекста тенента.</li>
+</ul>
+<p><strong>27:46</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть как я понимаю, что я когда вот у меня идентификатор тенато пришел, я пошел в ТМС, во-первых, проверил, что он живой, да.</li>
+</ul>
+<p><strong>27:47</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да да.</li>
+</ul>
+<p><strong>27:54</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>А в ответ не вернули там условно как работать там? Ну получается с видимо да вот вот да именно с тобой как будет работать?</li>
+</ul>
+<p><strong>28:00</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>В рамках данного тенонда с конкретной под системой - все тогда… Тогда да.</li>
+</ul>
+<p><strong>28:07</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Хотя ну с тобой это… Ну это Айдишник.</li>
+</ul>
+<p><strong>28:10</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>У вас айдишник должен быть одинаково, но нужно будет договариваться. А вот с вдц мне вернется идентификатор вдц и вот здесь вот что не отображено вот от какого имени пользователя я буду взаимодействовать? Да вот там если там иксмейлер писи, тогда возникнет там серьезная проблема передачи там логина и пароли.</li>
+</ul>
+<p><strong>28:31</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да ну, наверное мы не пойдем через иксмейлер писи, мы пойдем через кристал. Да? Тогда нужно будет в этот Кристал да учить, чтобы он вот я передал пользователя, да или какую-то учетную запись и чтобы Кристал проверял, что вот для этого Тенонта он там имеет право с ним что- то делать, с этим идентификатом не Тента, а Видиси.</li>
+</ul>
+<p><strong>28:53</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Идентификатор Видиси. Вот эту часть нужно будет, конечно, еще отдельно порабатывать, а так вот в целом да, Андрей прописал, как можно это.</li>
+</ul>
+<p><strong>29:00</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да смотри Саша, отвечу, что предполагается, что? Ну, с брестом мы общаемся, то есть будет ли некий адаптер?</li>
+</ul>
+<p><strong>29:16</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, возможно. Если мы считаем, что вот тот новый подход как бы в бресте который есть - это интерфейс для кристалла да что он полноценный? Ну я не знаю сейчас там возможно там дин поправят вот что-то прокомментируют. То есть мы вот посмотрим, что он полноценный. Вот мы будем считать, что это некий либо.</li>
+</ul>
+<p><strong>29:48</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Либо туда мы его будем использовать для общения оркестратора. Да и вот туда.</li>
+</ul>
+<p><strong>29:54</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Возможно там будет строить проверки.</li>
+</ul>
+<p><strong>30:04</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Андрей да? Можно я сразу прокомментирую?</li>
+</ul>
+<p><strong>30:05</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да да… Да.</li>
+</ul>
+<p><strong>30:06</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я перу… Ольга, на минуту прямо просто вопрос, который давно хотел уточнить и мне кажется, он должен ложиться в архитектуру, а его здесь как будто бы неподсвеченый и не закрытым а в целом вот подход такой к разделению блоков взаимодействия он через коллег, которые занимаются безопасностью операционной системы проходил или коммуникация с ними была или документация, который регламентирует ансификацию и авторизация пользователей была учтена здесь?</li>
+</ul>
+<p><strong>30:35</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну вот я как раз и вот об этом идет речь?</li>
+</ul>
+<p><strong>30:36</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не… Смотри!</li>
+</ul>
+<p><strong>30:42</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да? Вот когда я задаю вопрос: что через Колстлбе…</li>
+</ul>
+<p><strong>30:45</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ой, через из мереписи мы не можем ходить в безопасники не пропустим.</li>
+</ul>
+<p><strong>30:46</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот-вот, Александр, это специфика.</li>
+</ul>
+<p><strong>30:50</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот мне в который раз мне не очень правда нравится, что мы в реализацию едем. Там кристалл это будет бэкенд какой эксамолер в сине так важно? У нас есть на самом деле запросы, которые уже расширяют функционал и тех других блоков, которые могут закрыть эти вопросы, но они сейчас сделаны разными людьми в разное время, которые решали запросы, которые видимо им подсвечивались от команда РБПО. Вот опять же здесь на блоке под системе правления вертуализации никакого взаимодействия с может повышеть происну где там?</li>
+</ul>
+<p><strong>31:19</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да по системе управления идентификации доступом никакого нет.</li>
+</ul>
+<p><strong>31:24</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но вот я об этом говорю. С безопасниками это обсуждались.</li>
+</ul>
+<p><strong>31:27</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они говорят, что если вы идете как из одной подсистемы в другую подсистему по сети, вы должны запросы отправлять именно от того пользователя, которым дает запрос из фронта требовали безопасности?</li>
+</ul>
+<p><strong>31:27</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Так? Да. А почему они так говорят? Потому что…</li>
+</ul>
+<p><strong>31:43</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, я не помню конкретно, почему они сказали так должно быть.</li>
+</ul>
+<p><strong>31:45</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Потому что есть должно быть потому что если техническая причина система виртуализации здесь в контексте тмбрес но он пользуется ьзуется стеметуриализация операционной системы и безопасность обеспечит пресс-средствами реализованной операционной системе, в частности идентификация авторизации пользователей. То есть чтобы… Ну, грубо говоря, мы же все сводимся к тому, чтобы запустить егом в Либерте.</li>
+</ul>
+<p><strong>32:08</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот Либерту нужно дать знать, от какого пользователя она запускается, и он встроенными средствами этого пользователя автонсицирует.</li>
+</ul>
+<p><strong>32:16</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не обязательно. Безопасники говорят, что им все равно, что они говорят. Вот мы как раз про кристал БЕ с ними обсуждали.</li>
+</ul>
+<p><strong>32:22</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они говорят: если вы идете вот в на портале да, на фронте в юайке пользователь авторизовался и от этого пользователя прокидывается до Кристал БЕ да Кристал БЕ проверяет вот пользователя.</li>
+</ul>
+<p><strong>32:29</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну…</li>
+</ul>
+<p><strong>32:34</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Все ок. А дальше они говорят: вы вот кристал бе запущен на той же виртуальной машинке?</li>
+</ul>
+<p><strong>32:40</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Где вот этот ядро бриста на той же виртуальной машине, где и…</li>
+</ul>
+<p><strong>32:42</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что? Что - что? Кристал-бе запущен на чем?</li>
+</ul>
+<p><strong>32:49</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, где ядро этого самого бэкенда, где ядро бриста?</li>
+</ul>
+<p><strong>32:55</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот то пожалуйста, вы между кристлом бе и иксмейлер репесижным запросом в рамках одной виртуальной машины вы можете делать от учетной записи там внутренней, от одной и той же. И даже машинку запускать вот от этой стандартной записи. Главное, чтобы запрос, который идет по сети да?</li>
+</ul>
+<p><strong>33:17</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он был проверен в подсистеме юдиэм.</li>
+</ul>
+<p><strong>33:22</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну вот это то, что ты рассказываешь, это такой осноплагающий принцип, который изначально ставился во главе разработки, а сейчас вдруг рассказыва о том, что было принято решение, что можно не так? Вот скажите мне, где это записано и что это?</li>
+</ul>
+<p><strong>33:34</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Входные данные для вот этой архитектуры тогда я тебя… Обсуждение отложим в сторону. А сейчас нет, потому что есть документ.</li>
+</ul>
+<p><strong>33:43</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>А средства защиты информации по системе ротувализации? Никто его не менял.</li>
+</ul>
+<p><strong>33:52</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, значит нужно дойти до них и провалидировать и просто получить разрешение.</li>
+</ul>
+<p><strong>33:58</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Как правильно? С учетом тех ограничений, которые мы есть, чтобы они там условно визу дали, что вы так можете идти.</li>
+</ul>
+<p><strong>34:04</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот вам там условно доу пока…</li>
+</ul>
+<p><strong>34:05</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да делал даже не в том.</li>
+</ul>
+<p><strong>34:06</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот ты сейчас вас производишь путь аутентификации через внешний интерфейс бриста, который потом дойдет до ливерта и ему скажет откуда запускаться. Но вот у нас сейчас по запросам по интеграции с емом обсуждается переход на сертификаты. Он в каком контексте-то? Чтобы либвирт вместо… Вместо кевер-стикетов ходил по сертификатам?</li>
+</ul>
+<p><strong>34:33</strong>
+Дмитрий Попенов
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да а зачем он нужен будет делать, если у нас будет одна учетная запись? Да вообще тогда все не актуально.</li>
+</ul>
+<p><strong>34:49</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Дим, я…</li>
+</ul>
+<p><strong>34:49</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не могу комотировать я…</li>
+</ul>
+<p><strong>34:49</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я понял.</li>
+</ul>
+<p><strong>34:51</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я… Я все… Пока не могу больше комонтировать.</li>
+</ul>
+<p><strong>34:53</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да мы… Да давай тебе вот я просто вопрос там для себя пометил. Да мы отдельно это… То есть это хорошо, что ты вот как бы поднял там эту тему мы еще раз.</li>
+</ul>
+<p><strong>35:07</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Собственно, мы для этого и собрались, чтобы послушать да что-то обсудить. Хорошо? Да вот с этим вопросом, значит, мы еще посмотрим.</li>
+</ul>
+<p><strong>35:18</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Коллеги, смотрите, я могу следующую часть или есть еще вопрос?</li>
+</ul>
+<p><strong>35:28</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Подожди, я хочу… Можно?</li>
+</ul>
+<p><strong>35:30</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Давай…</li>
+</ul>
+<p><strong>35:31</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да смотри. Я хочел для своего понимания спросить. Вот как по мне, так вот вот эти разделения на порталы самообслуживания оператора - это все-таки некая логическая штука, да? По существу это все же один портал, у которого там есть разные контуры управления там провайдерские и клиентские. Да, но оперируют они все равно одними и теми же объектами по большей части.</li>
+</ul>
+<p><strong>35:56</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну то есть и оператор сам по себе провайдер, он тоже обращается за инфраструктурой, за ресурсами. Ну, в частности, это управление хранилищами, если взять.</li>
+</ul>
+<p><strong>36:11</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да управление шаблонами какими-то образами. Да он хочешь не хочеш, все равно должен идти на вот этот оркестратор. Мне непонятно почему.</li>
+</ul>
+<p><strong>36:20</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да стрелки, стрелки не хватает да согласен. Вижу. Да, да окей.</li>
+</ul>
+<p><strong>36:25</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть это просто как бы опечатка?</li>
+</ul>
+<p><strong>36:25</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, да, да, да, да, да, да у меня…</li>
+</ul>
+<p><strong>36:27</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть по факту будет стрелаага, да? Да-да, Андрей.</li>
+</ul>
+<p><strong>36:32</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>У меня встречный вопрос. Вот когда ты говоришь: он один… А что значит один?</li>
+</ul>
+<p><strong>36:38</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну как, как? Как сказать… Просто один портал. У него есть две разные роли.</li>
+</ul>
+<p><strong>36:44</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть эти роли есть этот портал реализует какую- то совокупность юскейсов, то есть какие-то возможности предоставлять просто те или иные возможности доступны одному либо обоим ролям вместе. Либо третье второму. Ну как мне кажется. А так это портал т один.</li>
+</ul>
+<p><strong>37:02</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Просто две ролевые функции. Мы их условно делим, как бы логически делим, да. Но по факту, мне кажется, это один портал.</li>
+</ul>
+<p><strong>37:12</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, имеется в виду Джева скрипт один тут же подгружается, а дальше в зависимости от ролевки рендерится тот или иной там хтвойко.</li>
+</ul>
+<p><strong>37:14</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да.</li>
+</ul>
+<p><strong>37:19</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, объекты - да.</li>
+</ul>
+<p><strong>37:19</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Объекты управления… Одни и те же.</li>
+</ul>
+<p><strong>37:24</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но экземпляры этих порталов разные.</li>
+</ul>
+<p><strong>37:28</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну…</li>
+</ul>
+<p><strong>37:28</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть физически они…</li>
+</ul>
+<p><strong>37:28</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Хорошо.</li>
+</ul>
+<p><strong>37:30</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да-да, разнесены. Как они реализованы? Действительно. То есть они оперируют одной и той же там модели предметной области, те же сущности? Безусловно.</li>
+</ul>
+<p><strong>37:40</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Подходы к реализации одни и те же, они на одной и той же там кодовой базе явно будут существовать. Но это разные экземпляры, да?</li>
+</ul>
+<p><strong>37:53</strong>
+Андрей Иволга
+<strong>Реплика:</strong></p>
+<ul>
+<li>Короче: как Папасе сделано видимо.</li>
+</ul>
+<p><strong>37:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, да то есть когда мы дойдем до диаграмм там развертываний, это будут две разные диаграммы развертывания?</li>
+</ul>
+<p><strong>38:05</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну окей, хорошо. Ну у меня вопрос был про вот связь с оркестратором.</li>
+</ul>
+<p><strong>38:09</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ты… Ты сказал, что будет вот еще один момент, который мне непонятен или…</li>
+</ul>
+<p><strong>38:10</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да-да это моя недоработка да.</li>
+</ul>
+<p><strong>38:16</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, мне кажется нецелесообразным, неправильным вот то, что у тебя было предложение прямо сразу в лоб через этот портал оператора предлагать пользователю создавать именно сущность тенонт. Ну то есть это же фронт, это работа с пользователем напрямую.</li>
+</ul>
+<p><strong>38:36</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Пользователь работает с системой. Да тенант - это не объект реального мира и соответственно нашим пользователям будет тупо непонятно, что за фигня, почему вдруг у меня в обиходе нет этого всего и мне предлагается сразу создавать тенент. Какой в этом физический смысл, людям будет непонятно. Мне кажется, что это все-таки как мы планировали. Эта сущность где-то у нас в Бэкенде создается по результатам создания каких-то объектов реального мира.</li>
+</ul>
+<p><strong>39:04</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это договоры, клиенты, заказаные услуги, какие-то виртуальные дата- центры. То, что понятно, скажем… Ну, тому, кто с этим работает именно в предметной области. Вот такой у меня как то.</li>
+</ul>
+<p><strong>39:18</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да смотри понятно. Ну я просто сознательно это упустил. Потому что иначе нам в оператора нужно будет переносить большинство функций там бил менеджера. Да не сами, не самих функций, то есть они останутся в том же билменеджере, но по крайней мере вот как это панель управления? Да.</li>
+</ul>
+<p><strong>39:52</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Графическую вот эту всю интеграцию с ним. Она действительно сюда нужна.</li>
+</ul>
+<p><strong>39:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я просто сознательно пока убрал, что мы действительно где- то там через старый подход там через другие порталы мы можем это там собрать, создать - да. Но вот саму как бы… Наверное, сейчас я по-другому скажу.</li>
+</ul>
+<p><strong>40:18</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я фокус на другом держала. То есть я скорее чтобы сделать то, что позволит отработать вот эту механику управления тенентами и оркестрации. То есть она заработала? Да. Чтобы мы вот получили вот эту вот рабочую конструкцию.</li>
+</ul>
+<p><strong>40:40</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Есть то есть ты как бы без уточнения, в рамках каких сценариев у тебя запустится этот запрос на создание тенента - просто так пока нарисовал? Да. Правильно я понимаю?</li>
+</ul>
+<p><strong>40:52</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да-да, да, да-да! Потому что вот мы…</li>
+</ul>
+<p><strong>40:54</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы опять же вот насколько я там концерт не знаю, значит, что мы пока это в Лайке там будем откатывать. Соответственно нам вот какая-то механика нужно отработать, а дальше мы ее уже вот привяжем. По крайней мере я…</li>
+</ul>
+<p><strong>41:15</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я исходил вот из такого подхода.</li>
+</ul>
+<p><strong>41:19</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Понятно. Ну и последний вопрос у меня вот если можешь там как бы остановись поподробнее по поводу сервиса унифицированного апи или как это? Ну под система предоставления там стандартизированного апи. Вот с учетом того, как сейчас она понимается с Сашей, что это внутренняя часть оркестратора? Да, она стала ее внутренней. Одной из составляющих.</li>
+</ul>
+<p><strong>41:42</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>А у тебя опять она в отдельную выходит?</li>
+</ul>
+<p><strong>41:46</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это… Это следующая часть.</li>
+</ul>
+<p><strong>41:47</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Сейчас расскажу давайте тогда сразу к ней да.</li>
+</ul>
+<p><strong>41:48</strong>
+Ольга Милащенко
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ага.</li>
+</ul>
+<p><strong>41:54</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>А можно я вопросик тоже быстренький задам несколько?</li>
+</ul>
+<p><strong>41:57</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Андрей, а можешь, пожалуйста, на самую первую страничку провесну насамый первый рисунок провиснуть? Да вот этот по система предоставления программных интерфейсов.</li>
+</ul>
+<p><strong>42:05</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это вот правильно понимаю, как раз апим и является?</li>
+</ul>
+<p><strong>42:09</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да…</li>
+</ul>
+<p><strong>42:11</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>А? Все окей, хорошо.</li>
+</ul>
+<p><strong>42:13</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Просто другом назывался, чтобы точнее так пробил менеджер Маким спросил смотри, ты упоминал, что нужно будет перестраивать, перепроектировать тмс. Или я тебя не правильно понял?</li>
+</ul>
+<p><strong>42:23</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да да… Да.</li>
+</ul>
+<p><strong>42:28</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы… Мы сейчас уже… Ну то есть кажется, что мы сделали…</li>
+</ul>
+<p><strong>42:32</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, реализовали требования таким образом, чтобы тмс был каким- то минимальным вообще допустимым компонентам. Вот даже в этом случае его придется переделывать.</li>
+</ul>
+<p><strong>42:42</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ликат.</li>
+</ul>
+<p><strong>42:42</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну смотри не то что переделывать, это просто как воспринимаете эти слова? Действительно мы перестраиваем взаимодействие.</li>
+</ul>
+<p><strong>42:50</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть в в старом подходе вот давайте сразу на картинку. На это, чтобы было понятно вот всем вот этим да вот вот эта стрелочка.</li>
+</ul>
+<p><strong>43:04</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот это все было на билл менеджере? Да-а. А тененты это вот где-то одни из вот где-то весь должна была будеть, то есть она.</li>
+</ul>
+<p><strong>43:16</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>ТМС выполнял пассивную роль, то есть его он ничем не управлял, он просто создавал вот тенонт объект, тенонт идентификатор к нему и так далее. И значит мы меняем взаимодействие?</li>
+</ul>
+<p><strong>43:33</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, тут это есть. Но опять же мы наверное… То есть мы будем…</li>
+</ul>
+<p><strong>43:41</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Давай отвечая на твой вопрос вот так. Если сухо короттко, то изменение будут в том, что мы расширим функциональность ТМСА, а некоторые операции из интерфейса ТМСА мы уберем.</li>
+</ul>
+<p><strong>44:03</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Так их же еще нету ты…</li>
+</ul>
+<p><strong>44:07</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Или ты имеешь в виду тмс в контексте билинга?</li>
+</ul>
+<p><strong>44:10</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну вот да тут то с тем подходом, который мы шли ранее… То есть когда у нас… У нас из-за этого и получилось, что мы все там операции больше получилось, чем нужно было, потому что они отражали, позволяли управлять состоянием тенента. Да извне сейчас мы те мы состоянием тенентов никто извне управлять не сможет.</li>
+</ul>
+<p><strong>44:40</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть только тенент сам может определить там со свое состояние своих объектов, да и их поменять. Что опять же там только плюс. Вот поэтому там в интерфейсе…</li>
+</ul>
+<p><strong>44:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Давай так: в интерфейсе у нас, как ты говоришь, там ручек будет не н-не шесть, а станет там условно четыре. Да.</li>
+</ul>
+<p><strong>45:05</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну и плюс мы еще дополним его определенной логикой.</li>
+</ul>
+<p><strong>45:10</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну я…</li>
+</ul>
+<p><strong>45:10</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Расширим.</li>
+</ul>
+<p><strong>45:10</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Окей…</li>
+</ul>
+<p><strong>45:10</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я опросе логика в том, что вот как интерфейсы были создать-удалить тенент? Да, там, но и все то вот то, что сейчас есть отправили, как я понял создать удалить там тенент и результат действия просто в базе занос сущность.</li>
+</ul>
+<p><strong>45:26</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Сочка какая-то. А расширится тем, что когда мы создаем тенер, отправляется запрос на создание в ТМСА он еще побежит в СДН создать там контейнер изоляции для сети и побежит в…</li>
+</ul>
+<p><strong>45:43</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>В Брест создай контейнер издаляции там для виртуальных машин для ресурсов, то есть вдц создай вот собственно вот а когда я это писал… Да поскольку этого функционала не было, я поэтому говорил, что давайте это вяс регистраторе. Теперь вот эта функция, она переедет просто в ТМС.</li>
+</ul>
+<p><strong>46:01</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Тут внешне ничего не поменяется, там для для потребителя интерфейсов ТМСА, а внутренняя просто расширится функционалом еще сходить там в Брест и в СДН, собственно.</li>
+</ul>
+<p><strong>46:14</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Короче, расширятся ручки - ой окей, понял?</li>
+</ul>
+<p><strong>46:17</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, спасибо.</li>
+</ul>
+<p><strong>46:19</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да и по поводу вот еще раз вернусь сюда переименование вот по поводу предоставления. Ну действительно он раньше, я об этом уже там сказал, что она была по система управления программальными интерфейсами.</li>
+</ul>
+<p><strong>46:33</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, но мы функцию немножко поменяли. Вот поэтому, о чем собственно сейчас дальше расскажу.</li>
+</ul>
+<p><strong>46:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот теперь такую картинку покажу. Значит она опять же тут про шлюзы, про аутентификацию, наверное вот затронем значит да. Значит раньше у нас была по система управления да программными интерфейсами там мы изначально предполагали, что как-то это все будем там вовне больше работать, да и управлять там самими интерфейсами.</li>
+</ul>
+<p><strong>47:12</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но сейчас там задачи немножко сузились до того, что с учетом появления новых подсистем, новых сервисов в них да появление новых точек подключения там ростовых из этих подсистем да у нас сама собой рождается задача или потребность в появления внутреннего и пиайшлюза. То есть единые точки, через которую все будут общаться с внутренними сервисам внутри периметра платформы значит. То есть это не только точка доступа она будет являться, но на нее возлагая будет возлагаться функция.</li>
+</ul>
+<p><strong>48:17</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы на этом шлюзе централизуем проверки там маркеров доступа да там токенов да то, что мы называем вот возможно каких-то политик, которые появятся, которые позволят нам единообразно да в одно в одном месте изменять политики доступа к нашим сервисам. Вот аспекты безопасности такие как проверка токина вот ее предполагается реализовать на неком внутреннем эпиэшлюзе, значит какие? Не то что предпосылки что?</li>
+</ul>
+<p><strong>49:09</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что нужно? Да чтобы можно было вот использовать сервис вот в этом контексте? Да. Значит, подразумевается, что он должен быть полностью интегрирован иамом нашим.</li>
+</ul>
+<p><strong>49:31</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть этот сервис должен поддерживать протокол юай диси, ну и автоматический лаус для взаимодействия? Да. Значит предполагается, что любые вызовы, например что давайте с этой стороны немножко расскажу, что каждая подсистема да, ее интерфейс публикуется на шлюзе из та вызывающая система, которая необходимо обратиться к ней?</li>
+</ul>
+<p><strong>50:13</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да, она обращается напрямую кашлюзы. Значит, с учетом того, что у нас есть аутентификация пользователей да. И аутентифицированный пользователь при обращении он у нас аутентифицируется непосредственно в подсистеме управления идентификации доступу там получает маркер доступа и содержащий весь там контекст безопасности там авторизационного характера и так далее.</li>
+</ul>
+<p><strong>50:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>И другой платформенный контекст? Да.</li>
+</ul>
+<p><strong>50:59</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>И с ним может выполнять операцию. Значит предполагается, что мы оперируем именно теми топкинами? Да.</li>
+</ul>
+<p><strong>51:16</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть вот этот рассказ только о тех системах, которые могут оперировать и передавать токен, полученный на персонализированную учетную запись? Да. То есть это не технологические пользователи, это непосредственно какой- то реальный там человек.</li>
+</ul>
+<p><strong>51:41</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть из-под его учетной записи он получает токер на него выдается ему да, маркер доступа и с этим маркером идут запросы во все внутреннюю во всем по всему контуру платформы. То есть вызывается через шлюз обращение там к одной системе другой и также важно тут возможно это не явно, точнее явно не видно, что подсистемы могут непосредственно не только их вызывать, но они сами могут вызывать там каких-то соседней и здесь собраны вот на мой взгляд только те вот которые сейчас могут, который мы можем назвать полностью и там и амы интегрированными. Да. То есть это новые две подсистемы, которые они такими станут? Да и сейчас у нас как такой локомотив? Да, это апос. Также предполагается, что в плюс будет обеспечивать проверку это токенов.</li>
+</ul>
+<p><strong>52:55</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да отправляя на валидацию их в рукс юадим наш риан. Да они будут там валидироваться и собственно мы вот эту вот функцию ее собираем в одном месте на внутреннем ипиай шлюзе. Значит также у нас. Ну опять же просроки сейчас не берусь утверждать.</li>
+</ul>
+<p><strong>53:25</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но есть задача появлений еще внешнего эпиай шлюза, который будет направлен на предоставление внешних внешних интерфейсов и здесь идет речь о управлении там самой платформы через эйпиай через командную стролку иили с помощью там кераформ. Да и здесь наверное.</li>
+</ul>
+<p><strong>53:55</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот я сейчас вижу что и понимаю, что не совсем там я стрелочку нарисовал. Вот эта вот стрелка у нас она у нас по крайней мере сейчас она должна быть поставщику.</li>
+</ul>
+<p><strong>54:11</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть это не точно не по крайней мере сейчас не функция потребителя. Да, мы говорим про скорее внешний шлюз.</li>
+</ul>
+<p><strong>54:24</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Имеется в виду, что управление и или нека некая автоматизация поставщиком каких-то процессов в платформе или управление создания там тех или иных сущностей. Скорее вот так давайте я, наверное, постарался по-быстрому.</li>
+</ul>
+<p><strong>54:45</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вопросы сейчас можно?</li>
+</ul>
+<p><strong>54:47</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну вот у меня вопросы есть ну, во-первых, вот внутренний шлюз и все взаимодействуют через него.</li>
+</ul>
+<p><strong>54:54</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это потенциальная точка отказа, да? То есть как бы точка взаимодействия, на мой взгляд. Конечно все это лучше да все-таки рассмотреть. И ну вот целесообразность там как бы чтобы все через один ходили шлюз вот это одна функция? Допустим да.</li>
+</ul>
+<p><strong>55:09</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вторая функция вот проверка авторизации. Мы вот все-таки где хотим делать именно на шлюзе, да? Или в каждой подсистеме?</li>
+</ul>
+<p><strong>55:18</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть доступ конкретно копишке там это будет атминский доступ или обычный доступ? Проверяться это будет в каком месте предполагается? На внутреннем шлюзе? Вот судя под под твоикакартники или все-таки каждая там под система это будет делать самостоятельно?</li>
+</ul>
+<p><strong>55:36</strong>
+Александр Шадрин
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну Это воро ага. смотри. Если… Если ты говоришь про…</li>
+</ul>
+<p><strong>55:40</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>О авторизации, то пока авторизацию мы… Она в планах действительно. Но пока мы ее не выносим из-под систем, они пока остаются подсистема.</li>
+</ul>
+<p><strong>55:55</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но план действительно в дальнейшем авторизацию из подсистем вынести в ИЯАМ.</li>
+</ul>
+<p><strong>56:07</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну нет, подожди, что значит в ИАМ вынести?</li>
+</ul>
+<p><strong>56:09</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>В ям ты не можешь вынести. То есть в яме?</li>
+</ul>
+<p><strong>56:12</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>В яме будет лежать просто ролевая модель и все. А конкретно доступ вот кто будет проверять? Пришел запрос на айпи й гитвей?</li>
+</ul>
+<p><strong>56:20</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да. Дальше нужно решить там на создание тенента да может пользователь эту опишку обычно дерат или нет? То есть должен конкретный шлюз принять решение или шлюз пропускает и под? Система сама принимает решение.</li>
+</ul>
+<p><strong>56:36</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Она принимает решение на основе той информации, которую получит из ИАБА. Но вот пустить или не пустить уже будет кто- то из этих бук принимать. Почему я этот вопрос задаю?</li>
+</ul>
+<p><strong>56:46</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Потому что если у нас на шлюзе будет решение приниматься да конкретно пропуститель не пропустить тогда вот запрос между сетевой запрос между шлюсом и самой подсистемой. Он будет уже там?</li>
+</ul>
+<p><strong>56:58</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, условно дырявый да потому что я могу быть не администратором. А как бы зайти там?</li>
+</ul>
+<p><strong>57:05</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Сломать там этот шлюс? Да каким-то образом, неважно каким, и уже с него там либо с другой системой как бы сделать запрос? Вот. То есть вот эту штуку вообще хорошо проговорить с ребятами з Яма а как правильный подход и согласовать с теми же с нами этими безопасниками. Вот просто здесь это два разных подхода и соответственно имеет технические последствия.</li>
+</ul>
+<p><strong>57:27</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Где это реализовывать? Вот.</li>
+</ul>
+<p><strong>57:29</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>А второе, что я хотел сказать спросите, блин.</li>
+</ul>
+<p><strong>57:33</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Саша, я прокомментирую да? По поводу вот, значит, твоего предложения.</li>
+</ul>
+<p><strong>57:38</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну как бы смотри, там тема с авторизацией… Да, на уровне шлюза она сейчас прорабатывается. Ребята там готовы содействовать. Вот что это означает, что в целом да, как сказал Андрей, да, это наша там некая целевая картина.</li>
+</ul>
+<p><strong>57:55</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они готовы, ну, я имею в виду да ребята из РУКС поделиться нужной документацией? Да.</li>
+</ul>
+<p><strong>58:00</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Которая бы объяснила да к каким рекомендациям следовать, чтобы вот эти нидлежащие системы а пстмс да или ас оркестратор были доработаны, чтобы вот вписаться в такую схему. То есть там помнишь, да?</li>
+</ul>
+<p><strong>58:14</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что и ам? Он тоже интегрируется со шлюзами? Да, он…</li>
+</ul>
+<p><strong>58:17</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он и поставляется вместе со шлюзом, но он может интегрироваться там, например, с нашим. Вот и как бы идея именно…</li>
+</ul>
+<p><strong>58:25</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Именно в этом. Чтобы авторизация да была именно в шлюзе.</li>
+</ul>
+<p><strong>58:26</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну так нет, у тебя в шлюзе будет авторизация. А если у меня запрос идет мимо шлюза?</li>
+</ul>
+<p><strong>58:33</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да ну я попал на машинку тмса, ну взломал апосы как-то попал на базу данных на любой и и з базу данных, который в этом контуре да и? И я из нее делаю апишный запрос.</li>
+</ul>
+<p><strong>58:44</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я он от пользователя получил токин и все и делаю запрос в ТМС на админскую опишку. Это же запрос идет мимо шлюзы уже и вот у тебя получается дырка. Да. Поэтому я говорю это…</li>
+</ul>
+<p><strong>58:56</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это… Это нужно там проговорить с безопасниками, потому как бы решение можно делать на шлюзе. Но тогда диаграмма развертывания, ее нужно тогда пересматривать. Плюс да вот на котором делается проверка. Ну он должен быть идти сайткаром в од системе, то с ть здесь нужна архитектура.</li>
+</ul>
+<p><strong>59:13</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Если мы идем в шлюзе, тогда нужно пересмотреть именно архитектура развертывания. Вот это вот такое замечание надо подумать. То есть как? Нужно определиться, куда мы будем двигаться.</li>
+</ul>
+<p><strong>59:23</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>И второй момент. Ну вот про отказа устойчивости. Это если все запросы идут только на внутренние шлюзы… Ну значит вот есть мэто точка отказа, да вот ну не знаю, тоже нужно подумать, потому что там, скажем, точка…</li>
+</ul>
+<p><strong>59:38</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Точка взаимодействия. Я вот из опоса там, допустим стмса вопрос…</li>
+</ul>
+<p><strong>59:42</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну неважно. Из оркестратора вопрос тучусь напрямую да я как бы я вот не не обязательно идти на айпи шлюз, потому что опишка, она так в рамках стандарта разворати разрабатывается и нет смысла вообще через шлюз это пропускать.</li>
+</ul>
+<p><strong>59:56</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть лишний раз его нагружать. То есть тут смысла не очень понятно то есть понятно, что вот мы портал оператора или портал самообслуживания.</li>
+</ul>
+<p><strong>01:00:07</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он стучится на внутренй слез, он его использует как маршрутизатор. Да вот пришли на единую точку входа, а дальше уже перенаправили на нужную подсистему. А вот внутри да уже когда мы в контуре находимся, там на яс оркестраторе он делает запрос в ТМС.</li>
+</ul>
+<p><strong>01:00:23</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ему стучаться на слез и со шлеза стучаться в тмс вот этот трафик гонять? Ну как бы не сильно то целесокрасло вот это тоже можно пересмотреть ну вот два таких замечания.</li>
+</ul>
+<p><strong>01:00:37</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Так, у меня все.</li>
+</ul>
+<p><strong>01:00:37</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Саша, смотри да давай я отвечу вот сейчас вот то, что ты рассказываешь да это в каждой там подсистеме, которая новая будет появляться. Да и нужно уметь там и с иамом взаимодействовать там и проверять там токин то есть вот. А ты представь, что что-то там поменяется. Во всех этих подсистемах можно будет носить эти изменения вот при таком подходе они…</li>
+</ul>
+<p><strong>01:01:11</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они будут только изменяться в одном месте. Это первый момент. И второй момент, что нету там. Ты говоришь, что это вот это взаимодействие да оно здесь будет, так сказать, никак не защищено? Ну это же можно там решить отдельные сделать, отдельный контур там защищенный, да на границу поставить этот шлюз и так далее.</li>
+</ul>
+<p><strong>01:01:36</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть технические средства для организации такого есть?</li>
+</ul>
+<p><strong>01:01:39</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да смотри это периферийная да, да, смотри, это периферийная защита и зачастую периферийной защиты не хватает.</li>
+</ul>
+<p><strong>01:01:46</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Требования? Да зачастую, что мы находимся там все равно там не недоверия.</li>
+</ul>
+<p><strong>01:01:51</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Мы не доверяем к любым внешним запросам. Да вот есть требования, которые мы откружаемся, чтобы любое сетевое взаимодействие к системе да оно было проверено там на авторизацию там по потлсу чтобы было. Вот и как бы то, что ты выносишь шлюз да и на нем все делаешь супер проверки этого недостаточно? Да как бы есть технические средства есть там ну вот этот шлюз можно использовать шлюз, но тогда он идет сайткаром. То есть на той же если мы используем виртуальные машины да на той же виемке нужно поднимать вот этот шлюз и тогда не между шлюзом там и скажем этой системой, пожалуйста, может идти запрос без там авторизации.</li>
+</ul>
+<p><strong>01:02:39</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот. Но на, скажем на сетевой интерфейс там виртуальной машины, который приходит запрос он должен проходить авторизацию. То есть ты не везде просто поставишься вот с таким подходом. Поэтому вот это нужно повнимательно посмотреть.</li>
+</ul>
+<p><strong>01:02:56</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну окей а тут надо с Дебом еще пообщаться окей.</li>
+</ul>
+<p><strong>01:03:02</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>И да, еще хотел вот у тебя гравити написать.</li>
+</ul>
+<p><strong>01:03:05</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Смотри, он мертвым опросом лежит. Почему, значит, мы отказались там вот товарищ там повлиял, да и мы отказались по полной функциональной разворачивать гравити эта система… Ну соответственно она и несет себе издержки.</li>
+</ul>
+<p><strong>01:03:21</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Еще там нужна базу данных отказа устойчиво еще куча вемок еще плодить рядошном. Да тогда она вот нормально встанет, если просто эйпи ашлюс разворачивать. Ну вот у меня, я накатывал конфигурацию и зачитал там документацию.</li>
+</ul>
+<p><strong>01:03:35</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>В общем, у меня не получалось да вот эту маршрутизацию сделать. Поэтому в этом контексте с гравити тут вопросы есть.</li>
+</ul>
+<p><strong>01:03:43</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я бы конечно… Ну и функционал полностью функционал, связанный там с интроспекцией и так далее. Он все-таки лицензируемый там? Да вот чтобы синтегрироваться там с любым другим иамом там нужно чтобы лицензия была. Поэтому предлагается пересмотреть там сгравити да какие-то более там подходящие и перешлюзы там, собственно, вот такое замечание. То есть он гру мертвым грузом лежит ровно по этих…</li>
+</ul>
+<p><strong>01:04:10</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>По этим причинам?</li>
+</ul>
+<p><strong>01:04:14</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Окей да ну это там проблема, наверное, есть. Она в принципе, наверное, у всех есть. То есть любой там пенсорсный ипе шлюз - он в базовом виде? Да, он, наверное. Ну вот в базовом виде он не очень интересен всем, да?</li>
+</ul>
+<p><strong>01:04:37</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>А в том, в котором там интересен большинство действительно там есть листензионные ограничения или какие-то платные версии и так далее. Да ну здесь понятно, что нужно возможно, да. А саму реализацию еще подумать.</li>
+</ul>
+<p><strong>01:04:55</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Просто пересмотреть еще раз это покопать… Я еще вот о чем-то ты сказал, что ты немножко неправильно писал. Вот ты говоришь поставщикам.</li>
+</ul>
+<p><strong>01:05:03</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот у меня такой вопрос. Вот боцман да он общается через опишку?</li>
+</ul>
+<p><strong>01:05:08</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Он сейчас мы вот его пускаем напрямую на брест, да? В дальнейшем мы потребуем, чтобы он ходил, значит, на наш эйпи интерфейс. Вот который именно иасный. Да будет интерфейс вот это считается как он поставщик или все-таки потребитель?</li>
+</ul>
+<p><strong>01:05:23</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я вот не очень вот эту терминологию понял. То есть он когда обращается в нашу иас систему на создание виртуальных там узлов да виртуальных машин, он же выступает как потребитель, насколько я понимаю. Поэтому, наверное, стрелочка-то все-таки правильно будет ботс.</li>
+</ul>
+<p><strong>01:05:41</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Кто? Еще раз - кто?</li>
+</ul>
+<p><strong>01:05:43</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ботс вот да.</li>
+</ul>
+<p><strong>01:05:44</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Нет, нет, ну Боцман! Это же наша педсистема. То есть он у нас как бы в контуре стоит.</li>
+</ul>
+<p><strong>01:05:52</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну вот, поскольку мы хотим все-таки сделать, чтобы мы ходили там через один и тот же единые интерфейс и боцман, он там все-таки пасный сервис, да? А пасы они должны там использовать иасы? Да, для своих нужд, то и он должен по идее ходить на опишку.</li>
+</ul>
+<p><strong>01:06:10</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не на напрямую там брестар, как сейчас это сделает делается, а напрямую наш нашу айпишку, которую мы разрабатываем. То есть он в этом случае будет потребителем иаса. Поэтому вот эта стрелочка просто она правильно у тебя нарисована.</li>
+</ul>
+<p><strong>01:06:26</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ты говоришь, что она неправильно. Конкретный потребитель сейчас есть это вот ботсман ну о не сейчас, а вот будет наши айпишки - это ботсман и он должен будет тоже проходить в тот же самый вот контекст безопасности и вот контекст вот мс, он тоже все это должен проходить, всю эту историю. Вот это такой комментарий, что стрелочка на мой злят правильно вот.</li>
+</ul>
+<p><strong>01:06:47</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну-ну хорошо. А смотри по поводу Босмана.</li>
+</ul>
+<p><strong>01:06:53</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот я пару слов скажу. Что действительно у нас там есть сейчас. Вот ты им там занимаешься и на мой взгляд, что сейчас он должен остаться… Ну в той там парадигме, в которой он сейчас интегрируется.</li>
+</ul>
+<p><strong>01:07:13</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть к билменеджеру это что-то вот должно и да, да и останется там на какое-то время.</li>
+</ul>
+<p><strong>01:07:15</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Все драка я не спорю и так останется все так.</li>
+</ul>
+<p><strong>01:07:22</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Потому что вот в новом подходе, мне кажется, совершенно надо будот там по-другому к этому… К этой задаче подходить.</li>
+</ul>
+<p><strong>01:07:29</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я не спорю я не спорю! Я абсолютно…</li>
+</ul>
+<p><strong>01:07:32</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>О!</li>
+</ul>
+<p><strong>01:07:33</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да нет, я просто вот это как?</li>
+</ul>
+<p><strong>01:07:36</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, наверное как предложение: что мы, Боцман, оставляем в старом подходе? Вот то, что на два два ты пытаешься интеграцию с дауд менеджером сделать, она так и будет и там и останется. И пока мы не не доделаем инфраструктурные сервисы да мы вот я считаю, что этими задачами заниматься не стоит.</li>
+</ul>
+<p><strong>01:07:50</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Сейчас сейчас да-да-да… Сейчас.</li>
+</ul>
+<p><strong>01:08:02</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я согласен да у меня нет нет возначения возражений там Максимова потянет.</li>
+</ul>
+<p><strong>01:08:08</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да Андрюх, мы уже тут это… Забежали за границы встречи, если по интерфейсам тут проговорили.</li>
+</ul>
+<p><strong>01:08:18</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я просто хотел там небольшое резюме там по ТМСУ на правах новоиспеченного ТПМ небольшое резюме сделать.</li>
+</ul>
+<p><strong>01:08:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Давай давай.</li>
+</ul>
+<p><strong>01:08:29</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну и сказать в целом да. Что нравится, что реально…</li>
+</ul>
+<p><strong>01:08:33</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, настораживает. И мы в целом там в разговорах это проговаривали, вот.</li>
+</ul>
+<p><strong>01:08:37</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Но хотел бы тоже да вместе с коллегами там озвучить. Сама идея нравится? Вот и идея да.</li>
+</ul>
+<p><strong>01:08:46</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Полной полного управления, да этим жизненным циклом, в том числе объектов. Объектами, да, связанными с тенонтом.</li>
+</ul>
+<p><strong>01:08:55</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Идея здравая и даже знакомая. Мы, я тут копался в старых записях, вот мы действительно обсуждали такую вот подобную конструкцию где-то да.</li>
+</ul>
+<p><strong>01:09:06</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну где-то чуть меньше года назад. Вот. Но потом в какой-то момент да пришли к идее с таким тонким-тонким сервисом. Вот и что вот хотел отметить?</li>
+</ul>
+<p><strong>01:09:16</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да что нравится, что вот мс действительно становится таким… Ну там ядром, да или центром платформы. Да.</li>
+</ul>
+<p><strong>01:09:23</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Где все опирается на тенантный контекст. Второй плюс, который там я для себя отметил, это действительно, наверное, меньше координации между командами, которые будут реализовывать да, различные этапы одного процесса.</li>
+</ul>
+<p><strong>01:09:40</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>И по сути да, компонент будет будут буду писать одни и те же люди. Вот мне кажется это плюс. Из этого вытекает следующий плюс, что наверное в текущих условиях нам будет проще организовать разработку. Да.</li>
+</ul>
+<p><strong>01:09:52</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не надо будет снова проходить от круг согласований, торгов, искать новые ресурсы, наверное, под соусом как бы да вот расширение существенного расширения функционала доработки. Наверное, это будет проще сделать. Что-то мне так подсказывает.</li>
+</ul>
+<p><strong>01:10:10</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>И что хотел бы сказать, что меня действительно настораживает. Да вот в этом… В этом компоненте, а точнее в том облике, в котором он сейчас вот да предстает.</li>
+</ul>
+<p><strong>01:10:20</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Давайте по-честному. Да как бы это новый и второй оркестратор, но под старым названием. Границу мы прочертили, но мне кажется, да ее нужно будет там явно-явно зафиксировать, кто чем управляет.</li>
+</ul>
+<p><strong>01:10:36</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Потому что по сути у нас две разных системы работают с одними и теми же смежными компонентами. Из этого там следует…</li>
+</ul>
+<p><strong>01:10:48</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Другой риск? Да. Это дублирование вот этих адаптеров. То есть нам и ИАС Оркестратор у нас будет ходить работать с Бристом и с Диеном. И то же самое нам придется делать в ТМСЕ.</li>
+</ul>
+<p><strong>01:11:02</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я проговаривал. Да с тобой это Андрей, просто дай еще раз это зафиксировать. Вот также хочется отметить… Да что? Вот явление любого нового сервиса. По сути это новая интеграция.</li>
+</ul>
+<p><strong>01:11:15</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Появится у нас там, скажем, не появится - дополнит эту картину билл менеджер. Надо будет писать адаптер к нему аудиты, логи, что- то еще? Да.</li>
+</ul>
+<p><strong>01:11:26</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть компонент поскольку является центровым, он по сути со всеми должен быть интегрирован. Вот.</li>
+</ul>
+<p><strong>01:11:34</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>И что больше всего меня настораживает то, что ТМС начинает все глубже заходить в другие компоненты да знать о ресурсах что-то. Ну вот я тут пытался помоделировать какие-то простые примеры… Да это, например, создание виртуального дат-центра. Вроде выглядит логично, но с другой стороны…</li>
+</ul>
+<p><strong>01:11:57</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да чтобы его создать, нам надо, чтобы ТМС что- то знал уже про… Про кластеры. Гипервизоры ведь также? Да. И он там создается, эта сущность в…</li>
+</ul>
+<p><strong>01:12:09</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>В Бресте. Вот. И это, мне кажется, негативный аспект. Вот.</li>
+</ul>
+<p><strong>01:12:14</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть возрастает связанность и пока да. Вот. Ну непонятно как с этим…</li>
+</ul>
+<p><strong>01:12:20</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Как с этим жить или просто принять как данность. Вот.</li>
+</ul>
+<p><strong>01:12:23</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>А когда у нас появится еще и многоуровневая иерархия? Да вот с…</li>
+</ul>
+<p><strong>01:12:28</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>С организациями, которые будут жить на тенентами? Да. Или с сущностями там под проектами, да которые там внутри тенента будет…</li>
+</ul>
+<p><strong>01:12:35</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Будет… В общем, это все там просто будет множиться, вот и… Ну такое короткое резюме, да?</li>
+</ul>
+<p><strong>01:12:43</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что архитектура представлена безальтернативно. Так Андрюха, я скажу вот хотя другие варианты, как мне кажется, они есть.</li>
+</ul>
+<p><strong>01:12:52</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот если ты их осознанно, значит обошел. Вот. Ну тоже как бы ответ.</li>
+</ul>
+<p><strong>01:13:00</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот поэтому просто хотел это подсветить. Вот я эти все комментарии оставлю в виде коммента к статье. Вот можно будет отдельно их там проговорить.</li>
+</ul>
+<p><strong>01:13:12</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я я давкину еще вот к твоему комментарию.</li>
+</ul>
+<p><strong>01:13:14</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот смотрите. Я конечно изначально вот говорил, что в Яс Орекистраторе да вот думаю, что тмс он там простыми сущностями вот тоненький да управляет. И я типа хожу там в ПРЕСТ и в АПС там создаю контейнер изоляции. Вот если посмотреть вот у нас в дальнейшем там мы там платформу будем расширять, там у нас может быть кас регистратор, паеис и так далее. И у нас будет там вот с боцманом в Босмане же тоже есть контейнер изоляция там неймспейсе.</li>
+</ul>
+<p><strong>01:13:40</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вопрос, кто его будет создавать? Да? То есть если там у нас централизованное место там скажем, тмс как видится как будто наверное это будет проще. Да? А если там я с регистратор, то почему он должен занимать этим заниматься?</li>
+</ul>
+<p><strong>01:13:53</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Или там кас оркестратор или пас оркестратор? В общем, если будут какие-то альтернативные варианты да еще предлагаться ну вот то чуть-чуть на будущее шагните и подумайте, что вот у нас, допустим, опастные сервисы появятся, у которых тоже есть там контейнер изоляции вот в других под системах, например, как боцман вот это комментарий.</li>
+</ul>
+<p><strong>01:14:14</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Если вот там будет какие-то альтернативы, то где вот следующий контейнер изоляции будут создаваться и как они будут управляться? Ике вот.</li>
+</ul>
+<p><strong>01:14:25</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>А все.</li>
+</ul>
+<p><strong>01:14:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну да, коллеги, смотрите то есть я там тоже там готов. Все альтернативные единственное, что мы по времени ограничены.</li>
+</ul>
+<p><strong>01:14:34</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Нам там Сергей оставляет определенные там рамки временные, в которые мы должны уже укладываться. Вот поэтому. То есть хорошо, конечно хорошо что-то иметь еще альтернативные, покрутить их, но боюсь, мы просто вот сейчас не можем себе позволить такой я не знаю сейчас, может Сергей поправит меня вот. Но мне кажется, что от нас хотят уже конкретных решений, а не еще дополнительных вариантов. Никаких альтернатив, вот.</li>
+</ul>
+<p><strong>01:15:17</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Не, ну смотрите, это же валрианты мы сами приприменяем, принимаем…</li>
+</ul>
+<p><strong>01:15:21</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да ну то есть если, допустим, еще одной неделя… Почему нет? Просто вопрос.</li>
+</ul>
+<p><strong>01:15:29</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну комментарий Валины. Давайте их раз мо… Просто тогда вот действительно теряется тогда сущность. Не может быть! Давайте это отдельно обсудим по поводу того, что в границах одного компонента на первого оркестратора что в границах тмса?</li>
+</ul>
+<p><strong>01:15:42</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да потому что действительно, если оркестратор только управляет в сущности мивом дисков при этом не управляет вдц… Ну не знаю… Короче, давайте. Тут действительно возможно такая сильная связанность, она в дальнейшем нам по…</li>
+</ul>
+<p><strong>01:16:01</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну как-то собирает злую службу. Если мы тут же по-хорошему, то если я правильно понял комментарий Максим, поправь меня да Александр тоже ну да, Андрей. Как бы компонент остается то же самое взаимодействие остается то же самое, то границы немножко меняются.</li>
+</ul>
+<p><strong>01:16:20</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они переезжают из одного компонента в другой либо в ряд других компонентов. Вот!</li>
+</ul>
+<p><strong>01:16:24</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну-ну да, все верно. Процесс один, а ответст…</li>
+</ul>
+<p><strong>01:16:29</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Скажем так, ресурсы одни просто управляют ими разные компоненты просто на разных этапах жизненного цикла. То есть тенен создается, им управляет ТМС? Да.</li>
+</ul>
+<p><strong>01:16:42</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>А когда уже идет работа с ресурсами там с виртуальными машинными дисками, этим управляет ИАС оркестратор. То есть если мы тут договоримся…</li>
+</ul>
+<p><strong>01:16:51</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Лот…</li>
+</ul>
+<p><strong>01:16:51</strong>
+Максим Югай
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да? Как говорится, где водораздел провести четкий, чтобы да не было… Не было недопониманий.</li>
+</ul>
+<p><strong>01:17:01</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да и тут действительно можно - быстренько закончил да вот Александр в твой мысль продолжил и вот да и то, что Максим сказал кажется когда у нас будет…</li>
+</ul>
+<p><strong>01:17:01</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вопрос здесь? Да.</li>
+</ul>
+<p><strong>01:17:09</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>А у нас будут появляться следующие сущности там организация да, она может быть в ТМСЕ быть, а может быть как отдельный кабинет. Я не знаю. Там точно появится пасоркистат для управления Брист…</li>
+</ul>
+<p><strong>01:17:20</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Бристом Босманом. Вот и у нас получается вот это количество стрелок будет просто как паутинка расти. Вот я не знаю.</li>
+</ul>
+<p><strong>01:17:25</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Может быть так и правильно. Ну вопрос вот надо подумать.</li>
+</ul>
+<p><strong>01:17:29</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да Сорь Александра перебил.</li>
+</ul>
+<p><strong>01:17:31</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Просто вот в текущем подходе, который Андрей показал здесь вопрос ининкопсуляции решен. Да.</li>
+</ul>
+<p><strong>01:17:36</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть никакая внешняя система не приходит там и не говорит тмсу типа сейчас вот ты создал сущность, а теперь измени свой статус. Мы почему-то как бы вот при вот тот подход, который я рисовал да.</li>
+</ul>
+<p><strong>01:17:51</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Имея на руках тонкие тмс, я им фактически еще и управлял. Да.</li>
+</ul>
+<p><strong>01:17:56</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>То есть он создал сам создал сущность? Да. А потом я к нему прихожу и говорю: ага, вот я до создал там дополнительные ресурсы, а теперь поменяеть статус на все готово. Вот это архитектурный неверный подход да?</li>
+</ul>
+<p><strong>01:18:12</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>В данном подходе вот он получается, что все вот его функции инкапсулированы внутри него и мы только у него статус опрашиваем. Но вот есть беспокойство Максима, что он становится там условно связанные, да? Или сильно связанные.</li>
+</ul>
+<p><strong>01:18:26</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Что он еще знает о ресурсах? Ну у меня нет пока на это ответа.</li>
+</ul>
+<p><strong>01:18:31</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Нужно может быть чутка подумать, может быть эту неделю и там встретиться еще раз это вот проговорить опасения и можешь как-то зафиналить. Вот.</li>
+</ul>
+<p><strong>01:18:42</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну я…</li>
+</ul>
+<p><strong>01:18:43</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Окей…</li>
+</ul>
+<p><strong>01:18:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Я просто здесь там комментарий дам, что мы же вдц, да? То есть это мы некая то есть это не ресурс.</li>
+</ul>
+<p><strong>01:18:57</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это мы используем такую сущность в из бреста для вполне конкретных там для решения вполне конкретных задач. Да там задач.</li>
+</ul>
+<p><strong>01:19:13</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Изоляция вот поэтому. Ну то есть вот еще раз там решить, что там несколько компонентов к бресту. Окей, там это можно сделать там один некий над ним адаптер, да?</li>
+</ul>
+<p><strong>01:19:28</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Который будет все там необходимые функции бреста как-то наружу там предоставлять. Возможно. Но я вот пока там для меня это не выглядит как там, наверное, минус. Ну, по крайней мере это там, мой взгляд.</li>
+</ul>
+<p><strong>01:19:46</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Окей ну смотрите, я я еще предлагаю. Мы уже время немножко перегимители.</li>
+</ul>
+<p><strong>01:19:49</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>У нас несколько… Ну, вопросов остались.</li>
+</ul>
+<p><strong>01:19:52</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да вот то, что Дмитрий Папенов, который отключился, к сожалению, поднимал по поводу безопасности. Я так понимаю, нужно еще раз ходить к безопасникам и уточнить подход, насколько предлагаемый подход вложится в их парадигму. Получать от них ответ. Вот, кажется будет правильно. Второй соответственно…</li>
+</ul>
+<p><strong>01:20:08</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, Андрей, ты сказал будешь дописывать второй серии бил компоненты, которые мы включали. Вот третье то, что можете, пожалуйста с Максимом вот как раз вот эти моменты проработать по поводу, наверное больше связанности с учетом расширения.</li>
+</ul>
+<p><strong>01:20:24</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Планируемое расширение, понятное дело, может быть даже там и в два три и в два четыре, но потом там, повторюсь, появится организация, ция чере раньше появляется пас оркестратор вот что-то еще? Возможно так и останется.</li>
+</ul>
+<p><strong>01:20:33</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Просто прошу вас это… Ну, проработать в плане. Ну какие плюсы и минус с каждого решения?</li>
+</ul>
+<p><strong>01:20:39</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Вот вроде три основных, подскажите, возможно что-то упустил из того, что… На что нужно лудеть внимание.</li>
+</ul>
+<p><strong>01:20:45</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну про авторизацию то есть вот где именно проверяется авторизация и куд точнее куда мы целимся.</li>
+</ul>
+<p><strong>01:20:51</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Где будет проверяться авторизация? Вот это все-таки с Дибом проговорить, да? Проверка там админских функций.</li>
+</ul>
+<p><strong>01:20:57</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да вот где она будет проходить там на шлюзе, которые на отдельном сервисе или все-таки рядом с сервисом. Как смотрят на это Дип? Да там Отдел Безопасности. Это тоже нужно вот проговорить.</li>
+</ul>
+<p><strong>01:21:08</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да смотри ты помоешь не с формулировкой я схожу к ним. Мне только формулировки нужна.</li>
+</ul>
+<p><strong>01:21:13</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Там или Александр ты, или Андрей. Как лучше? Ну короче, мне нужна формулировка, чтобы я пошел к ним с до уточнением по этому вопросу.</li>
+</ul>
+<p><strong>01:21:19</strong>
+Александр Шадрин
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну я свою формулировку пришлю касательно там авторизации…</li>
+</ul>
+<p><strong>01:21:23</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ага, да, спасибо Окей.</li>
+</ul>
+<p><strong>01:21:26</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Ну, мы… Мы, наверное, да мы, наверное, сами можем в ДИПТ сходить - там они же вроде…</li>
+</ul>
+<p><strong>01:21:26</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Это вот то, что. Окей, мне же лучше.</li>
+</ul>
+<p><strong>01:21:35</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да-да, общительные ребята.</li>
+</ul>
+<p><strong>01:21:39</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Они даже на теперь у нас на этаже сидят, я думаю видели когда идешь, я тебя нажавка с правой стороны вот окей, вроде все обсудили, коллеги.</li>
+</ul>
+<p><strong>01:21:43</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да ну… Тем более.</li>
+</ul>
+<p><strong>01:21:48</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Андрей, можешь потом тогда скинуть записи встречки встречи вот и сразу стать следующее да всем хороший вечер, коллеги.</li>
+</ul>
+<p><strong>01:21:52</strong>
+Андрей Крюков
+<strong>Реплика:</strong></p>
+<ul>
+<li>Да естественно… Естественно… Всем пришлю.</li>
+</ul>
+<p><strong>01:21:56</strong>
+Сергей Склабовский
+<strong>Реплика:</strong></p>
+<ul>
+<li>Спасибо.</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../../../../inbox/untitled.base" class="internal">Untitled</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript-3eea7814.js" type="module" data-persist="true"></script></html>

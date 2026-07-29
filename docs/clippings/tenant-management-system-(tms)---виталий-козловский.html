@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Tenant Management System (TMS) - Виталий Козловский</title><meta charset="utf-8"/><link rel="preload" href="../index-bb6c1746.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="Tenant Management System (TMS) - Виталий Козловский"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Tenant Management System (TMS) - Виталий Козловский"/><meta name="twitter:description" content="1."/><meta property="og:description" content="1."/><meta property="og:image:alt" content="1."/><meta property="og:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:url" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta name="twitter:image" content="https://https://sergeysklabov.github.io/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://sergeysklabov.github.io/notes"/><meta property="og:url" content="https://https//sergeysklabov.github.io/notes/clippings/tenant-management-system-(tms)---виталий-козловский"/><meta property="twitter:url" content="https://https//sergeysklabov.github.io/notes/clippings/tenant-management-system-(tms)---виталий-козловский"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="1."/><meta name="generator" content="Quartz"/><link href="../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="clippings/tenant-management-system-(tms)---виталий-козловский" data-basepath="//sergeysklabov.github.io/notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-15" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-15" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../clippings/">Clippings</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Tenant Management System (TMS) - Виталий Козловский</a></div></nav><h1 class="article-title">Tenant Management System (TMS) - Виталий Козловский</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">2</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">description</td><td class="note-properties-value metadata-property-value"><span class="note-properties-empty">—</span></td></tr><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/clippings" class="internal internal-link tag-link">clippings</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-05-28T21:00:00.000Z">May 29, 2026</time><span>17 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h2 id="1-введение">1. Введение<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-введение" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Тенант —</em> это логически изолированная единица, представляющая отдельного клиента, организацию, проект или команду, которая использует ресурсы облачной платформы.</p>
+<p><em>Tenant Manager System (TMS)</em> —компонент мультитенантной облачной платформы, ответственный за логику управления жизненным циклом тенанта, отвечает за изоляцию, конфигурирование и администрирование тенантов</p>
+<ul>
+<li>Хранит и управляет иерархией тенантов
+<ul>
+<li>например: <em>Организация →тенант ->ресурсы</em></li>
+</ul>
+</li>
+<li>Управление жизненным циклом организаций (клиентов) и тенантов внутри организаций — создание, модификация, приостановка (активация/деактивация), удаление. При этом Tenant Manager несет ответственность за создание записи и присвоение идентификатора организации и создаваемому тенанту. Все взаимодействия Tenant Manager с оркестраторами выполняется через асинхронную шину сообщений. Оркестраторы самостоятельно проверяют, что суммарный объем уже выделенных ресурсов вместе с новым запросом не превышает выделенную квоту. Если квота превышена, оркестратор отклоняет запрос и возвращает ошибку. Tenant Manager делегирует создание ресурсов специализированным оркестраторам:
+<ul>
+<li>Orchestrator IaaS — создание и удаление виртуальных машин;
+<ul>
+<li>Orchestrator SDN — создание и удаление виртуальных сетей;</li>
+<li>Orchestrator SDS — создание и удаление виртуальных дисков и хранилищ.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Проеряет права пользователя на создание ресурсов в конкретном тенанте</li>
+<li>Сохраняет данные аудита</li>
+<li>предоставление API и (и UI как часть GUI фронтов);</li>
+<li>Orchestrator Manager (возможно возникнет необходимость в таком компоненте TBD) может собирать комплексные запросы на наборы ресурсов, например, для XaaS может потребоваться одновременное выделение ВМ, сетей, дисков. Для проверки возможности размещения ресурсов одновременно Orchestrator Manager формирует запрос на проверку в каждый оркестратор и суммирует результат. Также этот компонент должен нести ответственность за своевременное удаление (или изменение статуса) неиспользуемых ресурсов в ситуациях, когда по какой-то причине не удалось освободить ресурсы при изменении статуса тенанта.</li>
+<li>TM не хранит пользователей и их роли, не хранит привязки пользователей к тенантам (это IAM), однако хранит “типы ролей”</li>
+<li>TM не управляет ресурсами напрямую, он использует для этого Оркестраторы.</li>
+<li>TM не ведет контроль квот и лимитов ресурсов для тенантов и виртуальных дата-центров (VDC). Предполагается, что источник правды о квотах это <em>QuotaManager</em> т.к значение квоты может быть изменено какой-то внутренней бизнес-логикой соответствующего компонента (сейчас это BillManager). QuotaManager запрашивается оркестраторами на предмет актуальных лимитов соответствующих ресурсов.</li>
+<li>TM не считает деньги и не выставляет счета</li>
+</ul>
+<h2 id="11-цели-tms">1.1. Цели TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-цели-tms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>обеспечить автоматизацию жизненного цикла тенантов при создании, активации, деактивации и удалении тенантов, предоставить единый API;</li>
+<li>обеспечение мультитенантной изоляции, гарантировать, что данные одного тенанта недоступны другим тенантам;</li>
+</ul>
+<h2 id="12-задачи-tms">1.2. Задачи TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-задачи-tms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Операции CRUD для тенанта (с пердоставлением API):
+<ol>
+<li>создание нового тенанта, валидация данных, генерация уникального идентификатора, создание записи в БД, инициализация изолированного пространства.
+2. чтение и пердоставление информации о тенантах
+3. изменение информации о тенанте
+4. удаление тенанта и инициализация освобождения ресурсов</li>
+</ol>
+</li>
+<li>Ведение БД тенантов с их атрибутами (название, владелец, метаданные).</li>
+<li>Управление состоянием тенантов: active, suspended, disabled, deleted. Обработка переходов между состояниями с каскадным оповещением связанных сервисов (менеджеров/оркестраторов ресурсов).</li>
+<li>Интеграцияс IAM, привязка тенантов к пользователям/ролям/политикам. Разграничение доступа: администратор платформы (организации) видит все тенанты, пользователь — только свои.</li>
+<li>Интеграция с биллингом для передачи событий создания/изменения тенанта в платежную систему.</li>
+<li>Аудит и логирование – фиксация всех действий над тенантами в неизменяемом audit log.</li>
+</ol>
+<h2 id="13-свойства-tms">1.3. Свойства TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-свойства-tms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Централизованность – TMS является единственным источником правды (single source of truth) для информации о тенантах. Изменение состояние тенантов проходит через TMS, что исключает рассинхронизацию между компонентами.</li>
+<li>Масштабируемость – архитектура TMS должна горизонтально масштабироваться для поддержки тысяч и миллионов тенантов.</li>
+<li>Отказоустойчивость - TMS должен быть спроектирован с учетом репликации данных и резервирования потоков управления. Если произошел сбой, то потеря TMS означает невозможность изменения и создания новых тенантов, но не влияет на работу уже запущенных (они продолжают функционировать автономно).</li>
+<li>Идемпотентность операций – операции создания/изменения тенантов должны быть идемпотентными. Повторный запрос с тем же идентификатором не должен приводить к дублированию тенанта или ошибочному состоянию.</li>
+<li>Асинхронность и событийно-ориентированная архитектура. Реализуется за счет асинхронных вызовов или публикации/подписки на события в очередь.</li>
+<li>Расширяемость (изменяемость) -TMS должен поддерживать плагины для интеграции с различными оркестраторами ресурсов.</li>
+</ul>
+<p>Безопасность API TMS защищены аутентификацией и авторизацией. Данные тенантов шифруются как at-rest, так и in-transit. В совокупности с менеджером квот реализуют защиту от “шумных соседей”</p>
+<h2 id="2-монетизация">2. Монетизация<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-монетизация" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TMS монетизируется не как отдельный компонент, а как платформенный слой, без которого мультитенантная облачная инфраструктура не может масштабироваться. TMS дает возможность привнести новый тип транзакций и артефактов за которые можно взимать плату.</p>
+<h2 id="21-целевая-аудитория">2.1. Целевая Аудитория<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-целевая-аудитория" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Коропративные клиенты, те, что строят свое приватное облако</li>
+<li>Госсектор (B2G), важен онпремис и соответствие регуляриторике</li>
+<li>Партнеры-провайдеры, которым необходима кастомизация TMS под свою специфику или использование в пердопределенных конфигурациях (например, телеком).</li>
+</ul>
+<h2 id="22-модели-монетизации">2.2. Модели монетизации<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-модели-монетизации" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TMS как компонент облачной платформы может монетизироваться по следующим моделям:</p>
+<ol>
+<li>как часть платформы, когда стоимость TMS включена в стоимость инфраструктуры
+<ol>
+<li>стоимость платформы и обслуживания включает стоимость компонента TMS и его поддержки (единоразовая покупка)
+2. годовая подписка на использование TMS с получением обновлений и поддержкой
+3. стоимость платформы включает стоимость компоеннта TMS, стоимость поддержки TMS выставляется отдельно по факту возникновения инцедента
+4. дополнительная стоимость формируется за счет границ потребления, например, в базовый пакет входит 5 изолированных тенантов внутри одной организации, в случае первышения лимита, дополнительные тенанты и связь между ними оплачиваются отдельно по тарифу. Может быть градация по пакетам – 5, 20, 200, 1000 управляемых тенантов.
+5. pay-as-u-go оплата за использование активного тенанта
+6. плата за количество (лимиты) использования API (API экономика)
+7. конфигурации для географически распределенных тенантов могут тарифицироваться особо
+8. плата за лицензию, покрывающую конфигурацию гибридного облака (on prem + public)
+9. в случае мультиоблака TMS может быть центральным хабом транзакций, плата за кросс-облачные операции
+10. лата за объем аудит-логов и/или количество записей (объъем БД и стораджа)
+11. плата за аналитику метрик и паттернов доступа, предоставление отчетности, выявление аномалий, нотификации</li>
+</ol>
+</li>
+<li>при интеграции со сторонними компонентами/сервисами
+<ol>
+<li>плата за экспорт в стороннюю SIEM систему
+2. плата за экспорт в стороннюю BI/аудит систему</li>
+</ol>
+</li>
+</ol>
+<h2 id="23-каналы-продаж">2.3. Каналы продаж<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-каналы-продаж" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Прямые enterprise-продажи (Field Sales) — аккаунт-менеджеры</li>
+<li>Дистрибьюторы ПО, которые осуществляют продажи ACP</li>
+<li>Интеграторы, занимающиеся трансофрмацией ИТ ландшафта, переходом в облако</li>
+<li>Участие в государственных тендерах</li>
+</ul>
+<h2 id="24-дополнительно">2.4. Дополнительно<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#24-дополнительно" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>TMS</em> может быть представлен в различных редакциях в зависимости от <a href="https://life.astralinux.ru/pages/viewpage.action?pageId=593766423#AstraCloudPlatformProductVision(ACP)v0.9-%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE" class="external external-link">класса<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> поставки (редакции и конфигурации) платформы.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Базовая</td><td>ограниченное количество активных тенантов, базовый аудит (может быть ограничение по глубине)</td><td></td><td>Базовый TMS— дёшево или бесплатно, продвинутые функции — с доплатой.</td></tr><tr><td>Бизнес</td><td>неограниченное количество тенантов, шаблоны развертывания, автоматизированные операции по управлению тенантами, расширенный аудит, экспорт в SIEM</td><td></td><td>включены самые востребованные функции в виде пакета предоплаченных услуг, расширение объемов за отдельную плату</td></tr><tr><td>Полная корпоративная</td><td>мультирегионная, поддержка 24/7</td><td>on-prem, hybrid</td><td>полный комплект функциональности, гарантия SLA, поддержка, professionnal services</td></tr><tr><td>Федеративная</td><td>мультиоблако, федератиынй доступ, устройства аутентификации, сертификация и/или аттестация, возможности ИИ аналитики и мониторинга</td><td>hybrid, multi-cloud</td><td></td></tr></tbody></table></div>
+<h2 id="3-архитектурные-принципы">3. Архитектурные принципы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-архитектурные-принципы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Основные архитектурные принципы построения TMS компонента:</p>
+<ul>
+<li>TMS – “единый источник правды” о тенантах в платформе. Ни один другой сервис не хранит собственное состояние тенантов.
+<ul>
+<li>Все операции создания/изменения/удаления тенантов проходят через TMS API (API Gateway)
+<ul>
+<li>TMS владеет Tenant БД</li>
+<li>Остальные сервисы (IAM, биллинг, оркестраторы) получают данные через события (или асинхронные вызовы)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Асинхронность. TMS публикует события в очередь (шину), а специализированные воркеры подписываются на них и выполняют фактическую работу. Посредством такого подхода осуществляется:
+<ul>
+<li>разделение ответственности (Separation of Concerns)
+<ul>
+<li>возможность перезапука обработки события при сбоях</li>
+<li>горизонтальное масштабирование воркеров независимо от TMS</li>
+<li>не блокируеся API-слой при тяжелых операциях (например, создание ВМ Брестом)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Идемпотентность. Все операции TMS должны быть идемпотентными. Повторный запрос с тем же идентификатором не должен приводить к дублированию тенанта или ошибочному состоянию.</li>
+<li>Изолированность (может быть реализована комплексом компонентов платформы. TMS поддерживает логику.)
+<ul>
+<li>Изолированность данных. TMS должна обеспечивать изоляцию данных разных клиентов платформы. Стратегии изоляции:
+<ul>
+<li>Отдельная физическая СХД/диск для каждого тенанта.
+- Отдельная БД для каждого тенанта
+- Отдельная схема в общей БД Enterprise, когда важен баланс изоляции и стоимости
+- Отдельные правила Row-Level Security (RLS) для общей таблицы
+- Уровень изоляции определяется тарифом и настраивается администратором платформы для каждого тенанта или группы тенантов.</li>
+<li>Изолированность CPU/compute.</li>
+<li>Изолированность сети.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Расширяемость (изменяемость). Возможность использования плагинов. В нашем случае важна овзможность расширять количество оркестраторов (менеджеров ресурсов)</li>
+<li>Поддержка мультитенантности и мультиорга</li>
+<li>REST API для операций по управлению состояниями тенантов (CRUD)</li>
+<li>Высокая доступность (HA) и восстанавливаемость</li>
+<li>TMS должен иметь возможность расширения методов проверки за счет подключения новых или сторонних модулейб</li>
+<li>Наблюдаемость и аудит (с алертингом) с возможностью детектирования аномалий. Логи и метрики хранятся read-only.</li>
+<li>Безопасность (шифрование, контроль доступа, аудит)</li>
+</ul>
+<h2 id="4-пользователи-tms">4. Пользователи TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-пользователи-tms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Пользователями TMS будут являться субъекты:</p>
+<ul>
+<li>администраторы различного уровня</li>
+<li>компоненты платформы, а также скрипты автоматизации, создаваемые сотрудниками DevOps и администраторами платформы.</li>
+</ul>
+<h3 id="411-пользователи-администраторы">4.1.1. Пользователи-администраторы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#411-пользователи-администраторы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>администратор платформы</td><td>Полный контроль над всей платформой и всеми тенантами</td><td>Создание/удаление любых тенантов, просмотр аудит логов всех тенантов</td></tr><tr><td>администратор биллинга</td><td>Контроль расходов</td><td>Запросы в TMS через интерфейсы других подсистем (BillManager?) с целью сбора данных о состоянии тенанта и потребляемых ресурсах/статистиках   через соответствующие оркестраторы.  Изменение тарифного плана тенанта, приостановка за неуплату,</td></tr><tr><td>адсинистратор техподдержки платформы</td><td>Техподдержка с ограниченным доступом</td><td>Просмотр состояния тенанта, принудительный перезапуск операций, просмотр логов без доступа к данным</td></tr><tr><td>аудитор</td><td>Аудит и безопасность</td><td>Просмотр аудит логов всех тенантов, управление политиками доступа</td></tr><tr><td>владелец тенанта</td><td>Физическое или юридическое лицо, владеющее тенантом</td><td></td></tr><tr><td>администратор тенанта</td><td>полные права внутри тенанта</td><td>операции внутри тенанта, просмотр аудита, управление ресурсами</td></tr><tr><td>пользователь тенанта</td><td>Конечный пользователь, работающий с ресурсами тенанта</td><td>работа с ресурсами тенанта</td></tr><tr><td>сервисный аккаунт</td><td>Автоматизированный субъект (скрипт, CI/CD)</td><td>операции с API TMS</td></tr><tr><td>2DO: описать мультиорг и федерацию</td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="42-пользователи-компоненты-платформы">4.2. Пользователи-компоненты платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#42-пользователи-компоненты-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Orchestrator</em></p>
+<ul>
+<li>Компонент, отвечающий за управление определенным ресурсом в привязке к тенантам (CRUD), отслеживает и меняет состояние ресурса.</li>
+<li>При запросе на размещение ресурса, Оркестратор запрашивает у <em>QuotaManager</em> квоту ресурса для текущего тенанта, сравнивает с текущим расходом, и принимает решение о размещении ресурса (ВМ, сеть, диск итп) или возвращает ошибку.</li>
+<li>Оркестратор может делать оценку выполнимости запроса на размещение ресурса не выполняя его (по API). Проверяется размер квоты и сравнивается с суммой объема размещенного ресурса и запрашиваемого, результат возвращается. При этом для избежания гонок ресурс может быть предварительно забронирован оркестратором (опция интерфейса).</li>
+<li>Оркестратор сообщает об изменении статуса ресурса нотифицируя подписчиков через шину сообщений</li>
+</ul>
+<p><em>Quota Manager</em></p>
+<ul>
+<li>компонент для управления квотами для организации/тенанта/VDC. Квотации привязываются к организации или тенанту, привязывает лимиты к ресурсам.</li>
+<li>При изменениии значения квоты, Quota Manager нотифицирует Tenant Manager*.*</li>
+<li>Billing Service может управлять величиной квоты через Quota Manager (например, при назначении тарифа на тенант, одновременно назначаются квоты на ресурсы тенанта)</li>
+<li>величина квоты запрашивается Tenant Manager у Quota Manager до обращения в оркестратор.</li>
+<li>Quota Manager должен сообщать в Tenant Manager о необходимости изменения статуса тенанта или конкретного ресурса. Tenant Manager по получении информации о необходимости изменения статуса тенанта, посредством оркестраторов, меняет статус у соответствующих ресурсов и модифицирует запись о тенанте.</li>
+</ul>
+<p>см. также <a href="https://aic.astra.ru/adm_guide/brest/ruk_admin_2/4_vm_units_management/4.5_quota_management.html" class="external external-link">Управление квотами<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> пример <a href="https://life.astralinux.ru/download/attachments/612884042/VDC_quota.json?api=v2" class="external external-link">JSON c информацией о квотах для VDC<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> от BillManager</p>
+<p><em>Blling Service</em></p>
+<ul>
+<li>привязывает тарифы к организации или тенанту, привязывет стоимости к ресурсам.</li>
+<li>может выставлять и модифицировать квоты.</li>
+<li>Опрашивает Оркестраторы на предмет объема расхода ресурсов. В случае полного расхода оплаченного (зарезервированного) ресурса, модифицирует квоту таким образом, чтобы инициировать смену статуса тенанта Тенант Менеджером.</li>
+<li>Выставление счетов и учет затрат (отдельный интерфейс комопнента)</li>
+</ul>
+<p><em>Message Bus</em></p>
+<ul>
+<li>шина для обмена асинхронными сообщениями, реализующая модель публикации-подписки</li>
+<li>Используется для обмена сообщениями между Tenant Manager и Оркестраторами</li>
+</ul>
+<p><em>Опции для реализации:</em></p>
+<ul>
+<li>для абсолютной изоляции на уровне организаций или тенантов, могут быть использованы отдельные экземпляры IAM для каждой организации (и, соответственно, ALD как источника знаний о пользователях)</li>
+<li>для физической изоляции хостов разных организаций/тенантов следует использовать affinity rules (настройка средствами Бреста)</li>
+</ul>
+<h2 id="5-реализация-компонента-tms">5. Реализация компонента TMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-реализация-компонента-tms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="51-принцип-реализации-компонента">5.1. Принцип реализации компонента<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#51-принцип-реализации-компонента" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Эвалюционный подход предполагает создание архитектуры платформы включающуей централизованный TMS, создание компонента TMS, оркестраторов ресурсов, менеджера квот и интеграцию их с существующими компонентами: ПК СВ Берст, Астра Мониторинг, SDS, SDN. APIM, BillManager, платформой XaaS, IAM. В адльнейшем планируется наращивание функциональных возможности TMS и выделение редакций для обеспечения специфики поставок.</p>
+<p><em>Ключевые положения</em></p>
+<ul>
+<li>Подсистема TMS выделяется в самостоятельный архитектурный компонент, который обладает четко определенным API:
+<ul>
+<li>Приватный (интеграция с платформенными и функциональными сервисами)
+<ul>
+<li>Административный (интеграция с Порталом Администратора)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Подсистемы и сервисы облачной платформы интегрируются с подсистемой TMS через стандартизированные интерфейсы и протоколы (очередь сообщений);</li>
+<li>Внутренняя реализация подсистемы TMS не раскрывается конечным сервисам — они взаимодействуют только через API подсистемыTMS;</li>
+<li>Ролевая модель управления доступом (RBAC), структура пользователей, ролей и тенантов формируется и управляется исключительно в подсистеме IAM.</li>
+</ul>
+<p>Подсистема TMS должна обеспечивать:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Идентификация  Аутентификация  Авторизация</th><th>- Проверка аутентичности пользователей или устройств, гарантируя, что они являются теми, за кого себя выдают. - Управление доступом на основе ролей (RBAC): назначает разрешения на основе предопределенных ролей пользователей; - Управление доступом на основе атрибутов (ABAC): оценивает атрибуты (например, должностные обязанности, местоположение или тип устройства) для предоставления доступа.</th></tr></thead><tbody><tr><td>Изоляция тенантов</td><td>Обеспечение изоляции тенантов за счет разделения доступа (посредством соответствующих оркестраторов)</td></tr><tr><td>Управление состоянием тенантов</td><td>Управление состоянием тенантов посредством создания соответсствующих записей в БД, публикацией сообщений в очередь и обработкой сообщений из очереди</td></tr><tr><td>API</td><td>Изолированные REST API для межсервисного и административного взаимодействия — изоляция функций управления на уровне платформы и отдельных тенантов</td></tr><tr><td>Управление тенантами для федеративной конфигурации платформы</td><td>TBD</td></tr><tr><td>Аудит</td><td>Генерация записей об измеенниях состояния тенантов.</td></tr><tr><td>Хранение информации о тенантах (организациях)</td><td>Хранение и организация информации о тенанте (организации) в защищенном формате.</td></tr></tbody></table></div>
+<p><em>Архитектурная реализация</em></p>
+<ul>
+<li>Подсистема TMS реализует REST API, которые соответствуют требованиям облачной платформы;</li>
+<li>Внутри подсистемы TMS используется хранилище данных в качестве поставщика информации о тенантах;</li>
+<li>Данные о тенантах доступны в подсистемеTMS, но управление осуществляется централизованно через API или специализированный интерфейс;</li>
+<li>Возможна федеративная конфигурация;</li>
+<li>Интеграция комопнентов платформы с подсистемой TMS происходит через асинхроннй интерфес;</li>
+</ul>
+<p><em>Безопасность</em></p>
+<ul>
+<li>Все вызовы к подсистеме TMS защищены теми же механизмами аутентификации и авторизации, что предоставляются в интересах других сервисов;</li>
+<li>Предусмотрена поддержка SSO и MFA, а также внешних провайдеров аутентификации для порталов администратора платформы и авдимнистратора тенанта;</li>
+<li>Реализуется генерация логирования и событий аудита всех операций с доступом и их отправка в централизованный сервис.</li>
+</ul>
+<p><em>Масштабируемость</em></p>
+<ul>
+<li>Архитектура предусматривает горизонтальное масштабирование подсистемы TMS и распределение нагрузки;</li>
+<li>(В перспективе) Архитектура предусматривает мультизональное и мультирегиональное масштабирование;</li>
+<li>Добавление новых функциональных сервисов требует только конфигурации в подсистемеTMS, без модификации их внутренней логики;</li>
+</ul>
+<h2 id="52-этапы-реализации-копонента">5.2. Этапы реализации копонента<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#52-этапы-реализации-копонента" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="521-acp-22">5.2.1. ACP 2.2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#521-acp-22" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>MVP, первая версия TMS. Определение наполнения JWT.</td><td>Добавление компонента TM и интеграции c IaaS провайдером, с ограничением по управлению ресурсами (удаление вручную?)</td></tr><tr><td>Реализация концепции организаций и тенантов для изоляции ресурсов.  Реализация JWT в IAM,  Публикация TMS в API Gateway  Интеграция с SDN, AM</td><td>Хранение полной информации о тенантах в IAM, передача и разбор токена в компонентах</td></tr><tr><td>Привязка квот и биллинга к тенантам через BillManager</td><td>использовать возможность API BillManager, избегая реализации отдельных компоеннтов на раннем этапе</td></tr><tr><td>TBD: Реализация на асинхронных вызовах API (без message bus)</td><td>вероятная опция для принятия решения. Ограничение - ресурсы на разраотку и интеграцию.</td></tr></tbody></table></div>
+<h3 id="522-2027-2030">5.2.2. 2027-2030<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#522-2027-2030" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Разработка оркестраторов ресурсов: SDS, k8S, (??)</td><td>управление ресурсами платформы в новой архитектуре</td></tr><tr><td>Интеграция с Message bus</td><td>централизованный механизм обмена сообщениями и аудита</td></tr><tr><td>разработка автоматизированного управления изменением состояния ресурсов, удаление, освобождение висящих ссылок (через reference counting и реестр используемых ресурсов)</td><td>автоматизация управления ресурсами</td></tr></tbody></table></div>
+<h2 id="6-метрики">6. Метрики<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-метрики" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Бизнес (выручка)</em></p>
+<ul>
+<li>сумма выручки по отдельным моделям продажи</li>
+<li>количество приходящих и удерживаемых клиентов по отдельным моделям продажи и поставки</li>
+<li>соблюдение SLA</li>
+<li>общая аудитория системы (GAGR)</li>
+</ul>
+<p><em>Бизнес (клиенты)</em></p>
+<ul>
+<li>процент тенантов, удалённых или приостановленных за период</li>
+<li>количество ресурсов (ВМ, сети, диски, пользователи) на один тенант</li>
+<li>операционные затраты на поддержку одного тенанта (инфра + поддержка)</li>
+<li>процент тенантов, созданных через: портал самообслуживания; через API; администратором</li>
+</ul>
+<p><em>Продукт</em></p>
+<ul>
+<li>общее количество обслуживаемых тенантов</li>
+<li>время от запроса на создание тенанта до его готовности</li>
+<li>процент запросов на создание тенанта, завершившихся успешно</li>
+<li>время от запроса на удаление тенанта до освобождения всех связанных с ним ресурсов</li>
+<li>процент (объем) “висящих ресурсов” – те, что не освобождены после приостановки или удаления тенанта</li>
+<li>прохождение аудитов безопасности (количество и % успешных за период)</li>
+<li>количество подсистем (приложений, рост количества) использующих TMS</li>
+<li>количество ошибок, инцидентов</li>
+<li>покрытие потребностей рынка в части поддержки популярных технологий и функций</li>
+<li>поддержка количества внешних интеграций (SEIM,BI)</li>
+<li>быстрота восстановления после сбоя (% доступности)</li>
+<li>задержки выполнения TMS API</li>
+<li>% соответствие требованиям регулятора и ИБ</li>
+</ul>
+<p><em>Разработка</em></p>
+<ul>
+<li>оценка простоты (количество ресурсов, времени) на интеграцию нового компонента с TMS</li>
+<li>сложность внесения изменений (длительность, ресурсоемкость. необходимость специфичной экспертизы)</li>
+<li>% ошибок в коде</li>
+</ul>
+<p><em>Обслуживание</em></p>
+<ul>
+<li>быстрота выполнения заявок и разрешения инцидентов</li>
+<li>объем привлеченного обсулуживания, количество контрактов на обслуживание</li>
+<li>вытеснение конкурентных решений за счет pre-sale и GoTo Market решений (по платформе)</li>
+</ul>
+<h2 id="7-примеры-сквозных-сценариев">7. Примеры сквозных сценариев.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-примеры-сквозных-сценариев" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="71-сценарии-для-администратора-платформы">7.1. Сценарии для администратора платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-сценарии-для-администратора-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Администратор платформы управляет всей платформой: создаёт тенанты, управляет глобальными настройками.</p>
+<p>Сценарий 1:</p>
+<ol>
+<li>Администратор платформы заполняет форму: название организации, регион, подразделение</li>
+<li>TMS:
+<ol>
+<li>- создает уникальный идентификатор тенанта
+2. - создает запись тенанта в БД (статус PENDING)
+3. - опционально вызывает IAM для создания администратора тенанта
+4. - Вызывает Billing и создает экземпляр тарифного плана (должен быть доступен набор базовых тарифных планов, которые могут кастомизироваться позднее)
+5. - Вызывает SDN, создает изолированную сеть для тенанта
+6. - опционально вызывает настройку DNS для создания записи домена тенанта <org>.<tenantid>.ru
+7. - TMS обновляет статус на ACTIVE</tenantid></org></li>
+</ol>
+</li>
+<li>Администратор платформы получает подтверждение: tenant ID, root credentials, URL входа</li>
+</ol>
+<p>Сценарий 2:</p>
+<ol>
+<li>Администратор платформы выбирает тенант и действие Suspend (например, за неуплату)</li>
+<li>TMS проверяет: не в SUSPENDED ли уже</li>
+<li>TMS обновляет статус на SUSPENDED</li>
+<li>TMS отправляет события:
+<ol>
+<li>в API Gateway блокировать все запросы к API тенанта
+2. в оркестраторы ресурсов — приостановить или освободить ресурсы</li>
+</ol>
+</li>
+<li>Администратор тенанта нотифицируется об изменении состояния тенанта</li>
+</ol>
+<p>Сценарий 3:</p>
+<ol>
+<li>Администратор платформы выбирает тенант и действие Delete</li>
+<li>TMS запускает компенсирующую сагу:</li>
+<li>выкладывает в шину сообщений сообщение <tenatnid>.deleting</tenatnid></li>
+<li>в оркестраторы ресурсов получая это сообщение начинают особождать ресурсы</li>
+<li>IAM: помечает на удаление пользователей тенанта (или поля, связанные с тенантом)</li>
+<li>Billing закрывает подписку и выставляет финальный счёт</li>
+<li>DNS: удаляет DNS-запись</li>
+<li>TMS помечает тенант как deleted</li>
+<li>Администратор платформы: тенант исчезает из списка активных</li>
+<li>Через определенный период система вычищает все помеченные на удаление записи</li>
+<li>Система производит сборку мусора для выявления висящих ресурсов</li>
+</ol>
+<p>Сценарий 4:</p>
+<ol>
+<li>Администратор платформы открывает дашборд <tmshome>/tenants</tmshome></li>
+<li>TMS возвращает список тенантов со статусами и дополнительной информацией</li>
+<li>Администратор платформы видит метрики</li>
+</ol>
+<h2 id="72-сценарии-для-аудитора-платформы">7.2. Сценарии для аудитора платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-сценарии-для-аудитора-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Аудитор платформы — права на чтение, просмотр истории изменений, просмотр инцидентов.</p>
+<p>Сценарий 5: Просмотр лога тенанта</p>
+<p>Сценарий 6: Прогон тестов на проверку изоляции тенантов</p>
+<p>Сценарий 7: Получение метрик по тенантам (пользователи, ресурсы, объемы, расходы)</p>
+<h2 id="73-сценарии-для-devops-платформы">7.3. Сценарии для DevOps платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-сценарии-для-devops-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>DevOps — управляет инфраструктурой, CI/CD, автоматизацией, развёртыванием, мониторингом, масштабированием.</p>
+<p>Сценарий 8: развертывание инфраструктуры внутри тенанта</p>
+<p>Сценарий 9: применение оновлений и hot fix компонентов платформы в тенанте</p>
+<p>Сценарий 10: масштабирование ресурсов в тенанте</p>
+<p>Сценарий 11: резервное копирование и восстановление данных и конфигураций в тенанте</p>
+<p>Сценарий 12: миграция тенанта на другое оборудование или в другой ЦОД</p>
+<h2 id="74-сценарии-для-администратора-тенанта">7.4. Сценарии для Администратора тенанта<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-сценарии-для-администратора-тенанта" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Сценарий 13: проверка статуса и статистик тенанта</p>
+<p>Сценарий 14: добваление (изменение роли, удаление) пользователя к тенанту</p>
+<p>Сценарий 15: просмотр расходов, оплата счетов</p>
+<p>Сценарий 16: изменение квот (через quota manager)</p>
+<p>Сценарий 17: создание запросов администратору платформы (например, на смену тарифа или удаление тенанта)</p>
+<h2 id="75-сценарии-для-компонентов-платформы">7.5. Сценарии для компонентов платформы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#75-сценарии-для-компонентов-платформы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TMS как источник правды о тенантах для других компонентов.</p>
+<p>Сценарий 18: выделение/освобождение ресурса с привязкой к тенанту</p>
+<p>Сценарий 19: запрос на авторизацию пользователя в тенанте</p>
+<p>Сценарий 20: запрос состояния тенанта</p>
+<p>Сценарий 21: мониторинг тенанта (тенантов)</p>
+<h2 id="8-управление-рисками">8. Управление рисками<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-управление-рисками" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td>Зависимость от смежных систем при интеграции централизованного TMS</td><td>Оркестраторы, IAM, TMS, аудит и другие общие системы развиваются по своим roadmap</td><td>Формальные договоренности между командами; промежуточные адаптеры; stage-gates по готовности зависимостей</td></tr><tr><td>Проблема быстродействия при масштабировании</td><td></td><td>Анализ логов и выявление причин  Возможно:  - Увеличить объем памяти на для кеширования БД in=emory  - Замена БД на более эффективную in-memory (пр. Tarantool)  - проверка задержек в очередях  - использование кеширования</td></tr><tr><td>Временная неработоспособность управляющего контура TMS</td><td></td><td>тенанты должны функционировать автономно, теряется возможность изменения состояния и размещения ресурсов на время восстановления TMS</td></tr><tr><td>Обнаружение критических ошибок</td><td></td><td>Высокопрооритетная обработка заявки и применение патча  Для избежания ситуаций должно применяться тщательное покрытие кода сценарными тестами и статический анализ</td></tr><tr><td>Проблема обратной совместимости для разных версий TMS компонента (API, токены, политики, роли)</td><td></td><td>Предусмотреть версионирование политик и ролей  Предусмотреть возможность отката на работоспособную версию</td></tr><tr><td>Сбой в закрытом контуре у заказчика</td><td>Невозможность прямого анализа телеметрии из-за недоступности данных (данные в закрытом контуре)</td><td>1. Необходимо предусмотреть сбор системных данных и способ их доставки группе поддержки Астры  2. Необходимость создания сервиса автоматического анализа и устранения ошибок</td></tr><tr><td>Утечка или компрометация данных тенантов</td><td></td><td>шифрование закрытыми ключами, храниение секретов в внешнем vault</td></tr><tr><td>Несоответствие регуляторным требованиям</td><td></td><td>Аудит сторонними аффилированными организациями  Bug bounty программа</td></tr><tr><td>Ограниченные ресурсы для разработки</td><td></td><td></td></tr><tr><td>”висящие ресурсы”</td><td></td><td>предусмотреть reference counting и ответственность оркестраторов проводить периодическую ревизию используемости (достижимости из записей о тенантах в TMS)</td></tr><tr><td>Нарушение изоляции тенантов</td><td>Пользователь тенанта A может подменить tenant_id и получить доступ к данным тенанта B</td><td>проверка подписи JWT</td></tr><tr><td>Размещение ресурса в тенанте блокируется при недоступности внешних систем</td><td>Создание тенанта требует вызова IAM, Billing, DNS, K8s — если один из сервисов недоступен, тенант не создаётся</td><td>отложить размещение до восстановления оркестратора и самого ресурса  использовать асинхронные вызовы (шину)  возможность отката операции  предусмотреть возможность в оркестраторах каскадного удаления зависимых ерсурсов</td></tr><tr><td>ситуация гонок при массовом создании или изменении тенантов</td><td></td><td>предусмотреть возможность “резервирования” ресурсов и возможность предварительной проверки возможности создания тенанта и выделения ресурсов до реального создания записи</td></tr><tr><td>”шумные соседи”</td><td>Один тенант потребляет все ресурсы, вследствие чего происходит деградация для всех остальных</td><td>пересмотр размещения ресурсов (может быть автоматизированная процедура)  балансировка трафика и нагрузки на compute  оптимизация обращений к БД  оптимизация расположения данных на чтение и запись</td></tr><tr><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="9-открытые-вопросы">9. Открытые вопросы<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-открытые-вопросы" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>разработка конечной архитектуры TMS</li>
+<li>выделение компоеннтов QuotaManagement, Billing, message bus</li>
+<li>согласование структуры тенантов с BillManager</li>
+<li>нужны ли отдельные DNS имена для тенантов?</li>
+<li>аттестуемость и сертифицируемость (требования, процессы):</li>
+</ol></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-7" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#1-введение" data-for="1-введение">1. Введение</a></li><li class="depth-0"><a href="#11-цели-tms" data-for="11-цели-tms">1.1. Цели TMS</a></li><li class="depth-0"><a href="#12-задачи-tms" data-for="12-задачи-tms">1.2. Задачи TMS</a></li><li class="depth-0"><a href="#13-свойства-tms" data-for="13-свойства-tms">1.3. Свойства TMS</a></li><li class="depth-0"><a href="#2-монетизация" data-for="2-монетизация">2. Монетизация</a></li><li class="depth-0"><a href="#21-целевая-аудитория" data-for="21-целевая-аудитория">2.1. Целевая Аудитория</a></li><li class="depth-0"><a href="#22-модели-монетизации" data-for="22-модели-монетизации">2.2. Модели монетизации</a></li><li class="depth-0"><a href="#23-каналы-продаж" data-for="23-каналы-продаж">2.3. Каналы продаж</a></li><li class="depth-0"><a href="#24-дополнительно" data-for="24-дополнительно">2.4. Дополнительно</a></li><li class="depth-0"><a href="#3-архитектурные-принципы" data-for="3-архитектурные-принципы">3. Архитектурные принципы</a></li><li class="depth-0"><a href="#4-пользователи-tms" data-for="4-пользователи-tms">4. Пользователи TMS</a></li><li class="depth-1"><a href="#411-пользователи-администраторы" data-for="411-пользователи-администраторы">4.1.1. Пользователи-администраторы</a></li><li class="depth-0"><a href="#42-пользователи-компоненты-платформы" data-for="42-пользователи-компоненты-платформы">4.2. Пользователи-компоненты платформы</a></li><li class="depth-0"><a href="#5-реализация-компонента-tms" data-for="5-реализация-компонента-tms">5. Реализация компонента TMS</a></li><li class="depth-0"><a href="#51-принцип-реализации-компонента" data-for="51-принцип-реализации-компонента">5.1. Принцип реализации компонента</a></li><li class="depth-0"><a href="#52-этапы-реализации-копонента" data-for="52-этапы-реализации-копонента">5.2. Этапы реализации копонента</a></li><li class="depth-1"><a href="#521-acp-22" data-for="521-acp-22">5.2.1. ACP 2.2</a></li><li class="depth-1"><a href="#522-2027-2030" data-for="522-2027-2030">5.2.2. 2027-2030</a></li><li class="depth-0"><a href="#6-метрики" data-for="6-метрики">6. Метрики</a></li><li class="depth-0"><a href="#7-примеры-сквозных-сценариев" data-for="7-примеры-сквозных-сценариев">7. Примеры сквозных сценариев.</a></li><li class="depth-0"><a href="#71-сценарии-для-администратора-платформы" data-for="71-сценарии-для-администратора-платформы">7.1. Сценарии для администратора платформы</a></li><li class="depth-0"><a href="#72-сценарии-для-аудитора-платформы" data-for="72-сценарии-для-аудитора-платформы">7.2. Сценарии для аудитора платформы</a></li><li class="depth-0"><a href="#73-сценарии-для-devops-платформы" data-for="73-сценарии-для-devops-платформы">7.3. Сценарии для DevOps платформы</a></li><li class="depth-0"><a href="#74-сценарии-для-администратора-тенанта" data-for="74-сценарии-для-администратора-тенанта">7.4. Сценарии для Администратора тенанта</a></li><li class="depth-0"><a href="#75-сценарии-для-компонентов-платформы" data-for="75-сценарии-для-компонентов-платформы">7.5. Сценарии для компонентов платформы</a></li><li class="depth-0"><a href="#8-управление-рисками" data-for="8-управление-рисками">8. Управление рисками</a></li><li class="depth-0"><a href="#9-открытые-вопросы" data-for="9-открытые-вопросы">9. Открытые вопросы</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../inbox/untitled.base" class="internal">Untitled</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-3eea7814.js" type="module" data-persist="true"></script></html>
