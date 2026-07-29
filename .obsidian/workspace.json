@@ -8,105 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6955f134d92bb2dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/PBR/pre-PBR.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "pre-PBR"
-            }
-          },
-          {
-            "id": "3ba46ff04e602111",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Тайлаков.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Дмитрий Тайлаков"
-            }
-          },
-          {
-            "id": "ff7a3b02f1d9d089",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/PBR/pre-PBR.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "pre-PBR"
-            }
-          },
-          {
-            "id": "2dd4ea87bbdfcc7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/2026-07-28 Синк с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-07-28 Синк с On-prem"
-            }
-          },
-          {
-            "id": "11f631258eb094d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с RnD"
-            }
-          },
-          {
-            "id": "1cca34bbc7cf8516",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с техписами/Синки с техписами.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с техписами"
-            }
-          },
-          {
             "id": "441b03af1ea06d90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/PBR/PBR Air Bug.md",
+                "file": "Работа/Astra/Встречи/Протоколы встреч/PBR/PBR AICBUG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PBR Air Bug"
+              "title": "PBR AICBUG"
+            }
+          },
+          {
+            "id": "9d4365234cc8deee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Команда/ИБ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ИБ"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -280,31 +210,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "441b03af1ea06d90",
+  "active": "9d4365234cc8deee",
   "lastOpenFiles": [
-    "Работа/Astra/Встречи/Протоколы встреч/PBR/2026-06-18 PBR в AICBUG.md",
-    "Работа/Astra/Встречи/Протоколы встреч/PBR/PBR Air Bug.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
-    "Работа/Astra/Встречи/Протоколы встреч/PBR/2026-05-29 PBR в AICBUG.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
-    "Работа/Astra/Встречи/Протоколы встреч/1-2-1/07-07-2026 1-2-1 Александр Шадрин.md",
-    "docs/index.html",
-    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-13 Планирование команды.md",
-    "Работа/Astra/Встречи/Подготовка ко встречам/17-07-2026 Актуализация документации и материалов по Платформе Astra Cloud.md",
-    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-17 Актуализация документации и материалов по Платформе Astra Cloud.md",
-    "Без названия.md",
-    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-21 Портал оператора (ЛК админ) - тенанты, роли, квоты.md",
-    "docs/src/site/notes/работа/astra/встречи/протоколы-встреч/pbr/pre-pbr.html",
-    "docs/src/site/notes/работа/astra/встречи/протоколы-встреч/pbr/index.html",
-    "docs/src/site/notes/работа/astra/встречи/протоколы-встреч/pbr",
-    "docs/src/site/notes/работа/astra/встречи/протоколы-встреч/index.html",
-    "docs/src/site/notes/работа/astra/встречи/протоколы-встреч",
-    "docs/src/site/notes/работа/astra/встречи/index.html",
-    "docs/src/site/notes/работа/astra/встречи",
-    "docs/src/site/notes/работа/astra/index.html",
-    "docs/src/site/notes/работа/index.html",
+    "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Попенов.md",
+    "Работа/Astra/Встречи/Протоколы встреч/PBR/PBR AICBUG.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/2026-07-28 Синк с On-prem.md",
+    "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Тайлаков.md",
+    "docs/“full-product-review”-шаблон-оценки-проекта-by-prodictdo.html",
+    "docs/щебень.html",
+    "docs/что-такое-стратегия.html",
+    "docs/сколько-слайдов-а-чего-так-много.html",
+    "docs/свой-пайплайнер.html",
+    "docs/размеры.html",
+    "docs/работа/astra/astra-cloud-материалы/коммерция/конкурсы/мегафон/прил_2_к_приглашению_тех_требования_лот_2_telco_сегмент-06.03-v1.xlsx",
+    "docs/работа/astra/astra-cloud-материалы/коммерция/конкурсы/мегафон/прил_2_к_приглашению_тех_требования_лот_1_it_сегмент_v2.xlsx",
+    "docs/работа/astra/встречи/протоколы-встреч/архитектура/архитектура-компонентов/2026-07-22-dr-acp.html",
+    "docs/работа/astra/встречи/протоколы-встреч/архитектура/общая-архитектура/2026-07-22-архитектура-acp-2.3---квоты-и-iam.html",
+    "docs/static/og-image.png",
+    "docs/static/icon.png",
     "docs/attachments/pasted-image-20250909231213.png",
     "docs/attachments/pasted-image-20250205012342.png",
     "docs/attachments/pasted-image-20241123222434.png",
@@ -313,8 +237,19 @@
     "docs/attachments/pasted-image-20250911183531.png",
     "docs/attachments/img_0958.jpeg",
     "docs/attachments/pasted-image-20251015232909.png",
-    "docs/attachments/pasted-image-20250831192418.png",
-    "docs/attachments/pasted-image-20250205012550.png",
+    "Работа/Astra/Встречи/Протоколы встреч/PBR/2026-06-18 PBR в AICBUG.md",
+    "Работа/Astra/Встречи/Протоколы встреч/PBR/PBR Air Bug.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
+    "Работа/Astra/Встречи/Протоколы встреч/PBR/2026-05-29 PBR в AICBUG.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/Синки с BillManager.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синк с BillManager/2026-07-24 Регулярный синк с BillManager.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Архитектура/Архитектура компонентов/2026-07-22 DR ACP.md",
+    "Работа/Astra/Встречи/Протоколы встреч/1-2-1/07-07-2026 1-2-1 Александр Шадрин.md",
+    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-13 Планирование команды.md",
+    "Работа/Astra/Встречи/Подготовка ко встречам/17-07-2026 Актуализация документации и материалов по Платформе Astra Cloud.md",
+    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-17 Актуализация документации и материалов по Платформе Astra Cloud.md",
+    "Без названия.md",
+    "Работа/Astra/Встречи/Подготовка ко встречам/2026-07-21 Портал оператора (ЛК админ) - тенанты, роли, квоты.md",
     "покрытие-потребностей-ПСБ.md",
     "план-закрытия-проблем-ПСБ.md",
     "Размеры.md",
@@ -323,11 +258,6 @@
     "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Сценарии взаимодействия.md",
     "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Публичное API TeamStorm.md",
     "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Подготовка BigYoonionMeetup.md",
-    "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Интеграция с TestIT.md",
-    "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Интеграция TeamStorm с GitLab .md",
-    "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Договор с Yoonion.md",
-    "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/Договор по общей тех.поддержки.md",
-    "Работа/VK Tech/Партенры VK Tech/Yoonion/Взаимодействие с Yoonion/VK Tracker_оценка потенициала .md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/IAM (UIDM)/Identity and Access Managment/Единый SSO для Платформы.canvas",
     "Работа/Astra/Astra Cloud Platform/Компоненты/Интеграция с XaaS/Интеграция с Xa.canvas",
