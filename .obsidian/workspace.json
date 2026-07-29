@@ -147,8 +147,7 @@
               "title": "Максим Югай"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 392.5
   },
   "right": {
     "id": "c2887a5db4ce6be2",
@@ -322,8 +321,9 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "abd35febf309d9a1",
+  "active": "6955f134d92bb2dc",
   "lastOpenFiles": [
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
     "conflict-files-obsidian-git.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки команды/2026-07-20 Статус команды облачной платформы.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
@@ -333,7 +333,6 @@
     "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с командой тех писов/Синки с командой тех писов.md",
     "Работа/Astra/Команда/Команда Платформы AC/Максим Югай.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
     "AI/Hermes/Hermes — карта агентов и скиллов.md",
     "Inbox/SberTech/Идеи для развития SourceControl.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с командой тех писов/2026-07-17 Актуализация документации и материалов по Платформе Astra Cloud.md",
