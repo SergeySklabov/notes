@@ -22,44 +22,6 @@
             }
           },
           {
-            "id": "fbe2eacc694f9614",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Billing (BIL)"
-            }
-          },
-          {
-            "id": "d8a4b917a7697b66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-07-24 Синк с RnD"
-            }
-          },
-          {
             "id": "3ba46ff04e602111",
             "type": "leaf",
             "state": {
@@ -71,6 +33,20 @@
               },
               "icon": "lucide-file",
               "title": "Дмитрий Тайлаков"
+            }
+          },
+          {
+            "id": "2f0a9757034dfc6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Синки с RnD"
             }
           },
           {
@@ -158,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -332,14 +308,19 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "2ae17bb4cd54fbd9",
+  "active": "2f0a9757034dfc6d",
   "lastOpenFiles": [
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
+    "conflict-files-obsidian-git.md",
+    "Работа/Astra/Команда/Команда Платформы AC/Дмитрий Тайлаков.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
+    "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/Синки с RnD.md",
-    "AI/Hermes/Hermes — карта агентов и скиллов.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с командой тех писов/Синки с командой тех писов.md",
-    "Inbox/SberTech/Идеи для развития SourceControl.md",
     "Работа/Astra/Команда/Команда Платформы AC/Максим Югай.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
+    "AI/Hermes/Hermes — карта агентов и скиллов.md",
+    "Inbox/SberTech/Идеи для развития SourceControl.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синк с командой тех писов/2026-07-17 Актуализация документации и материалов по Платформе Astra Cloud.md",
     "Работа/Astra/Встречи/Подготовка ко встречам/17-07-2026 Актуализация документации и материалов по Платформе Astra Cloud.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с техписами/Синки с техписами.md",
@@ -349,18 +330,13 @@
     "Работа/Astra/Встречи/Протоколы встреч/Синки с техписами",
     "Добро пожаловать.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/2026-07-28 Синк с On-prem.md",
-    "conflict-files-obsidian-git.md",
     "Без названия.md",
     "покрытие-потребностей-ПСБ.md",
     "план-закрытия-проблем-ПСБ.md",
     "API Gateway (APIM).md",
     "Untitled 1.md",
     "psijfios.md",
-    "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
     "Работа/Astra/Команда/Команда Платформы AC/Михаил Перевалов.md",
-    "Работа/Astra/Встречи/Записи встреч/Записи.md",
     "Работа/Astra/Встречи/Протоколы встреч/1-2-1",
     "Работа/Astra/Astra Cloud Platform/Компоненты/Identity and Access Managment",
     "Работа/Astra/Встречи/Записи встреч",
