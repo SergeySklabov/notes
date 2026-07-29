@@ -156,135 +156,9 @@
               "icon": "lucide-file",
               "title": "Максим Югай"
             }
-          },
-          {
-            "id": "586b68d97b3356ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Добро пожаловать.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Добро пожаловать"
-            }
-          },
-          {
-            "id": "11273236e98464a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "1808274d4f8ad23f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "49313e84cf6d3a49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "d08a7a6f2123e2b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "d0be29c91e75c2f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "bb99c266f1c60f81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "68c431a1a4cad520",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
-          },
-          {
-            "id": "b219aeb41f45b07b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Синки с On-prem"
-            }
           }
         ],
-        "currentTab": 18
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -458,19 +332,19 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "b219aeb41f45b07b",
+  "active": "df52e33830e86fe3",
   "lastOpenFiles": [
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/2026-07-28 Синк с On-prem.md",
-    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
-    "conflict-files-obsidian-git.md",
+    "Работа/Astra/Команда/Команда Платформы AC/Максим Югай.md",
     "Добро пожаловать.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/Синки с On-prem.md",
+    "Работа/Astra/Встречи/Протоколы встреч/Синки с On-prem/2026-07-28 Синк с On-prem.md",
+    "conflict-files-obsidian-git.md",
     "Без названия.md",
     "покрытие-потребностей-ПСБ.md",
     "план-закрытия-проблем-ПСБ.md",
     "API Gateway (APIM).md",
     "Untitled 1.md",
     "psijfios.md",
-    "Работа/Astra/Команда/Команда Платформы AC/Максим Югай.md",
     "Работа/Astra/Платформа Astra Cloud/Компоненты/Billing (BIL)/Billing (BIL).md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки команды/Синки команды.md",
     "Работа/Astra/Встречи/Протоколы встреч/Синки с RnD/2026-07-24 Синк с RnD.md",
