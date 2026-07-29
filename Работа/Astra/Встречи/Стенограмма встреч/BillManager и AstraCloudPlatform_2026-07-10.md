@@ -1,3 +1,11 @@
+---
+tags:
+  - transcript
+  - protocol/done
+Дата: 2026-07-10
+Событие: "BillManager и AstraCloudPlatform"
+Протокол: "[[2026-07-10 Регулярный синк с BillManager]]"
+---
 **00:01**
 Юлия Луценко
 **Реплика:**
